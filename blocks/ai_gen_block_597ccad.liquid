@@ -1,0 +1,1105 @@
+{% doc %}
+  @prompt
+    Generate a 100% wide table with 3 columns. Give me the ability to update this table within the settings, and switch between full width, 75% width, and 50% width, Wrap this table in a dropdown that I can toggle off and on, switch the icon from an arrow to a plus sign, and use the same font as the body copy (Monsterrat Bold). Make the table title slightly larger than the column headings, and give me the ability to add or remove rows. Format the second column with italics and give me the ability to add a hyperlink to text in the third column., Give me the ability to change background colors and to add or remove rows within the table settings, Add 10 more rows, Make all the rows below the column headings use a normal font weight, not bold, Give me the ability to change the title text color and the column headings color
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-table-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    margin: 0 auto;
+    background-color: {{ block.settings.wrapper_background_color }};
+    padding: {{ block.settings.wrapper_padding }}px;
+  }
+
+  .ai-table-container-{{ ai_gen_id }} {
+    width: {{ block.settings.table_width }};
+    margin: 0 auto;
+  }
+
+  .ai-table-toggle-{{ ai_gen_id }} {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-family: {{ block.settings.type_body_font.family }}, {{ block.settings.type_body_font.fallback_families }};
+    font-weight: {{ block.settings.type_body_font.weight }};
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_text_color }};
+    text-align: left;
+  }
+
+  .ai-table-toggle-icon-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .ai-table-toggle-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    stroke: {{ block.settings.title_text_color }};
+  }
+
+  .ai-table-toggle-{{ ai_gen_id }}[aria-expanded="true"] .ai-table-toggle-icon-{{ ai_gen_id }} {
+    transform: rotate(180deg);
+  }
+
+  .ai-table-content-{{ ai_gen_id }} {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .ai-table-content-{{ ai_gen_id }}.active {
+    max-height: 5000px;
+  }
+
+  .ai-table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-family: {{ block.settings.type_body_font.family }}, {{ block.settings.type_body_font.fallback_families }};
+    background-color: {{ block.settings.table_background_color }};
+  }
+
+  .ai-table-{{ ai_gen_id }} thead th {
+    font-size: {{ block.settings.heading_size }}px;
+    font-weight: {{ block.settings.type_body_font.weight }};
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid {{ block.settings.border_color }};
+    color: {{ block.settings.heading_text_color }};
+    background-color: {{ block.settings.header_background_color }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tbody td {
+    padding: 12px;
+    border-bottom: 1px solid {{ block.settings.border_color }};
+    color: {{ block.settings.text_color }};
+    font-weight: normal;
+  }
+
+  .ai-table-{{ ai_gen_id }} tbody tr {
+    background-color: {{ block.settings.row_background_color }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tbody tr:nth-child(even) {
+    background-color: {{ block.settings.row_alternate_background_color }};
+  }
+
+  .ai-table-{{ ai_gen_id }} tbody td:nth-child(2) {
+    font-style: italic;
+  }
+
+  .ai-table-{{ ai_gen_id }} tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  .ai-table-link-{{ ai_gen_id }} {
+    color: {{ block.settings.link_color }};
+    text-decoration: underline;
+  }
+
+  .ai-table-link-{{ ai_gen_id }}:hover {
+    opacity: 0.8;
+  }
+{% endstyle %}
+
+<collapsible-table-{{ ai_gen_id }} class="ai-table-wrapper-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-table-container-{{ ai_gen_id }}">
+    {% if block.settings.enable_dropdown %}
+      <button
+        class="ai-table-toggle-{{ ai_gen_id }}"
+        aria-expanded="false"
+        aria-controls="ai-table-content-{{ ai_gen_id }}"
+      >
+        <span>{{ block.settings.table_title }}</span>
+        <span class="ai-table-toggle-icon-{{ ai_gen_id }}">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"></line>
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+          </svg>
+        </span>
+      </button>
+      <div class="ai-table-content-{{ ai_gen_id }}" id="ai-table-content-{{ ai_gen_id }}">
+    {% else %}
+      {% if block.settings.table_title != blank %}
+        <div class="ai-table-toggle-{{ ai_gen_id }}" style="cursor: default;">
+          <span>{{ block.settings.table_title }}</span>
+        </div>
+      {% endif %}
+    {% endif %}
+
+    <table class="ai-table-{{ ai_gen_id }}">
+      <thead>
+        <tr>
+          <th>{{ block.settings.column_1_heading }}</th>
+          <th>{{ block.settings.column_2_heading }}</th>
+          <th>{{ block.settings.column_3_heading }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for i in (1..30) %}
+          {% liquid
+            assign col1_key = 'row_' | append: i | append: '_col_1'
+            assign col2_key = 'row_' | append: i | append: '_col_2'
+            assign col3_key = 'row_' | append: i | append: '_col_3'
+            assign col3_link_key = 'row_' | append: i | append: '_col_3_link'
+
+            assign col1_value = block.settings[col1_key]
+            assign col2_value = block.settings[col2_key]
+            assign col3_value = block.settings[col3_key]
+            assign col3_link = block.settings[col3_link_key]
+          %}
+
+          {% if col1_value != blank or col2_value != blank or col3_value != blank %}
+            <tr>
+              <td>{{ col1_value }}</td>
+              <td>{{ col2_value }}</td>
+              <td>
+                {% if col3_link != blank %}
+                  <a href="{{ col3_link }}" class="ai-table-link-{{ ai_gen_id }}">{{ col3_value }}</a>
+                {% else %}
+                  {{ col3_value }}
+                {% endif %}
+              </td>
+            </tr>
+          {% endif %}
+        {% endfor %}
+      </tbody>
+    </table>
+
+    {% if block.settings.enable_dropdown %}
+      </div>
+    {% endif %}
+  </div>
+</collapsible-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class CollapsibleTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.toggle = this.querySelector('.ai-table-toggle-{{ ai_gen_id }}');
+        this.content = this.querySelector('.ai-table-content-{{ ai_gen_id }}');
+
+        if (this.toggle && this.content) {
+          this.toggle.addEventListener('click', () => this.toggleContent());
+        }
+      }
+
+      toggleContent() {
+        const isExpanded = this.toggle.getAttribute('aria-expanded') === 'true';
+        this.toggle.setAttribute('aria-expanded', !isExpanded);
+        this.content.classList.toggle('active');
+      }
+    }
+
+    customElements.define('collapsible-table-{{ ai_gen_id }}', CollapsibleTable{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Collapsible table",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Table settings"
+    },
+    {
+      "type": "text",
+      "id": "table_title",
+      "label": "Table title",
+      "default": "Product Specifications"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_dropdown",
+      "label": "Enable dropdown toggle",
+      "default": true
+    },
+    {
+      "type": "select",
+      "id": "table_width",
+      "label": "Table width",
+      "options": [
+        {
+          "value": "50%",
+          "label": "50%"
+        },
+        {
+          "value": "75%",
+          "label": "75%"
+        },
+        {
+          "value": "100%",
+          "label": "100%"
+        }
+      ],
+      "default": "100%"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "font_picker",
+      "id": "type_body_font",
+      "label": "Font",
+      "default": "montserrat_n7"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Title size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Column heading size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "title_text_color",
+      "label": "Title text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heading_text_color",
+      "label": "Column heading text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Row text color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link color",
+      "default": "#0066cc"
+    },
+    {
+      "type": "header",
+      "content": "Background colors"
+    },
+    {
+      "type": "color",
+      "id": "wrapper_background_color",
+      "label": "Wrapper background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "wrapper_padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Wrapper padding",
+      "default": 0
+    },
+    {
+      "type": "color",
+      "id": "table_background_color",
+      "label": "Table background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "header_background_color",
+      "label": "Header background",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "row_background_color",
+      "label": "Row background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "row_alternate_background_color",
+      "label": "Alternate row background",
+      "default": "#fafafa"
+    },
+    {
+      "type": "header",
+      "content": "Column headings"
+    },
+    {
+      "type": "text",
+      "id": "column_1_heading",
+      "label": "Column 1 heading",
+      "default": "Feature"
+    },
+    {
+      "type": "text",
+      "id": "column_2_heading",
+      "label": "Column 2 heading",
+      "default": "Description"
+    },
+    {
+      "type": "text",
+      "id": "column_3_heading",
+      "label": "Column 3 heading",
+      "default": "Details"
+    },
+    {
+      "type": "header",
+      "content": "Row 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_1_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_2_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 3"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_3_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 4"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_4_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 5"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_5_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 6"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_6_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 7"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_7_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 8"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_8_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 9"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_9_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 10"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_10_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 11"
+    },
+    {
+      "type": "text",
+      "id": "row_11_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_11_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_11_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_11_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 12"
+    },
+    {
+      "type": "text",
+      "id": "row_12_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_12_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_12_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_12_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 13"
+    },
+    {
+      "type": "text",
+      "id": "row_13_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_13_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_13_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_13_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 14"
+    },
+    {
+      "type": "text",
+      "id": "row_14_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_14_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_14_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_14_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 15"
+    },
+    {
+      "type": "text",
+      "id": "row_15_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_15_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_15_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_15_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 16"
+    },
+    {
+      "type": "text",
+      "id": "row_16_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_16_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_16_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_16_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 17"
+    },
+    {
+      "type": "text",
+      "id": "row_17_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_17_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_17_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_17_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 18"
+    },
+    {
+      "type": "text",
+      "id": "row_18_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_18_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_18_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_18_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 19"
+    },
+    {
+      "type": "text",
+      "id": "row_19_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_19_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_19_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_19_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 20"
+    },
+    {
+      "type": "text",
+      "id": "row_20_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_20_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_20_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_20_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 21"
+    },
+    {
+      "type": "text",
+      "id": "row_21_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_21_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_21_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_21_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 22"
+    },
+    {
+      "type": "text",
+      "id": "row_22_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_22_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_22_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_22_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 23"
+    },
+    {
+      "type": "text",
+      "id": "row_23_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_23_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_23_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_23_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 24"
+    },
+    {
+      "type": "text",
+      "id": "row_24_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_24_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_24_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_24_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 25"
+    },
+    {
+      "type": "text",
+      "id": "row_25_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_25_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_25_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_25_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 26"
+    },
+    {
+      "type": "text",
+      "id": "row_26_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_26_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_26_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_26_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 27"
+    },
+    {
+      "type": "text",
+      "id": "row_27_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_27_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_27_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_27_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 28"
+    },
+    {
+      "type": "text",
+      "id": "row_28_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_28_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_28_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_28_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 29"
+    },
+    {
+      "type": "text",
+      "id": "row_29_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_29_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_29_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_29_col_3_link",
+      "label": "Column 3 link"
+    },
+    {
+      "type": "header",
+      "content": "Row 30"
+    },
+    {
+      "type": "text",
+      "id": "row_30_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_30_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_30_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "url",
+      "id": "row_30_col_3_link",
+      "label": "Column 3 link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Collapsible table"
+    }
+  ]
+}
+{% endschema %}

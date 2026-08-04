@@ -1,0 +1,492 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_text_BT3iHE": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p>SKU Number + Barcode</p>",
+            "content_color": "",
+            "truncate_text": false
+          }
+        },
+        "vendor_Y6fpfU": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_6hGJBM": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h3",
+            "enable_h1_tag": true
+          }
+        },
+        "product_code_HQXThx": {
+          "type": "product_code",
+          "settings": {
+            "product_code_to_show": "both"
+          }
+        },
+        "price_wkNpbb": {
+          "type": "price",
+          "settings": {
+            "heading_size": "h3",
+            "color_product_price": "",
+            "show_tax_and_shipping_policy": false,
+            "show_sold_out_badge": true,
+            "show_sale_badge": "text_only",
+            "show_new_in_badge": true
+          }
+        },
+        "custom_text_L6cPLA": {
+          "type": "custom_text",
+          "settings": {
+            "text": "<p><em>Certified Real Truffle™</em></p>",
+            "content_color": "",
+            "truncate_text": false
+          }
+        },
+        "attributes_e9tmHP": {
+          "type": "attributes",
+          "settings": {}
+        },
+        "pickup_availability_E9WdKU": {
+          "type": "pickup_availability",
+          "settings": {
+            "show_pickup_time": true,
+            "background_color": "#ffb82d",
+            "content_color": ""
+          }
+        },
+        "variant_selector_AfqKDc": {
+          "type": "variant_selector",
+          "settings": {
+            "show_low_stock": true,
+            "show_stock_counter": true,
+            "selector_style": "block",
+            "show_variant_swatches": true,
+            "enable_size_guide": false,
+            "size_label_heading": "Size chart",
+            "size_guide_content": ""
+          }
+        },
+        "buy_buttons_YNKTfQ": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout_buttons": true,
+            "show_gift_card_form": false,
+            "enable_pre_order": false,
+            "note": "",
+            "show_payment_method": true,
+            "payment_heading": "We Accept"
+          }
+        },
+        "divider_3YpJQt": {
+          "type": "divider",
+          "settings": {
+            "divider_color": "#ededed"
+          }
+        },
+        "icon_with_text_yf9TNn": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "delivery-truck",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "heading": "Fast Shipping Headline",
+            "description": "<p>Information about shipping times, availablility, etc can go here.</p>",
+            "desktop_block_width": "full-width",
+            "mobile_block_width": "full-width"
+          }
+        },
+        "description_WYxRQf": {
+          "type": "description",
+          "settings": {
+            "enable_icon": false,
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "heading": "Description",
+            "description_type": "regular",
+            "expand_collapsible": true
+          }
+        },
+        "collapsible_item_kC9mUk": {
+          "type": "collapsible_item",
+          "settings": {
+            "enable_icon": false,
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "expand_collapsible": false,
+            "heading": "Details",
+            "text": "<p>Write additional information about your products</p>",
+            "content_from_page": ""
+          }
+        },
+        "performance_graphs_ArgetK": {
+          "type": "performance_graphs",
+          "settings": {
+            "enable_icon": false,
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "graphs_style": "linear",
+            "custom_graphs_color": "",
+            "heading": "Product performance",
+            "show_as_collapsible": false,
+            "expand_collapsible": false,
+            "label": "Product fit",
+            "description": "Description",
+            "graph_max_value": 5,
+            "product_value": 5,
+            "use_list_of_graphs": true,
+            "graphs_metafield": ""
+          }
+        },
+        "collapsible_item_38AJ6p": {
+          "type": "collapsible_item",
+          "settings": {
+            "enable_icon": false,
+            "icon_source": "theme_library",
+            "theme_library_icon": "truck",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "expand_collapsible": false,
+            "heading": "Tasting Notes & Favorite Uses",
+            "text": "<p><strong>Tasting Notes</strong></p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p><p><strong>Favorite Uses</strong></p><p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>",
+            "content_from_page": ""
+          }
+        },
+        "collapsible_item_x4Lb4i": {
+          "type": "collapsible_item",
+          "settings": {
+            "enable_icon": false,
+            "icon_source": "theme_library",
+            "theme_library_icon": "return",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "expand_collapsible": false,
+            "heading": "Nutritional Information",
+            "text": "<p>Information about product nutrition goes here.</p>",
+            "content_from_page": ""
+          }
+        },
+        "share_j7QJAE": {
+          "type": "share",
+          "settings": {}
+        },
+        "complementary_products_GrLGbC": {
+          "type": "complementary_products",
+          "settings": {
+            "heading": "Complete with",
+            "products_to_show": 3,
+            "show_vendor": true,
+            "show_rating": false,
+            "show_price": true,
+            "show_quick_view": true,
+            "quick_buy": "standard"
+          }
+        },
+        "custom_liquid_delivery_date": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid_code": "<div class=\"product__info product__block-custom_liquid mb-3xl\"><label for=\"DeliveryDate-{{ section.id }}\" class=\"fs-body-l fw-medium d-block mb-2\">Preferred Delivery Date</label><select name=\"properties[Preferred Delivery Date]\" id=\"DeliveryDate-{{ section.id }}\" class=\"form__control w-100 h-100 field__text field--focus field--hover\" form=\"{{ product_form_id }}\" required><option value=\"\" disabled selected>Choose a delivery date</option><option value=\"Mon, Dec 8, 2026\">Mon, Dec 8, 2026</option><option value=\"Mon, Dec 15, 2026\">Mon, Dec 15, 2026</option><option value=\"Mon, Jan 5, 2027\">Mon, Jan 5, 2027</option><option value=\"Mon, Jan 19, 2027\">Mon, Jan 19, 2027</option><option value=\"Mon, Feb 2, 2027\">Mon, Feb 2, 2027</option><option value=\"Mon, Feb 16, 2027\">Mon, Feb 16, 2027</option><option value=\"Mon, Mar 2, 2027\">Mon, Mar 2, 2027</option><option value=\"Mon, Mar 9, 2027\">Mon, Mar 9, 2027</option></select><p class=\"fs-body-s color-foreground-75 mt-2\">Truffles ship fresh starting December 1st through peak season. Choose your preferred delivery week &mdash; we&#39;ll confirm the exact date as harvest timing firms up.</p></div>"
+          }
+        },
+        "custom_liquid_disclosure_a": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid_code": "<div class=\"product__info product__block-custom_liquid mb-3xl\"><p class=\"fs-body-s color-foreground-75\">The photos shown are for illustrative purposes only. Truffles are a fully natural product and each piece is unique in shape and size. The number of truffles may vary depending on individual weight. The total weight purchased is always guaranteed.</p></div>"
+          }
+        }
+      },
+      "block_order": [
+        "custom_text_BT3iHE",
+        "vendor_Y6fpfU",
+        "title_6hGJBM",
+        "product_code_HQXThx",
+        "price_wkNpbb",
+        "custom_text_L6cPLA",
+        "attributes_e9tmHP",
+        "pickup_availability_E9WdKU",
+        "variant_selector_AfqKDc",
+        "custom_liquid_delivery_date",
+        "buy_buttons_YNKTfQ",
+        "custom_liquid_disclosure_a",
+        "divider_3YpJQt",
+        "icon_with_text_yf9TNn",
+        "description_WYxRQf",
+        "collapsible_item_kC9mUk",
+        "performance_graphs_ArgetK",
+        "collapsible_item_38AJ6p",
+        "collapsible_item_x4Lb4i",
+        "share_j7QJAE",
+        "complementary_products_GrLGbC"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "main_media_ratio": "1/1",
+        "thumbnails_ratio": "1/1 fill",
+        "enable_media_zoom": false,
+        "zoom_images": false,
+        "media_background_color": "",
+        "enable_fullwidth": false,
+        "section_ordering": "fd-row-md",
+        "media_layout": "slideshow-left",
+        "media_width_on_desktop": "2/3",
+        "enable_sticky_media": true,
+        "media_width_on_mobile": "option_fullwidth",
+        "show_media_thumbnails": true,
+        "enable_sticky_add_to_cart": false,
+        "add_to_cart_sticky_position": "left-0"
+      }
+    },
+    "recommendation": {
+      "type": "product-recommendation",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "product_type": {
+          "type": "product_type",
+          "settings": {
+            "color_product_type": ""
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "color_product_price": ""
+          }
+        },
+        "variants": {
+          "type": "variants",
+          "settings": {
+            "card_product_variants": ""
+          }
+        },
+        "product_attributes": {
+          "type": "product_attributes",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title",
+        "product_type",
+        "price",
+        "variants",
+        "product_attributes"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "heading": "Product Recommendation",
+        "heading_size": "h3-regular",
+        "description": "",
+        "products_to_show": 10,
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "true",
+        "columns_per_row_mobile": "2",
+        "show_quick_view": true,
+        "quick_buy": "standard"
+      }
+    },
+    "image_with_text_MkRB3t": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_NFaKfR": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Lorem ipsum dolar set dium placeholder text lorem ipsum.",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_dDkXGq": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>This is placeholder copy, lorem ipsum dolar. Our mission is to make the world’s most celebrated ingredient both approachable and trustworthy. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NFaKfR",
+        "description_dDkXGq"
+      ],
+      "custom_css": [
+        ".o-hidden {overflow: initial;}",
+        ".media-with-text__images {margin-top: -90px;}",
+        ".image-with-text {margin-top: 100px;}",
+        ".clm:not(.media-with-text__images) {align-self: center;}"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/image-product-featurette.png",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "text_first",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "blog_post_list_WLgAMD": {
+      "type": "blog-post-list",
+      "blocks": {
+        "title_dfPaiV": {
+          "type": "title",
+          "settings": {}
+        },
+        "excerpt_V8hFEE": {
+          "type": "excerpt",
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "title_dfPaiV",
+        "excerpt_V8hFEE"
+      ],
+      "name": "t:sections.blog_post_list.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "blog": "news",
+        "heading": "Recipe section headline.",
+        "heading_size": "h3-regular",
+        "description": "",
+        "items_to_show": 3,
+        "show_featured_image": true,
+        "image_ratio": "1/1",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "true",
+        "enable_button": false,
+        "button_text": "View all",
+        "button_position": "above-listing"
+      }
+    },
+    "extensive_description": {
+      "type": "extensive-descriptions",
+      "blocks": {
+        "description": {
+          "type": "description",
+          "settings": {
+            "enable_icon": true,
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "heading": "Product Specs",
+            "description_type": "collapsible",
+            "expand_collapsible": false
+          }
+        },
+        "collapsible_item": {
+          "type": "collapsible_item",
+          "settings": {
+            "enable_icon": true,
+            "icon_source": "theme_library",
+            "theme_library_icon": "truck",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "expand_collapsible": false,
+            "heading": "Collapsible heading",
+            "text": "<p>Write additional information about your products</p>",
+            "content_from_page": ""
+          }
+        },
+        "performance_graphs": {
+          "type": "performance_graphs",
+          "settings": {
+            "enable_icon": true,
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "graphs_style": "linear",
+            "custom_graphs_color": "",
+            "heading": "Product performance",
+            "show_as_collapsible": false,
+            "expand_collapsible": false,
+            "label": "Product fit",
+            "description": "Description",
+            "graph_max_value": 5,
+            "product_value": 5,
+            "use_list_of_graphs": false,
+            "graphs_metafield": ""
+          }
+        },
+        "contact_form": {
+          "type": "contact_form",
+          "settings": {
+            "enable_icon": true,
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "custom_icon_color": "",
+            "heading": "Ask a question",
+            "button_label": "Send message",
+            "show_as_collapsible": false,
+            "expand_collapsible": false
+          }
+        }
+      },
+      "block_order": [
+        "description",
+        "collapsible_item",
+        "performance_graphs",
+        "contact_form"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": ""
+      }
+    },
+    "multiple_columns_AEKqct": {
+      "type": "multiple-columns",
+      "name": "Two Column Newsletter",
+      "settings": {
+        "left_bg_image": "shopify://shop_images/image_texture.png",
+        "right_bg_color": "#825236",
+        "left_heading": "Join our community",
+        "left_text": "Discover new content, offers and updates directly from us.",
+        "left_button_label": "atc for growers",
+        "left_button_url": "#",
+        "right_heading": "Stay updated",
+        "right_text": "Subscribe to our newsletter and never miss an update.",
+        "alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "recommendation",
+    "image_with_text_MkRB3t",
+    "blog_post_list_WLgAMD",
+    "extensive_description",
+    "multiple_columns_AEKqct"
+  ]
+}

@@ -1,0 +1,928 @@
+{% doc %}
+  @prompt
+    Generate a 100% wide table with 31 rows and 3 columns. Give me the ability to update this table within the settings, and switch between full width, 75% width, and 50% width, Wrap this table in a dropdown that I can toggle off and on, Center the toggle label, switch the icon from an arrow to a plus sign, and use the same font as the body copy (Monsterrat)
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-editable-table-{{ ai_gen_id }} {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-editable-table-{{ ai_gen_id }}--width-100 {
+    max-width: 100%;
+  }
+
+  .ai-editable-table-{{ ai_gen_id }}--width-75 {
+    max-width: 75%;
+  }
+
+  .ai-editable-table-{{ ai_gen_id }}--width-50 {
+    max-width: 50%;
+  }
+
+  .ai-editable-table__toggle-{{ ai_gen_id }} {
+    width: 100%;
+    padding: {{ block.settings.cell_padding }}px;
+    background-color: {{ block.settings.header_background }};
+    color: {{ block.settings.header_text_color }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    font-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
+    font-weight: {{ settings.type_body_font.weight }};
+    font-style: {{ settings.type_body_font.style }};
+  }
+
+  .ai-editable-table__toggle-{{ ai_gen_id }}:hover {
+    opacity: 0.9;
+  }
+
+  .ai-editable-table__toggle-icon-{{ ai_gen_id }} {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .ai-editable-table__toggle-icon-{{ ai_gen_id }}.active {
+    transform: rotate(45deg);
+  }
+
+  .ai-editable-table__content-{{ ai_gen_id }} {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .ai-editable-table__content-{{ ai_gen_id }}.active {
+    max-height: 10000px;
+  }
+
+  .ai-editable-table__table-wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+  }
+
+  .ai-editable-table__table-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: {{ block.settings.table_background }};
+  }
+
+  .ai-editable-table__table-{{ ai_gen_id }} th,
+  .ai-editable-table__table-{{ ai_gen_id }} td {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: {{ block.settings.text_alignment }};
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-editable-table__table-{{ ai_gen_id }} th {
+    background-color: {{ block.settings.header_background }};
+    color: {{ block.settings.header_text_color }};
+    font-weight: 600;
+  }
+
+  .ai-editable-table__table-{{ ai_gen_id }} td {
+    color: {{ block.settings.cell_text_color }};
+  }
+
+  .ai-editable-table__table-{{ ai_gen_id }} tbody tr:nth-child(even) {
+    background-color: {{ block.settings.alternate_row_background }};
+  }
+{% endstyle %}
+
+<editable-table-{{ ai_gen_id }}
+  class="ai-editable-table-{{ ai_gen_id }} ai-editable-table-{{ ai_gen_id }}--width-{{ block.settings.table_width }}"
+  {{ block.shopify_attributes }}
+>
+  <button
+    class="ai-editable-table__toggle-{{ ai_gen_id }}"
+    aria-expanded="{{ block.settings.default_open }}"
+    type="button"
+  >
+    <span>{{ block.settings.toggle_label }}</span>
+    <svg
+      class="ai-editable-table__toggle-icon-{{ ai_gen_id }} {% if block.settings.default_open %}active{% endif %}"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <line x1="12" y1="5" x2="12" y2="19"></line>
+      <line x1="5" y1="12" x2="19" y2="12"></line>
+    </svg>
+  </button>
+
+  <div class="ai-editable-table__content-{{ ai_gen_id }} {% if block.settings.default_open %}active{% endif %}">
+    <div class="ai-editable-table__table-wrapper-{{ ai_gen_id }}">
+      <table class="ai-editable-table__table-{{ ai_gen_id }}">
+        <thead>
+          <tr>
+            <th>{{ block.settings.header_col_1 }}</th>
+            <th>{{ block.settings.header_col_2 }}</th>
+            <th>{{ block.settings.header_col_3 }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i in (1..31) %}
+            {% liquid
+              assign col1_key = 'row_' | append: i | append: '_col_1'
+              assign col2_key = 'row_' | append: i | append: '_col_2'
+              assign col3_key = 'row_' | append: i | append: '_col_3'
+
+              assign col1_value = block.settings[col1_key]
+              assign col2_value = block.settings[col2_key]
+              assign col3_value = block.settings[col3_key]
+            %}
+            <tr>
+              <td>{{ col1_value }}</td>
+              <td>{{ col2_value }}</td>
+              <td>{{ col3_value }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</editable-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class EditableTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.toggle = this.querySelector('.ai-editable-table__toggle-{{ ai_gen_id }}');
+        this.content = this.querySelector('.ai-editable-table__content-{{ ai_gen_id }}');
+        this.icon = this.querySelector('.ai-editable-table__toggle-icon-{{ ai_gen_id }}');
+
+        this.toggle.addEventListener('click', () => {
+          const isActive = this.content.classList.contains('active');
+
+          this.content.classList.toggle('active');
+          this.icon.classList.toggle('active');
+          this.toggle.setAttribute('aria-expanded', !isActive);
+        });
+      }
+    }
+
+    customElements.define('editable-table-{{ ai_gen_id }}', EditableTable{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Editable table",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Dropdown"
+    },
+    {
+      "type": "text",
+      "id": "toggle_label",
+      "label": "Toggle label",
+      "default": "View table"
+    },
+    {
+      "type": "checkbox",
+      "id": "default_open",
+      "label": "Open by default",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Table layout"
+    },
+    {
+      "type": "select",
+      "id": "table_width",
+      "label": "Table width",
+      "options": [
+        {
+          "value": "100",
+          "label": "100%"
+        },
+        {
+          "value": "75",
+          "label": "75%"
+        },
+        {
+          "value": "50",
+          "label": "50%"
+        }
+      ],
+      "default": "100"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Cell padding",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "label": "Border width",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "table_background",
+      "label": "Table background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Header background",
+      "default": "#636855"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text",
+      "default": "#f8f6ed"
+    },
+    {
+      "type": "color",
+      "id": "cell_text_color",
+      "label": "Cell text",
+      "default": "#4e4e4e"
+    },
+    {
+      "type": "color",
+      "id": "alternate_row_background",
+      "label": "Alternate row background",
+      "default": "#f8f6ed"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border color",
+      "default": "#dfc5aa"
+    },
+    {
+      "type": "header",
+      "content": "Header row"
+    },
+    {
+      "type": "text",
+      "id": "header_col_1",
+      "label": "Column 1 header",
+      "default": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "header_col_2",
+      "label": "Column 2 header",
+      "default": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "header_col_3",
+      "label": "Column 3 header",
+      "default": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 3"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 4"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 5"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_5_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 6"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_6_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 7"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_7_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 8"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_8_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 9"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_9_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 10"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_10_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 11"
+    },
+    {
+      "type": "text",
+      "id": "row_11_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_11_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_11_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 12"
+    },
+    {
+      "type": "text",
+      "id": "row_12_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_12_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_12_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 13"
+    },
+    {
+      "type": "text",
+      "id": "row_13_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_13_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_13_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 14"
+    },
+    {
+      "type": "text",
+      "id": "row_14_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_14_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_14_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 15"
+    },
+    {
+      "type": "text",
+      "id": "row_15_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_15_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_15_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 16"
+    },
+    {
+      "type": "text",
+      "id": "row_16_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_16_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_16_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 17"
+    },
+    {
+      "type": "text",
+      "id": "row_17_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_17_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_17_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 18"
+    },
+    {
+      "type": "text",
+      "id": "row_18_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_18_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_18_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 19"
+    },
+    {
+      "type": "text",
+      "id": "row_19_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_19_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_19_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 20"
+    },
+    {
+      "type": "text",
+      "id": "row_20_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_20_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_20_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 21"
+    },
+    {
+      "type": "text",
+      "id": "row_21_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_21_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_21_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 22"
+    },
+    {
+      "type": "text",
+      "id": "row_22_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_22_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_22_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 23"
+    },
+    {
+      "type": "text",
+      "id": "row_23_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_23_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_23_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 24"
+    },
+    {
+      "type": "text",
+      "id": "row_24_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_24_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_24_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 25"
+    },
+    {
+      "type": "text",
+      "id": "row_25_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_25_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_25_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 26"
+    },
+    {
+      "type": "text",
+      "id": "row_26_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_26_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_26_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 27"
+    },
+    {
+      "type": "text",
+      "id": "row_27_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_27_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_27_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 28"
+    },
+    {
+      "type": "text",
+      "id": "row_28_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_28_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_28_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 29"
+    },
+    {
+      "type": "text",
+      "id": "row_29_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_29_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_29_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 30"
+    },
+    {
+      "type": "text",
+      "id": "row_30_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_30_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_30_col_3",
+      "label": "Column 3"
+    },
+    {
+      "type": "header",
+      "content": "Row 31"
+    },
+    {
+      "type": "text",
+      "id": "row_31_col_1",
+      "label": "Column 1"
+    },
+    {
+      "type": "text",
+      "id": "row_31_col_2",
+      "label": "Column 2"
+    },
+    {
+      "type": "text",
+      "id": "row_31_col_3",
+      "label": "Column 3"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Editable table"
+    }
+  ],
+  "tag": null
+}
+{% endschema %}

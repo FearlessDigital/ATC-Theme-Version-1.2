@@ -1,0 +1,126 @@
+{% comment %}
+  Truffle Map Section
+  Shows a Google Map with favorable truffle climate locations
+{% endcomment %}
+
+<style>
+  .truffle-map-wrapper {
+    width:66%;
+    height: {{ section.settings.map_height }}px;
+    margin: 0 auto 112px;
+    padding: 0;
+  }
+  .map{
+    height: {{ section.settings.map_height }}px;
+  }
+  .truffle-map-wrapper #map {
+    height: 100%;
+    width: 100%;
+    -webkit-transform: none;
+    z-index: 10;
+  }
+  @media (max-width: 1024px) {
+    .truffle-map-wrapper {
+      width:85%;
+    }
+  }
+</style>
+
+{%- liquid
+  assign section_id_clean = section.id | replace: '-', '_' | replace: '.', '_'
+-%}
+
+<div class="truffle-map-wrapper">
+  <div id="map-{{ section.id }}" class="map"></div>
+</div>
+
+{{ 'truffle-map.js' | asset_url | script_tag }}
+
+<script>
+  window['initTruffleMap_{{ section_id_clean }}'] = function() {
+    if (typeof window.TruffleMap !== 'undefined') {
+        var dataUrl = '{{ section.settings.data_url }}';
+        // If data_url is empty or just 'data.wide', use the asset URL
+        if (!dataUrl || dataUrl === 'data.wide') {
+            dataUrl = '{{ "data.wide" | asset_url }}';
+        }
+      window.TruffleMap.init({
+        mapId: 'map-{{ section.id }}',
+        markerImage: '{{ section.settings.marker_image | img_url: 'master' }}',
+        dataUrl: dataUrl,
+        centerLat: {{ section.settings.center_lat }},
+        centerLng: {{ section.settings.center_lng }},
+        zoomLevel: {{ section.settings.zoom_level }}
+      });
+    }
+  };
+</script>
+
+{% if section.settings.google_maps_api_key != blank %}
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key={{ section.settings.google_maps_api_key }}&callback=initTruffleMap_{{ section_id_clean }}"></script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Truffle Climate Map",
+  "settings": [
+    {
+      "type": "text",
+      "id": "google_maps_api_key",
+      "label": "Google Maps API Key",
+      "info": "Enter your Google Maps API key"
+    },
+    {
+      "type": "url",
+      "id": "data_url",
+      "label": "Map Data URL",
+      "info": "URL to your data file containing truffle location data"
+    },
+    {
+      "type": "image_picker",
+      "id": "marker_image",
+      "label": "Marker Image",
+      "info": "Custom marker icon for locations"
+    },
+    {
+      "type": "range",
+      "id": "map_height",
+      "min": 300,
+      "max": 1000,
+      "step": 50,
+      "unit": "px",
+      "label": "Map Height",
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "zoom_level",
+      "min": 1,
+      "max": 20,
+      "step": 1,
+      "label": "Zoom Level",
+      "default": 4
+    },
+    {
+      "type": "text",
+      "id": "center_lat",
+      "label": "Center Latitude",
+      "default": "40.269569",
+      "info": "Default: US Center"
+    },
+    {
+      "type": "text",
+      "id": "center_lng",
+      "label": "Center Longitude",
+      "default": "-95.916625",
+      "info": "Default: US Center"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Truffle Climate Map"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,603 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_page_title": true,
+        "enable_h1_tag": true,
+        "show_page_content": true
+      }
+    },
+    "image_banner_yQ6eiA": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_zBDKiV": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Why American Truffle Company?",
+            "heading_size": "h1",
+            "enable_h1_tag": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_zBDKiV"
+      ],
+      "custom_css": [
+        ".right-panel {display: none;}"
+      ],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/Grower_Hero_1.jpg",
+        "section_image_width": "full-width",
+        "height_desktop": "50vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "Headline for growers here.",
+        "text_panel": "Default text content",
+        "panel_title_link": "ATC for growers",
+        "panel_link": ""
+      }
+    },
+    "rich_text_kwVyYL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HA3Vgh": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "We only get paid when you harvest truffles",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_GjKU3H": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>ATC doesn't profit from selling trees or advice—we earn only when you produce truffles. While others \"plant, consult and hope\" with 97%+ failure rates, we provide everything for your success: proven science across four continents, certified DNA-tested contamination-free trees, customized orchard management and monitoring, direct top chef access, and world-class truffle dog and harvest management. Your investment is too valuable for trial and error, or consultants with no skin in the game.</p>"
+          }
+        },
+        "button_dWfXUX": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "We're Here To Make A Difference",
+            "button_primary_style": "primary",
+            "button_primary_link": "#",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_HA3Vgh",
+        "description_GjKU3H",
+        "button_dWfXUX"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-center middle-xs"
+      }
+    },
+    "custom_media_carousel_FYFHkP": {
+      "type": "custom-media-carousel",
+      "blocks": {
+        "publication_TmceKL": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/KTVU_Fox_2_646857.jpg",
+            "quote": "Fox News Highlights Napa Truffle Festival",
+            "link": "https://americantruffle.com/blogs/news/fox-news-highlights-napa-truffle-festival"
+          }
+        },
+        "publication_rwLwfr": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-abcnews-thumbnail-v2.jpg",
+            "quote": "ABC News Covers Icon Truffle Harvest",
+            "link": "https://americantruffle.com/blogs/news/abc-news-highlights-atc-icon-class-truffle-harvest"
+          }
+        },
+        "publication_MaWUrK": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-napavalley-thumbnail-v2.jpg",
+            "quote": "Truffle Treasures Unearthed",
+            "link": "https://americantruffle.com/blogs/news/truffle-treasures-unearthed"
+          }
+        },
+        "publication_yWy7MQ": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-democrat-thumbnail-v2.jpg",
+            "quote": "A $973 Fungus – and How You Can Get Some",
+            "link": "https://americantruffle.com/blogs/news/a-973-fungus-and-how-you-can-get-some"
+          }
+        },
+        "publication_wTwcNj": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-cbsnews-thumbnail-v2.jpg",
+            "quote": "CBS News Highlights ATC Truffle Harvest",
+            "link": "https://americantruffle.com/blogs/news/cbs-news-highlights-atc-truffle-harvest"
+          }
+        },
+        "publication_ereERH": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-fintimes-thumbnail-v2.jpg",
+            "quote": "Truffle Economy: How a Scientist Sniffed Out a Culinary Opportunity",
+            "link": "https://americantruffle.com/blogs/news/truffle-economy-how-a-scientist-sniffed-out-a-culinary-opportunity"
+          }
+        },
+        "publication_wYQHAw": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-nyt-thumbnail-v2.jpg",
+            "quote": "Has A Start-Up Found the Secret to Farming the Elusive Truffle?",
+            "link": "https://americantruffle.com/blogs/news/a-start-up-found-the-secret-to-farming-the-elusive-truffle"
+          }
+        }
+      },
+      "block_order": [
+        "publication_TmceKL",
+        "publication_rwLwfr",
+        "publication_MaWUrK",
+        "publication_yWy7MQ",
+        "publication_wTwcNj",
+        "publication_ereERH",
+        "publication_wYQHAw"
+      ],
+      "name": "Media Carousel",
+      "settings": {
+        "label": "",
+        "background_color": "#ffffff",
+        "label_color": "#333333",
+        "quote_color": "#555555",
+        "scroll_speed": 20,
+        "item_width": 280,
+        "item_padding": 16,
+        "logo_filter": "none"
+      }
+    },
+    "blog_post_list_7xKEFL": {
+      "type": "blog-post-list",
+      "blocks": {
+        "excerpt_jxpt3j": {
+          "type": "excerpt",
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "excerpt_jxpt3j"
+      ],
+      "disabled": true,
+      "name": "t:sections.blog_post_list.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "blog": "news",
+        "heading": "",
+        "heading_size": "h3-regular",
+        "description": "",
+        "items_to_show": 12,
+        "show_featured_image": true,
+        "image_ratio": "3/2",
+        "carousel_desktop": "true",
+        "columns_per_row_desktop": "6",
+        "carousel_mobile": "false",
+        "enable_button": true,
+        "button_text": "View all",
+        "button_position": "last-item"
+      }
+    },
+    "custom_html_R46ajA": {
+      "type": "custom-html",
+      "name": "t:sections.custom_html_section.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "html_code": "<h2 style=\"text-align: center\">We're here to make a <em>difference</em>\n</h2>",
+        "heading_alignment_desktop": "ta-center-md middle-md",
+        "heading_alignment_mobile": "ta-center middle-xs"
+      }
+    },
+    "image_with_text_ifmM4X": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XV8hWF": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Our growers achieve results",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "description_qMJUet": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>When you invest in a truffle orchard, one outcome matters most: <strong>harvesting exceptional truffles and selling them</strong>. American Truffle Company exists to make that happen, and our partner growers have been consistently producing world-class truffles in North America. In 2018, a partner orchard harvested the first scientifically cultivated Périgord black truffle in America using ATC science—a 108-gram gem that was prepared that same night by a Michelin-starred chef. In 2020, the very first Burgundy truffle was harvested, demonstrating that our science works across multiple truffle species. Subsequently, a partner grower achieved a record four-year first harvest of Périgord truffles, with a standout total yield and several truffles weighing over 100 grams. ATC partner orchards continued producing multiple icon-class truffles, including a 412-gram Périgord that a Michelin-starred chef described as a world-class truffle, unmatched in freshness and quality. These are not lucky anecdotes, but the predictable result of ATC’s long-term <strong>scientific partnership, rigorous monitoring, and disciplined grower training</strong>. Our growers aren’t just planting truffle orchards;  they’re <strong>harvesting exceptional truffles</strong>.<br/></p>"
+          }
+        },
+        "button_thMpkd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "Explore more",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "View details",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_XV8hWF",
+        "description_qMJUet",
+        "button_thMpkd"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/Grower.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "testimonials_v2_qaP8YT": {
+      "type": "testimonials-v2",
+      "blocks": {
+        "testimonial_RYBD9T": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<h4>Before establishing our orchard, we talked to most major truffle companies in the US. There’s a reason we chose ATC. While everyone else was happy to sell us their trees and leave us to our own devices, ATC has been there for us every step of the way, along with their deep expertise. When ATC says your success is their success, they really mean it! I cannot recommend ATC highly enough.</h4>",
+            "author_name": "EVAN,",
+            "author_description": "Southern Tennessee"
+          }
+        },
+        "testimonial_feHQkN": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<h4>After a failed 2018 truffle project with another company that left me with trees that were no longer viable and no access to truffle expertise nor real science—I was eager to partner with ATC. They brought rigorous, science-based guidance to every step of our new project. Their technical precision and attention to detail were critical to establishing a thriving truffle orchard across our five-acre site, and gave us strong confidence in a far more successful outcome.</h4>",
+            "author_name": "MARK,",
+            "author_description": "Central Oregon"
+          }
+        },
+        "testimonial_aXrTgc": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<h4>I really appreciate the responsiveness of ATC to answer all questions and work to resolve any issue that comes up<strong>—</strong>especially at a time when it is hard to get a live person to speak with at many companies. Robert, Paul & Peta are true collaborators, with a wealth of expertise. The ATC model shows skin in the game; if you succeed, they succeed. </h4>",
+            "author_name": "CAROL, Manzanita Grove Vineyard,",
+            "author_description": "Sonoma CA"
+          }
+        },
+        "testimonial_LMkFGC": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<h4>ATC’s business model is unique and exemplary. I have worked with ATC for many years, throughout which they have helped me at every turn, while proactively staying closely involved. I could not be more pleased!</h4>",
+            "author_name": "CHARLES, Eagle Crest Farms LLC,",
+            "author_description": "Pacific Northwest"
+          }
+        },
+        "testimonial_GV94AX": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<h4>ATC's science-first approach is essential for a 30+ year commitment. They give me confidence to mitigate risk and navigate the immense complexity from orchard planning through planting. Their invaluable support transforms a high-risk venture into a disciplined project. Robert's regular check-ins also clarify local and global market realities, answering my many questions along the way. Partnering with ATC isn’t just farming—it’s a strategic investment in a growing market.</h4>",
+            "author_name": "CHRIS,",
+            "author_description": "Central Missouri"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_RYBD9T",
+        "testimonial_feHQkN",
+        "testimonial_aXrTgc",
+        "testimonial_LMkFGC",
+        "testimonial_GV94AX"
+      ],
+      "name": "t:sections.testimonials.name",
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "heading_size_item": "f-body fs-body-xl",
+        "content_alignment": "ta-center middle-xs",
+        "image_ratio": "1/1",
+        "image_size": "small",
+        "show_rating": false,
+        "color_rating": "#ffb82d",
+        "carousel_desktop": "true",
+        "columns_per_row": "4",
+        "carousel_mobile": "true",
+        "label": "Explore more",
+        "link": ""
+      }
+    },
+    "rich_text_FXQfPD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_BqVNCM": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading_text": "ATC in Media",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_BqVNCM"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "multi_columns_6kH8RK": {
+      "type": "multi-columns",
+      "blocks": {
+        "image_column_LnTChB": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/GH_3.2.jpg",
+            "title": "25+ years of science & ongoing research",
+            "description": "<p>One of the biggest differences between ATC and others is that we’re built on 25+ years of <strong>rigorous truffle science</strong>—and that science <strong>continues to advance</strong>. Our Chief Scientist, Prof. Paul Thomas, continues to lead peer-reviewed research on truffle cultivation and climate impacts, and through Paul we’ve worked closely on truffle projects in <strong>more than 20 countries</strong>, building one of the <strong>largest truffle-orchard scientific datasets in the world</strong>. This foundation has produced multiple world firsts for our growers, from <strong>record-latitude Périgord production </strong>to <strong>climate-suitability mapping</strong> that underpins where we plant. We stay plugged into global science—attending and presenting at <strong>every </strong>truffle conference worldwide—then go further by conducting our own research. We then share these valuable insights within our community of partner growers.<br/></p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        },
+        "image_column_H338cX": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/GH_3.3_Final.png",
+            "title": "100% invested in your success",
+            "description": "<p>Unlike nurseries that just sell inoculated trees or consultants who drop in occasionally, ATC is structurally aligned with your <strong>long-term success</strong>. Through our unique partnership model, we only succeed when you do: our incentives are tied to your actually producing salable truffles, not just planting an orchard. That alignment defines how we work. We don’t hand you a binder and wish you luck—<strong>we stay engaged over the life of the orchard</strong> with land search guidance, orchard design input, best-practice and orchard management training, soil and root analysis, and on-site visits when needed. Our scientific team continually monitors results across the ATC grower network and proactively brings you updated recommendations, rather than waiting for problems to surface. This means you are never experimenting alone. You have a partner whose science, data, and business model are all focused on the same outcome you care about the most: <strong>a productive truffle orchard</strong>.</p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        },
+        "image_column_QgtJDb": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/GH_3.4_Final.png",
+            "title": "Distribution networks & relationships",
+            "description": "<p>Most growers focus on how to produce truffles and only later ask, “<em><strong>Who will buy them?</strong></em>” The reality: truffles are among the most expensive foods in the world, and prices are driven by scarcity, quality, and whom you sell to. Selling through generic middlemen means lower prices and slower movement of a product that loses value by the day. ATC has built a direct-to-market channel around our brand and grower network. We already distribute high-quality American-grown Périgord truffles directly from our partner orchards to professional chefs and home chefs, not through wholesalers. Our relationships with leading culinary partners—such as Michelin-level restaurants—mean your truffles can reach top kitchens and serious home cooks <strong>at peak freshness and price</strong>. As an ATC grower, you’re not left to “figure out the market.” You plug into an established distribution engine designed to <strong>showcase </strong>and <strong>reward </strong>the quality you’ve worked so hard to produce.</p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_LnTChB",
+        "image_column_H338cX",
+        "image_column_QgtJDb"
+      ],
+      "name": "t:general.settings.multi_columns.label",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "item_position": "ta-left start-xs",
+        "media_ratio": "1/1",
+        "heading_size_item": "fs-heading-m",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "false",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "content_collage_irbkbi": {
+      "type": "content-collage",
+      "blocks": {
+        "text_88cUhB": {
+          "type": "text",
+          "settings": {
+            "heading": "About Our Growers",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description": "<p>This is bodycopy. Our mission is to make the world’s most celebrated ingredient both approachable and trustworthy. Whether you’re a home cook, a chef, or a restaurant sourcing for your menu, We connect you directly to the growers, offering fresh seasonal truffles, artisanal products, and recipes that inspire. </p>",
+            "desktop_content_position": "center-md",
+            "desktop_content_alignment": "ta-center-md middle-md",
+            "desktop_column": "2",
+            "desktop_row": "2",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "1",
+            "mobile_row": "2",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "https://example.com",
+            "background_color": "",
+            "text_color": ""
+          }
+        },
+        "image_g4PEgM": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description": "",
+            "desktop_image": "shopify://shop_images/img-atc-video-thumb.jpg",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "desktop_column": "2",
+            "desktop_row": "2",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "2",
+            "mobile_row": "2",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "https://www.youtube.com/watch?v=1BX4EuCh43E&pp=ygUYYW1lcmljYW4gdHJ1ZmZsZSBjb21wYW55",
+            "overlay_opacity": 0,
+            "mask_overlay_color": "",
+            "content_overlay_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_88cUhB",
+        "image_g4PEgM"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-3",
+        "enable_fullwidth": false,
+        "show_layout_grid": false,
+        "desktop_row_height": 200,
+        "mobile_row_height": 200
+      }
+    },
+    "rich_text_zMH8rd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_K38D4w": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading_text": "Latest Developments",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_K38D4w"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "blog_post_list_8cgeXj": {
+      "type": "blog-post-list",
+      "blocks": {
+        "title_8a6KhV": {
+          "type": "title",
+          "settings": {}
+        },
+        "excerpt_DQjJ8q": {
+          "type": "excerpt",
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "title_8a6KhV",
+        "excerpt_DQjJ8q"
+      ],
+      "disabled": true,
+      "name": "t:sections.blog_post_list.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "blog": "industry-news",
+        "heading": "Name Of Blog Section",
+        "heading_size": "h3-regular",
+        "description": "",
+        "items_to_show": 8,
+        "show_featured_image": true,
+        "image_ratio": "1/1",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "true",
+        "enable_button": true,
+        "button_text": "View all",
+        "button_position": "above-listing"
+      }
+    },
+    "multiple_columns_P98QgC": {
+      "type": "multiple-columns",
+      "name": "Two Column Newsletter",
+      "settings": {
+        "hide_left": false,
+        "left_bg_image": "shopify://shop_images/Laptop_at_Dining_Table.jpg",
+        "right_bg_color": "#dfc5aa",
+        "left_heading": "We understand the complexities of truffle cultivation & business – we'll help you navigate the maze, together.",
+        "left_text": "",
+        "left_button_label": "Learn more",
+        "left_button_url": "",
+        "right_heading": "Contact us to learn more",
+        "show_form": false,
+        "right_text": "and find out how we can help you",
+        "zoho_form": "<div class=\"zf-templateWidth\">\n  <form action=\"https://forms.zohopublic.com/robert6174/form/Growers/formperma/5NtUmMz9LAoRjIw1HkJQhKrd4EFr8RsanUvb4PH3awo/htmlRecords/submit\" name=\"form\" method=\"POST\" onsubmit='javascript:document.charset=\"UTF-8\"; return zf_ValidateAndSubmit();' accept-charset=\"UTF-8\" enctype=\"multipart/form-data\" id=\"form\">\n    <input type=\"hidden\" name=\"zf_referrer_name\" value=\"\"><!-- To Track referrals , place the referrer name within the \" \" in the above hidden input field -->\n    <input type=\"hidden\" name=\"zf_redirect_url\" value=\"\"><!-- To redirect to a specific page after record submission , place the respective url within the \" \" in the above hidden input field -->\n    <input type=\"hidden\" name=\"zc_gad\" value=\"\"><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->\n    <div class=\"zf-templateWrapper\">\n      <ul class=\"zf-tempHeadBdr\">\n        <li class=\"zf-tempHeadContBdr\">\n          <h2 class=\"zf-frmTitle\">\n            <em>Growers</em>\n          </h2>\n          <p class=\"zf-frmDesc\"></p>\n          <div class=\"zf-clearBoth\"></div>\n        </li>\n      </ul>\n      <div class=\"zf-subContWrap zf-topAlign\">\n        <ul>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> First Name </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"First Name\">\n              </span>\n              <p id=\"SingleLine_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              Last Name\n              <em class=\"zf-important\"> *</em>\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine1\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"Last Name\">\n              </span>\n              <p id=\"SingleLine1_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> Email </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"Email\" checktype=\"c5\" value=\"\" maxlength=\"255\" fieldtype=\"9\" placeholder=\"Email\">\n              </span>\n              <p id=\"Email_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf- zf-large\">\n            <label class=\"zf-labelName\"> Mobile </label>\n            <div class=\"zf-tempContDiv zf-phonefld\">\n              <div class=\"zf-phwrapper zf-phNumber\">\n                <span>\n                  <input type=\"text\" compname=\"PhoneNumber\" name=\"PhoneNumber_countrycode\" phoneformat=\"1\" iscountrycodeenabled=\"false\" maxlength=\"20\" value=\"\" fieldtype=\"11\" id=\"international_PhoneNumber_countrycode\" placeholder=\"Mobile (Numbers Only)\">\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"PhoneNumber_countrycode_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> City </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine2\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"City\">\n              </span>\n              <p id=\"SingleLine2_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-radio zf-tempFrmWrapper zf-oneColumns\">\n            <label class=\"zf-labelName\"> Country </label>\n            <div class=\"zf-tempContDiv\">\n              <div class=\"zf-overflow\">\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_1\" name=\"Radio\" checktype=\"c1\" value=\"United States\">\n                  <label for=\"Radio_1\" class=\"zf-radioChoice\">United States</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_2\" name=\"Radio\" checktype=\"c1\" value=\"Canada\">\n                  <label for=\"Radio_2\" class=\"zf-radioChoice\">Canada</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_3\" name=\"Radio\" checktype=\"c1\" value=\"Mexico\">\n                  <label for=\"Radio_3\" class=\"zf-radioChoice\">Mexico</label>\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"Radio_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large zf-radio\">\n            <label class=\"zf-labelName\"> State </label>\n            <div class=\"zf-tempContDiv\">\n              <select class=\"zf-form-sBox\" name=\"Dropdown\" checktype=\"c1\">\n                <option selected value=\"-Select-\">-Select-</option>\n                <option value=\"Alabama\">Alabama</option>\n                <option value=\"Alaska\">Alaska</option>\n                <option value=\"Arizona\">Arizona</option>\n                <option value=\"Arkansas\">Arkansas</option>\n                <option value=\"California\">California</option>\n                <option value=\"Colorado\">Colorado</option>\n                <option value=\"Connecticut\">Connecticut</option>\n                <option value=\"Delaware\">Delaware</option>\n                <option value=\"Florida\">Florida</option>\n                <option value=\"Georgia\">Georgia</option>\n                <option value=\"Hawaii\">Hawaii</option>\n                <option value=\"Idaho\">Idaho</option>\n                <option value=\"Illinois\">Illinois</option>\n                <option value=\"Indiana\">Indiana</option>\n                <option value=\"Iowa\">Iowa</option>\n                <option value=\"Kansas\">Kansas</option>\n                <option value=\"Kentucky\">Kentucky</option>\n                <option value=\"Louisiana\">Louisiana</option>\n                <option value=\"Maine\">Maine</option>\n                <option value=\"Maryland\">Maryland</option>\n                <option value=\"Massachusetts\">Massachusetts</option>\n                <option value=\"Michigan\">Michigan</option>\n                <option value=\"Minnesota\">Minnesota</option>\n                <option value=\"Mississippi\">Mississippi</option>\n                <option value=\"Missouri\">Missouri</option>\n                <option value=\"Montana\">Montana</option>\n                <option value=\"Nebraska\">Nebraska</option>\n                <option value=\"Nevada\">Nevada</option>\n                <option value=\"New Hampshire\">New Hampshire</option>\n                <option value=\"New Jersey\">New Jersey</option>\n                <option value=\"New Mexico\">New Mexico</option>\n                <option value=\"New York\">New York</option>\n                <option value=\"North Carolina\">North Carolina</option>\n                <option value=\"North Dakota\">North Dakota</option>\n                <option value=\"Ohio\">Ohio</option>\n                <option value=\"Oklahoma\">Oklahoma</option>\n                <option value=\"Oregon\">Oregon</option>\n                <option value=\"Pennsylvania\">Pennsylvania</option>\n                <option value=\"Rhode Island\">Rhode Island</option>\n                <option value=\"South Carolina\">South Carolina</option>\n                <option value=\"South Dakota\">South Dakota</option>\n                <option value=\"Tennessee\">Tennessee</option>\n                <option value=\"Texas\">Texas</option>\n                <option value=\"Utah\">Utah</option>\n                <option value=\"Vermont\">Vermont</option>\n                <option value=\"Virginia\">Virginia</option>\n                <option value=\"Washington\">Washington</option>\n                <option value=\"West Virginia\">West Virginia</option>\n                <option value=\"Wisconsin\">Wisconsin</option>\n                <option value=\"Wyoming\">Wyoming</option>\n              </select>\n              <p id=\"Dropdown_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-radio zf-tempFrmWrapper zf-oneColumns\">\n            <label class=\"zf-labelName\"> Do you own land? </label>\n            <div class=\"zf-tempContDiv\">\n              <div class=\"zf-overflow\">\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio1_1\" name=\"Radio1\" checktype=\"c1\" value=\"Yes\">\n                  <label for=\"Radio1_1\" class=\"zf-radioChoice\">Yes</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio1_2\" name=\"Radio1\" checktype=\"c1\" value=\"No\">\n                  <label for=\"Radio1_2\" class=\"zf-radioChoice\">No</label>\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"Radio1_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              How many total acres on your property?\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine3\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"How many total acres on your property?\">\n              </span>\n              <p id=\"SingleLine3_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              How many acres are available for a planting?\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine4\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"How many acres are available for a planting?\">\n              </span>\n              <p id=\"SingleLine4_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n        </ul>\n      </div>\n      <ul>\n        <li class=\"zf-fmFooter\">\n          <button class=\"zf-submitColor\">Submit</button>\n        </li>\n      </ul>\n    </div>\n  </form>\n</div>\n<script type=\"text/javascript\">\n  var dateAndMonthRegexFormateArray =\n    zf_SetDateAndMonthRegexBasedOnDateFormate(\"dd-MMM-yyyy\");\n  var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);\n  var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);\n  var zf_MandArray = [\"SingleLine1\"];\n  var zf_FieldArray = [\n    \"SingleLine\",\n    \"SingleLine1\",\n    \"Email\",\n    \"PhoneNumber_countrycode\",\n    \"SingleLine2\",\n    \"Radio\",\n    \"Dropdown\",\n    \"Radio1\",\n    \"SingleLine3\",\n    \"SingleLine4\",\n  ];\n  var isSalesIQIntegrationEnabled = false;\n  var salesIQFieldsArray = [];\n</script>",
+        "alignment": "left",
+        "radio_label": "Please select one:",
+        "radio_options": "Restaurateur, At-Home Chef",
+        "button_label": "Subscribe"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_yQ6eiA",
+    "rich_text_kwVyYL",
+    "custom_media_carousel_FYFHkP",
+    "blog_post_list_7xKEFL",
+    "custom_html_R46ajA",
+    "image_with_text_ifmM4X",
+    "testimonials_v2_qaP8YT",
+    "rich_text_FXQfPD",
+    "multi_columns_6kH8RK",
+    "content_collage_irbkbi",
+    "rich_text_zMH8rd",
+    "blog_post_list_8cgeXj",
+    "multiple_columns_P98QgC"
+  ]
+}

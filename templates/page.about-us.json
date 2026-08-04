@@ -1,0 +1,635 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_page_title": true,
+        "enable_h1_tag": true,
+        "show_page_content": true
+      }
+    },
+    "image_banner_hbdy9F": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_JnaByR": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "About Us",
+            "heading_size": "h1",
+            "enable_h1_tag": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_JnaByR"
+      ],
+      "custom_css": [
+        ".right-panel {display: none;}"
+      ],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/thick-lush-green-forest.jpg",
+        "section_image_width": "full-width",
+        "height_desktop": "50vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "50vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "Headline for growers here.",
+        "text_panel": "Statement about working in collaboration with truffle farmers.",
+        "panel_title_link": "ATC for growers",
+        "panel_link": "#"
+      }
+    },
+    "image_with_text_dDydkn": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_gNRw3G": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Chief Truffle Officer & Managing Director"
+          }
+        },
+        "heading_YRMhEQ": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Robert Chang",
+            "heading_size": "h3-regular",
+            "enable_h1_tag": false
+          }
+        },
+        "description_ANNWc9": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Robert leads American Truffle Company with a combination of global business expertise, scientific rigor, and technological innovation—bringing together the skills required to transform truffle cultivation from European tradition into American commercial success.<br/></p><p>With engineering training from Stanford University (B.S. and M.S. in Electrical Engineering, qualified for Ph.D. program, Biology minor), Robert applies systems-level thinking to translate Prof. Paul Thomas's groundbreaking mycorrhizal research into practical A-Z methodology for North American conditions. His technical background enables the data-driven infrastructure that ensures optimal conditions across all ATC partner orchards.<br/></p><p>Before truffles, Robert led global marketing teams at Silicon Valley companies including Yahoo and served as CEO of a software startup—gaining expertise in scaling businesses, building partnerships, and translating complex technology into compelling value propositions and products. He now applies this experience to foster strong relationships with growers, Michelin-starred chefs, media and consumers across North America.<br/></p><p>Fluent in five languages (English, German, Spanish, Mandarin, Japanese), Robert leverages deep industry and cultural understanding with extensive networks across truffle-producing regions in the Americas, Europe, Asia, and Oceania, plus direct access to the industry's three major markets: North America, Asia, and Europe. He is a sought-after speaker at premier truffle events and culinary festivals in the U.S. and Europe—representing American truffle industry on both national and global stages.<br/></p><p>Robert also holds an MBA from Stanford Graduate School of Business and is a Bosch Foundation Fellow. Based in the San Francisco Bay Area, he is passionate about cooking, food innovation, eating well and building a sustainable North American truffle industry through science and partnership. He can often be found eating his way across five continents.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_gNRw3G",
+        "heading_YRMhEQ",
+        "description_ANNWc9"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) and (max-width: 1181px) {.clm-text {max-width: 60%; } .clm-image {max-width: 40%; } .media-with-text__grid {align-items: flex-start; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-206402cf-0ad6-469e-a6e7-0a7e0526ddad",
+        "image_alignment": "top-xs",
+        "image_1": "shopify://shop_images/img-profile-robert.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "2",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "fd-column-reverse",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "image_with_text_h3hRFT": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_qpk7MP": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Chief Scientist"
+          }
+        },
+        "heading_XxhgWQ": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Prof. Paul Thomas",
+            "heading_size": "h3-regular",
+            "enable_h1_tag": false
+          }
+        },
+        "description_CjTRnQ": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>In addition to his role as Chief Scientist with American Truffle Company, Prof. Paul Thomas is also the lead researcher and Managing Director of Mycorrhizal Systems Ltd. in the UK. Being absolutely passionate about truffles and the understanding of their biology, he is recognized worldwide as an expert on the cultivation of truffles and has actively engaged in many areas of truffle research. Prof. Thomas received his Bachelor of Science with honors in Natural Environmental Science from the University of Sheffield (England), followed by a doctoral dissertation focusing on long distance signaling pathways within the plant kingdom, which is central in truffle cultivation. Having published throughout the course of his study, Prof. Thomas quickly earned his Ph.D. from the University of Sheffield.</p><p>Towards the end of his doctoral studies, Prof. Thomas was awarded a university grant to commercialize the technology developed during his time at Sheffield and enhance a new system he pioneered to inoculate trees with numerous truffle species. Having actively researched European truffles since 2001, he has built a solid reputation and developed what is now the world’s largest and most diverse range of truffle research sites worldwide. Spanning four continents and a range of climatic and edaphic (soil) zones, the results from these ongoing sites have changed and challenged our understanding of truffles and their biology. Since 2020, Prof. Thomas has been appointed an Honorary Professor with the University of Stirling (UK), an exceptional distinction and testament of his world-class academic achievement in the field of truffles.</p>"
+          }
+        },
+        "button_4Kwma9": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Paul's ResearchGate",
+            "button_primary_style": "primary",
+            "button_primary_link": "https://www.researchgate.net/profile/Paul-Thomas-21",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qpk7MP",
+        "heading_XxhgWQ",
+        "description_CjTRnQ",
+        "button_4Kwma9"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) and (max-width: 1181px) {.clm-text {max-width: 60%; } .clm-image {max-width: 40%; } .media-with-text__grid {align-items: flex-start; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-206402cf-0ad6-469e-a6e7-0a7e0526ddad",
+        "image_alignment": "top-xs",
+        "image_1": "shopify://shop_images/img-profile-paul.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "text_first",
+        "desktop_media_width": "2",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "fd-column-reverse",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "image_with_text_37EtpT": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_J9GVqi": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Operations Administrator & Partner Relations"
+          }
+        },
+        "heading_cfBHQN": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Peta Shindle",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_V9qNqL": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Peta is the organizational heartbeat of ATC, ensuring our grower-partners receive the guidance, clarity, and support they need at every stage of their orchard journey. With a background rooted in luxury hospitality across Australia and Canada, Peta has spent her career making complex operations run smoothly and keeping communication flowing between teams and decision-makers.</p><p>Her hospitality experience—spanning front-of-house operations to serving as the coordination hub for executive committees—gave her a strong foundation in high-touch service, detailed project management, and the kind of calm, clear communication partners rely on. After stepping back to raise her two daughters, she continued to lead community organizations before joining ATC in 2016, inspired by a longtime love of food and a fateful meeting with Robert at the Napa Truffle Festival.</p><p>Today, Peta manages operations administration and partner relations, working alongside the Managing Director and supporting sales & retail, operations, and orchard coordination. For grower-partners, she serves as a consistent point of contact—helping align schedules, clarify next steps, connect experts, and ensure every detail is handled. Her work reflects what she does best: keeping teams aligned, keeping communication clear, and making sure partners are always informed and supported.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_J9GVqi",
+        "heading_cfBHQN",
+        "description_V9qNqL"
+      ],
+      "custom_css": [
+        "@media (min-width: 769px) and (max-width: 1181px) {.clm-text {max-width: 60%; } .clm-image {max-width: 40%; } .media-with-text__grid {align-items: flex-start; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-206402cf-0ad6-469e-a6e7-0a7e0526ddad",
+        "image_alignment": "top-xs",
+        "image_1": "shopify://shop_images/img-profile-peta.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "2",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "fd-column-reverse",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "blog_post_list_ULVnFf": {
+      "type": "blog-post-list",
+      "blocks": {
+        "title_JkxwC3": {
+          "type": "title",
+          "settings": {}
+        },
+        "excerpt_TKhnRr": {
+          "type": "excerpt",
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "title_JkxwC3",
+        "excerpt_TKhnRr"
+      ],
+      "disabled": true,
+      "name": "t:sections.blog_post_list.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "blog": "research-papers",
+        "heading": "Highlights of our ongoing science",
+        "heading_size": "h3-regular",
+        "description": "",
+        "items_to_show": 8,
+        "show_featured_image": true,
+        "image_ratio": "1/1",
+        "carousel_desktop": "true",
+        "columns_per_row_desktop": "5",
+        "carousel_mobile": "true",
+        "enable_button": true,
+        "button_text": "View all",
+        "button_position": "above-listing"
+      }
+    },
+    "17628841954e037d43": {
+      "type": "apps",
+      "blocks": {
+        "snap_blocks_accordion_Ui7PLT": {
+          "type": "shopify://apps/snap-blocks/blocks/accordion/4597ddd5-3788-4466-bf15-19659dce96c2",
+          "settings": {
+            "question_1": "Complete List of Our Peer-Reviewed Scientific Papers",
+            "answer_1": "<ol><li><a href=\"https://www.researchgate.net/publication/396248232_Ectomycorrhizal_competition_as_a_driver_of_root-zone_niche_partitioning_insights_from_Tuber_aestivum_and_Tuber_rufum\" target=\"_blank\">Ectomycorrhizal competition as a driver of root-zone niche partitioning: insights from Tuber aestivum and Tuber rufum</a>, September 2025, Research Square</li><li><a href=\"https://www.researchgate.net/publication/392185187_Polycultural_food_production_in_temperate_woodlands_Multifactorial_benefits_and_political-economic_barriers?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">Polycultural food production in temperate woodlands: Multifactorial benefits and political-economic barriers</a>, May 2025, Land Use Policy 156(September 2025):107620</li><li><a href=\"https://www.researchgate.net/publication/391903037_Is_There_a_Specific_Role_for_Fungal_Protein_Within_Food_Based_Dietary_Guidelines_A_Roundtable_Discussion\" target=\"_blank\">Is There a Specific Role for Fungal Protein Within Food Based Dietary Guidelines? A Roundtable Discussion</a>, May 2025 Nutrition Bulletin 50(5):514-528</li><li><a href=\"https://www.researchgate.net/publication/389805537_Hunting_dog_behaviour_is_a_key_driver_impacting_harvest_quantity_and_quality_of_truffles\" target=\"_blank\">Hunting dog behaviour is a key driver impacting harvest quantity and quality of truffles</a>, March 2025, Nature Portfolio, Scientific Reports 15(1)</li><li><a href=\"https://www.researchgate.net/publication/387177699_Soil_Physicochemical_and_Metagenomic_Analyses_of_Bacteria_and_Fungi_Toward_Desert_Truffle_Cultivation_in_Saudi_Arabia\" target=\"_blank\">Soil Physicochemical and Metagenomic Analyses of Bacteria and Fungi: Toward Desert Truffle Cultivation in Saudi Arabia</a>, December 2024, 14(12):3021</li><li><a href=\"https://www.researchgate.net/publication/383054522_Mycoforestry_potential_in_Scotland\" target=\"_blank\">Mycoforestry potential in Scotland</a>, July 2024</li><li><a href=\"https://www.researchgate.net/publication/369200765_Edible_fungi_crops_through_mycoforestry_potential_for_carbon_negative_food_production_and_mitigation_of_food_and_forestry_conflicts?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">Edible fungi crops through mycoforestry, potential for carbon negative food production and mitigation of food and forestry conflicts</a>, March 2023, Proceedings of the National Academy of Sciences 120(12):e2220079120</li><li><a href=\"https://www.researchgate.net/publication/367466249_The_importance_of_botanic_gardens_for_global_change_research-New_insights_into_Cambridge's_hidden_truffle_kingdom?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">The importance of botanic gardens for global change research—New insights into Cambridge's hidden truffle kingdom</a>, January 2023, Plants, People, Planet, 5(3)</li><li><a href=\"https://www.researchgate.net/publication/364217597_Mycorrhizal_fungi_and_invertebrates_Impacts_on_Tuber_melanosporum_ascospore_dispersal_and_lifecycle_by_isopod_mycophagy?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">Mycorrhizal fungi and invertebrates: Impacts on Tuber melanosporum ascospore dispersal and lifecycle by isopod mycophagy</a>, October 2022, Food Webs 33(4):e00260</li><li><a href=\"https://www.researchgate.net/publication/359863871_Understanding_the_performance_of_truffle_dogs\" target=\"_blank\">Understanding the performance of truffle dogs</a>, April 2022, Journal of Veterinary Behavior 52-53</li><li><a href=\"https://www.researchgate.net/publication/355746913_A_novel_approach_to_combine_food_production_with_carbon_sequestration_biodiversity_and_conservation_goals?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">A novel approach to combine food production with carbon sequestration, biodiversity and conservation goals</a>, February 2022, The Science of The Total Environment 806(1):151301</li><li><a href=\"https://www.researchgate.net/publication/357597746_Risk_and_reward_of_the_global_truffle_sector_under_predicted_climate_change\" target=\"_blank\">Risk and reward of the global truffle sector under predicted climate change</a>, February 2022, Environmental Research Letters, 17(024001)</li><li><a href=\"https://www.researchgate.net/publication/358331194_Mini_Review_Hydnora_Species_between_Folk_Remedies_and_Ethnopharmacology_Limited_Data_for_a_Valuable_Genus\" target=\"_blank\">Mini Review Hydnora Species between Folk Remedies and Ethnopharmacology: Limited Data for a Valuable Genus</a>, January 2022, International Journal of Medical Research & Health Sciences 9(5):3329-3364</li><li><a href=\"https://www.researchgate.net/publication/356834817_Rethinking_a_sustainable_truffle_sector_under_global_crises\" target=\"_blank\">Rethinking a sustainable truffle sector under global crises</a>, December 2021, Erdkunde 75(4):2021</li><li><a href=\"https://www.researchgate.net/publication/352221148_Mycorrhiza_and_Lichens_as_two_models_of_Fungal_symbiosis\" target=\"_blank\">Mycorrhiza and Lichens as two models of Fungal symbiosis</a>, December 2021, Journal of Microbiology Biotechnology and Food Sciences 11(3):1-10</li><li><a href=\"https://www.researchgate.net/publication/352998435_Highlights_on_aquatic_fungi_and_mushrooms_ecology_and_biotechnology_with_description_of_the_rarely_isolated_aquatic_mushroom_Psathyrella_aquatic_as_a_novel_taxon\" target=\"_blank\">Highlights on aquatic fungi and mushrooms ecology and biotechnology, with description of the rarely isolated aquatic mushroom Psathyrella aquatic as a novel taxon</a>, September 2021, Research Journal of Pharmacognosy and Phytochemistry 13(3):101-109</li><li><a href=\"https://www.researchgate.net/publication/351009888_Industrial_Applications_of_Truffles_and_Truffle-like_Fungi\" target=\"_blank\">Industrial Applications of Truffles and Truffle-like Fungi</a>, September 2021, Advances in Macrofungi Industrial Avenues and Prospects (pp.82-88), Edition: 1st Edition, Chapter: 6, Publisher: CRC Press, Taylor & Francis Group, 2021</li><li><a href=\"https://www.researchgate.net/publication/350663336_Hypogeous_and_Epigeous_Mushrooms_in_Human_Health\" target=\"_blank\">Hypogeous and Epigeous Mushrooms in Human Health</a>, September 2021, Advances in Macrofungi Pharmaceuticals and Cosmeceuticals (pp.7-19), Edition: 1, Chapter: Hypogeous and Epigeous Mushrooms in Human Health, Publisher: CRC Press, Taylor & Francis Group, 2021</li><li><a href=\"https://www.researchgate.net/publication/351548064_Ectomycorrhiza_resilience_and_recovery_to_extreme_flood_events_in_Tuber_aestivum_and_Quercus_robur?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">Ectomycorrhiza resilience and recovery to extreme flood events in Tuber aestivum and Quercus robur</a>, May 2021, Mycorrhiza 31(2):3</li><li><a href=\"https://www.researchgate.net/publication/344358980_Metabolic_profile_and_skin-related_bioactivities_of_Cerioporus_squamosus_hydromethanolic_extract?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">Metabolic profile and skin-related bioactivities of Cerioporus squamosus hydromethanolic extract</a>, September 2020, Biodiversitas Journal of Biological Diversity 21(10):4732-4740</li><li><a href=\"https://www.researchgate.net/publication/341219177_Chaga_Inonotus_obliquus_a_medical_marvel_but_a_conservation_dilemma\" target=\"_blank\">Chaga (Inonotus obliquus): a medical marvel but a conservation dilemma?</a>, May 2020, Sydowia -Horn- 72:123-130</li><li><a href=\"https://www.researchgate.net/publication/339105701_Fomes_fomentarius_and_Polyporus_squamosus_Models_of_Marvel_Medicinal_Mushrooms\" target=\"_blank\">Fomes fomentarius and Polyporus squamosus Models of Marvel Medicinal Mushrooms</a>, February 2020</li><li><a href=\"https://www.researchgate.net/publication/338872814_Mysterious_World_of_Lichens_Highlights_on_Their_History_Applications_and_Pharmaceutical_Potentials\" target=\"_blank\">Mysterious World of Lichens: Highlights on Their History, Applications, and Pharmaceutical Potentials</a>, January 2020, The Open Natural Products Journal 10(10):1-13</li><li><a href=\"https://www.researchgate.net/publication/338480421_Trametes_Versicolor_and_Dictyophora_Indusiata_Champions_of_Medicinal_Mushrooms\" target=\"_blank\">Trametes Versicolor and Dictyophora Indusiata Champions of Medicinal Mushrooms</a>, January 2020, Pharmaceutical Research 4(1)</li><li><a href=\"https://www.researchgate.net/publication/338396610_Fomitopsis_officinalis_mushroom_ancient_gold_mine_of_functional_components_and_biological_activities_for_modern_medicine\" target=\"_blank\">Fomitopsis officinalis mushroom: ancient gold mine of functional components and biological activities for modern medicine</a>, January 2020, Egyptian Pharmaceutical Journal 18(4):285-289</li><li><a href=\"https://www.researchgate.net/publication/338263339_Truffle_and_truffle-like_fungi_from_continental_Africa\" target=\"_blank\">Truffle and truffle-like fungi from continental Africa</a>, December 2019, Acta Mycologica 54(2)</li><li><a href=\"https://www.researchgate.net/publication/337991190_To_Heal_or_Not_to_Heal_Medicinal_Mushrooms_Wound_Healing_Capacities\" target=\"_blank\">To Heal or Not to Heal? Medicinal Mushrooms Wound Healing Capacities</a>, December 2019, Journal of Pharmaceutical Sciences 5(4):1-8</li><li><a href=\"https://www.researchgate.net/publication/336588696_The_Rarely_Isolated_fungi_Arthrinium_sacchari_Beltrania_querna_and_Papulaspora_immersa_Potentials_and_Expectations\" target=\"_blank\">The Rarely Isolated fungi: Arthrinium sacchari, Beltrania querna, and Papulaspora immersa, Potentials and Expectations</a>, October 2019, Journal of Pharmaceutical Sciences 5(4):1-6</li><li><a href=\"https://www.researchgate.net/publication/336231517_Anticoagulant_Capacities_of_Some_Medicinal_Mushrooms\" target=\"_blank\">Anticoagulant Capacities of Some Medicinal Mushrooms</a>, October 2019, Journal of Pharmaceutical Sciences 5(3):12-16</li><li><a href=\"https://www.researchgate.net/publication/335841418_Hypocholesterolemic_and_anti-human_colon_cancer_capacities_of_the_Japanese_medicinal_mushroom_Ganoderma_Spp\" target=\"_blank\">Hypocholesterolemic, and anti-human colon cancer capacities of the Japanese medicinal mushroom Ganoderma Spp</a>, September 2019. Conference: the first NRC-Grenoble INP international conference on Science and Sustainable Development</li><li><a href=\"https://www.researchgate.net/publication/335098324_The_Continuous_Story_of_Truffle-Plant_Interaction_In_Microbiome_in_Plant_Health_and_Disease_-_Challenges_and_Opportunities_Eds\" target=\"_blank\">The Continuous Story of Truffle-Plant Interaction In: Microbiome in Plant Health and Disease - Challenges and Opportunities. (Eds)</a>, August 2019. In book: Microbiome in Plant Health and Disease (pp.375-383) Edition: First, Chapter: The Continuous Story of Truffle-Plant Interaction. Publisher: Springer, Singapore</li><li><a href=\"https://www.researchgate.net/publication/334152059_Medicinal_mushrooms_as_a_new_source_of_natural_therapeutic_bioactive_compounds\" target=\"_blank\">Medicinal mushrooms as a new source of natural therapeutic bioactive compounds</a>, July 2019, Egyptian Pharmaceutical Journal 18(2):88-101</li><li><a href=\"https://www.researchgate.net/publication/333985199_GC-MS_analysis_and_in-vitro_hypocholesterolemic_anti-rotavirus_anti-human_colon_carcinoma_activities_of_the_crude_extract_of_a_Japanese_Ganoderma_spp?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">GC-MS analysis and in-vitro hypocholesterolemic, anti-rotavirus, anti-human colon carcinoma activities of the crude extract of a Japanese Ganoderma spp</a>, June 2019, Egyptian Pharmaceutical Journal 10(2):102-110</li><li><a href=\"https://www.researchgate.net/publication/332684515_Antiviral_Potential_of_Mushrooms_in_the_Light_of_their_Biological_Active_Compounds\" target=\"_blank\">Antiviral Potential of Mushrooms in the Light of their Biological Active Compounds</a>, April 2019, Journal of Pharmaceutical Sciences 5(2):8-12</li><li><a href=\"https://www.researchgate.net/publication/329482694_This_era_biotechnological_tools_an_insight_into_endophytic_mycobiota\" target=\"_blank\">This era biotechnological tools: an insight into endophytic mycobiota</a>, December 2018, Egyptian Pharmaceutical Journal 17(3):121-128</li><li><a href=\"https://www.researchgate.net/publication/329022562_A_risk_assessment_of_Europe's_black_truffle_sector_under_predicted_climate_change?_tp=eyJjb250ZXh0Ijp7ImZpcnN0UGFnZSI6InByb2ZpbGUiLCJwYWdlIjoicHJvZmlsZSJ9fQ\" target=\"_blank\">A risk assessment of Europe's black truffle sector under predicted climate change</a>, November 2018, The Science of The Total Environment 655(2)</li><li><a href=\"https://www.researchgate.net/publication/320446344_New_truffle_in_the_UK_as_a_result_of_climate_change\" target=\"_blank\">New truffle in the UK as a result of climate change</a>, November 2017, Climate Research 74(1)</li><li><a href=\"https://www.researchgate.net/publication/321097789_First_harvest_of_Perigord_black_truffle_in_the_UK_as_a_result_of_climate_change\" target=\"_blank\">First harvest of Périgord black truffle in the UK as a result of climate change</a>, January 2017, Climate Research 74(1):67-70</li><li><a href=\"https://www.researchgate.net/publication/273275102_Tuber_melanosporum_spread_within_sub-optimal_climatic_zones_is_controlled_by_fruiting_triggers_and_not_mycorrhiza_survival\" target=\"_blank\">Tuber melanosporum spread within sub-optimal climatic zones is controlled by fruiting triggers and not mycorrhiza survival</a>, December 2014, Acta Mycologica 49(2):255-265</li><li><a href=\"https://www.researchgate.net/publication/271324487_An_analysis_of_the_climatic_parameters_needed_for_Tuber_melanosporum_cultivation_incorporating_data_from_six_continents\" target=\"_blank\">An analysis of the climatic parameters needed for Tuber melanosporum cultivation incorporating data from six continents</a>, February 2014, Mycosphere 5(1):137-142</li><li><a href=\"https://www.researchgate.net/publication/321097795_Sex_a_welcome_frontier_in_truffle_cultivation\" target=\"_blank\">Sex: a welcome frontier in truffle cultivation</a>, October 2013, Current Research in Environmental & Applied Mycology 3(2)</li><li><a href=\"https://www.researchgate.net/publication/271264090_The_role_of_pH_in_Tuber_aestivum_syn_uncinatum_mycorrhiza_development_within_commercial_orchards\" target=\"_blank\">The role of pH in Tuber aestivum syn. uncinatum mycorrhiza development within commercial orchards</a>, December 2012, Acta Mycologica 47(2):161-167</li><li><a href=\"https://www.researchgate.net/publication/228009004_Systemic_irradiance_signaling_in_tobacco\" target=\"_blank\">Systemic irradiance signaling in tobacco</a>, November 2003, New Phytologist, 161(1):193 - 198</li></ol>",
+            "question_2": "",
+            "answer_2": "",
+            "question_3": "",
+            "answer_3": "",
+            "question_4": "",
+            "answer_4": "",
+            "question_5": "",
+            "answer_5": "",
+            "animation": true,
+            "show_index_numbers": false,
+            "multiple_opened": false,
+            "default_opened": "none",
+            "text_size_question": "h3",
+            "question_symbol": "plus",
+            "general_bg_color": "#636855",
+            "general_text_color": "#ffffff",
+            "block_width": "page-fluid",
+            "spacing_top": 12,
+            "spacing_bottom": 12
+          }
+        }
+      },
+      "block_order": [
+        "snap_blocks_accordion_Ui7PLT"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "enable_fullwidth": false,
+        "remove_padding_top": false,
+        "remove_padding_bottom": false
+      }
+    },
+    "image_with_text_aMVxVp": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_46QEtB": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Our Advanced Truffle Tree Nursery",
+            "heading_size": "h3-regular",
+            "enable_h1_tag": false
+          }
+        },
+        "description_VYbkNU": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>From our state-of-the-art Oregon nursery facility, ATC supplies certified truffle trees throughout North America. Unlike nurseries that only sell trees, we carefully control every step of the process because our success as a partner depends entirely on yours.<br/><br/>We start with hand-selected acorns from our own partner orchards—ensuring known provenance and superior genetic strains. Each acorn is germinated in exceptionally clean, controlled conditions that eliminate contamination from the start. Then we inoculate every seedling using our advanced certified scientific protocol, proven to have produced truffles on four continents.</p><p>Before any tree ships, it must pass rigorous mycorrhizal colonization and DNA analysis. This guarantees two critical factors: maximum mycorrhizal content for higher future yields, and no contamination from competing truffle species. Since we only earn when you harvest truffles, we produce the highest quality trees that science can deliver—not just the trees that are easiest to sell.</p>"
+          }
+        },
+        "button_686VHJ": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Learn The Fundamentals",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/truffle-fundamentals",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_46QEtB",
+        "description_VYbkNU",
+        "button_686VHJ"
+      ],
+      "settings": {
+        "color_scheme": "scheme-206402cf-0ad6-469e-a6e7-0a7e0526ddad",
+        "image_alignment": "top-xs",
+        "image_1": "shopify://shop_images/ATC_truffle_tree_nursery_1.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "fd-column-reverse",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "image_with_text_W9hr9e": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_qmdiT9": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Identical to GH5"
+          }
+        },
+        "heading_4cyezW": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Headline Goes Here",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_t9iwUm": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Highlight your new collection or share content related to these images</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qmdiT9",
+        "heading_4cyezW",
+        "description_t9iwUm"
+      ],
+      "disabled": true,
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "image_alignment": "on_scroll",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "text_first",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "image_with_text_yYHKxq": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_6CREet": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Napa Truffle Festival",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "subheading_i8LwLr": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Demonstration of truffle leadership"
+          }
+        },
+        "description_B9Cttz": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Each January, American Truffle Company organizes and presents the <a href=\"https://napatrufflefestival.com/\" target=\"_blank\" title=\"https://napatrufflefestival.com/\"><strong>Napa Truffle Festival</strong></a>—widely recognized as North America’s premier truffle event, set in Napa Valley, the food and wine mecca of the country. For a prospective grower, that matters for several reasons.</p><p>First, the festival brings together <a href=\"https://napatrufflefestival.com/michelin-star-and-master-chefs/\" target=\"_blank\" title=\"List of Michelin star & master chefs featured in the Napa Truffle Festival \"><strong>Michelin-star and master chefs </strong></a><strong>with world-renowned truffle scientists</strong> in the heart of wine country, showcasing exactly the intersection ATC lives in: cutting-edge truffle science and top-tier cuisine. Second, it is a powerful <strong>demand engine</strong> for your truffles—featured winery lunch, dinner and events highlight ultra-fresh American black truffles, helping chefs, sommeliers, and media experience just how exceptional American Périgord truffles can be compared with imports. Third, the festival hosts the <a href=\"https://napatrufflefestival.com/schedule/scientific-truffle-grower-seminar/\" target=\"_blank\" title=\"Scientific Truffle Grower Seminar\"><strong>Scientific Truffle Grower Seminar</strong></a>, a full-day immersion into truffle business fundamentals and the latest cultivation science, plus orchard visits and truffle dog sessions—designed specifically for current and future growers. And finally, ATC’s role at the center of this ecosystem—working with growers, scientists, chefs, wineries, and media—signals what you can expect as a partner: a team that doesn’t just talk about truffles, but actively shapes the truffle industry in North America.</p>"
+          }
+        },
+        "button_Jw9zBj": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Discover more",
+            "button_primary_style": "primary",
+            "button_primary_link": "https://napatrufflefestival.com/",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_6CREet",
+        "subheading_i8LwLr",
+        "description_B9Cttz",
+        "button_Jw9zBj"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "image_alignment": "on_scroll",
+        "image_1": "shopify://shop_images/NTF_collage_4.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "slideshow_QTemB6": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_FAhBzT": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description_text": "",
+            "background_image": "shopify://shop_images/ATC_Website_History_Slider_01s.jpg",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        },
+        "slide_awWX73": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description_text": "",
+            "background_image": "shopify://shop_images/ATC_Website_History_Slider_02_v2s.jpg",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        },
+        "slide_i8CFQ3": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description_text": "",
+            "background_image": "shopify://shop_images/ATC_Website_History_Slider_03s.jpg",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        },
+        "slide_gpdejk": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description_text": "",
+            "background_image": "shopify://shop_images/ATC_Website_History_Slider_04s.jpg",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        },
+        "slide_kxKc3P": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description_text": "",
+            "background_image": "shopify://shop_images/ATC_Website_History_Slider_05_v2s.jpg",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        },
+        "slide_9NnHha": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description_text": "",
+            "background_image": "shopify://shop_images/ATC_Website_History_Slider_06_v2s.jpg",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_FAhBzT",
+        "slide_awWX73",
+        "slide_i8CFQ3",
+        "slide_gpdejk",
+        "slide_kxKc3P",
+        "slide_9NnHha"
+      ],
+      "name": "t:sections.slideshow.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "show_pagination": false,
+        "show_navigation": true,
+        "enable_autoplay": false,
+        "change_slide_interval": 5,
+        "slide_style": "secondary",
+        "slideshow_width": "full-width",
+        "slideshow_height": "unset",
+        "mobile_slideshow_height": "unset",
+        "slideshow_description": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_hbdy9F",
+    "image_with_text_dDydkn",
+    "image_with_text_h3hRFT",
+    "image_with_text_37EtpT",
+    "blog_post_list_ULVnFf",
+    "17628841954e037d43",
+    "image_with_text_aMVxVp",
+    "image_with_text_W9hr9e",
+    "image_with_text_yYHKxq",
+    "slideshow_QTemB6"
+  ]
+}

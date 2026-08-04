@@ -1,0 +1,448 @@
+{%- if section.settings.hide_header_footer -%}
+  <style>
+    header.header,
+    .header-wrapper,
+    .shopify-section-header,
+    #shopify-section-header,
+    .shopify-section-announcement-bar,
+    #shopify-section-announcement-bar,
+    footer.footer,
+    .footer-wrapper,
+    .shopify-section-footer,
+    #shopify-section-footer,.footer-section {
+      display: none !important;
+    }
+    body,
+    main,
+    #MainContent,
+    .main-content {
+      padding-top: 0 !important;
+      margin-top: 0 !important;
+    }
+  </style>
+{%- endif -%}
+{%- comment -%}
+  ════════════════════════════════════════════════════
+  Build JSON rotation data from blocks (safe output)
+  ════════════════════════════════════════════════════
+{%- endcomment -%}
+{{ 'section-split-hero.css' | asset_url | stylesheet_tag }}
+<script id="split-hero-data-{{ section.id }}" type="application/json">
+{
+  "savor": [
+    {%- assign savor_first = true -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'savor_rotation_image' -%}
+
+        {%- if block.settings.media_type == 'video' and block.settings.video != blank -%}
+          {%- for source in block.settings.video.sources -%}
+            {%- if source.format == 'mp4' -%}
+              {%- unless savor_first -%},{%- endunless -%}
+              {"type":"video","url":"{{ source.url }}"}
+              {%- assign savor_first = false -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+        {%- elsif block.settings.media_type == 'image' and block.settings.image != blank -%}
+          {%- unless savor_first -%},{%- endunless -%}
+          {"type":"image","url":"{{ block.settings.image | image_url: width: 1400 }}"}
+          {%- assign savor_first = false -%}
+        {%- endif -%}
+
+      {%- endif -%}
+    {%- endfor -%}
+  ],
+  "cultivate": [
+    {%- assign cultivate_first = true -%}
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'cultivate_rotation_image' -%}
+
+        {%- if block.settings.media_type == 'video' and block.settings.video != blank -%}
+          {%- for source in block.settings.video.sources -%}
+            {%- if source.format == 'mp4' -%}
+              {%- unless cultivate_first -%},{%- endunless -%}
+              {"type":"video","url":"{{ source.url }}"}
+              {%- assign cultivate_first = false -%}
+            {%- endif -%}
+          {%- endfor -%}
+
+        {%- elsif block.settings.media_type == 'image' and block.settings.image != blank -%}
+          {%- unless cultivate_first -%},{%- endunless -%}
+          {"type":"image","url":"{{ block.settings.image | image_url: width: 1400 }}"}
+          {%- assign cultivate_first = false -%}
+        {%- endif -%}
+
+      {%- endif -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<div class="split-hero" role="region" aria-label="{{ section.settings.headline | strip_html | default: 'Choose your experience' }}">
+  <div class="split-hero__wrapper">
+
+    <!-- HEADER / LOGO -->
+    <div class="split-hero__header" role="banner">
+      <div class="split-hero__logo">
+        {%- if section.settings.logo != blank -%}
+          <img
+            src="{{ section.settings.logo | image_url: width: 400 }}"
+            alt="{{ shop.name }}"
+            class="split-hero__logo-img"
+            width="400"
+            height="auto"
+            loading="eager"
+          >
+        {%- else -%}
+          <span class="split-hero__logo-img" style="color:var(--gold);font-family:'Cormorant Garamond',serif;font-size:24px;">{{ shop.name }}</span>
+        {%- endif -%}
+        <div class="split-hero__logo-rule" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <!-- PAGE HEADLINE -->
+    <div class="split-hero__page-headline">
+      <h1>{{ section.settings.headline | default: '"Which side of the truffle are you on?"' }}</h1>
+      <div class="split-hero__headline-rule" aria-hidden="true">
+        <div class="split-hero__headline-rule-line"></div>
+        <div class="split-hero__headline-rule-diamond"></div>
+        <div class="split-hero__headline-rule-line"></div>
+      </div>
+    </div>
+
+    <!-- CENTER BADGE -->
+    {%- if section.settings.badge_text != blank -%}
+      <div class="split-hero__center-badge" aria-hidden="true">
+        <div class="split-hero__badge-circle">
+          <div class="split-hero__badge-inner">
+            <span class="split-hero__badge-text">{{ section.settings.badge_text }}</span>
+          </div>
+        </div>
+      </div>
+    {%- endif -%}
+
+    <!-- ═══════ SPLIT PANELS ═══════ -->
+    <nav class="split-hero__split" aria-label="Main navigation">
+
+      <!-- ── SAVOR PANEL ── -->
+      <article class="split-hero__panel split-hero__panel--savor">
+
+        {%- if section.settings.savor_button_url != blank -%}
+          <a
+            class="split-hero__panel-link"
+            href="{{ section.settings.savor_button_url }}"
+            aria-label="{{ section.settings.savor_heading | default: 'Savor' }}: {{ section.settings.savor_tagline }}. {{ section.settings.savor_button_text | default: "Let's Eat" }}"
+          ></a>
+        {%- endif -%}
+
+        {%- comment -%} Fallback default image — always rendered server-side {%- endcomment -%}
+        <div
+          class="split-hero__panel-bg"
+          id="split-hero-bg-savor-{{ section.id }}"
+          role="img"
+          aria-label="{{ section.settings.savor_heading | default: 'Savor' }} background"
+          {%- if section.settings.savor_default_image != blank -%}
+            style="background-image: url('{{ section.settings.savor_default_image | image_url: width: 1400 }}')"
+          {%- else -%}
+            style="background-color: var(--earth);"
+          {%- endif -%}
+        ></div>
+
+        <div class="split-hero__panel-overlay" aria-hidden="true"></div>
+        <span class="split-hero__side-label" aria-hidden="true">{{ section.settings.savor_eyebrow }}</span>
+
+        <div class="split-hero__panel-content">
+          <p class="split-hero__eyebrow">{{ section.settings.savor_eyebrow }}</p>
+          <h2 class="split-hero__heading">{{ section.settings.savor_heading | default: 'Savor' }}</h2>
+          <p class="split-hero__tagline">{{ section.settings.savor_tagline }}</p>
+          <p class="split-hero__sub">{{ section.settings.savor_subcopy }}</p>
+          {%- if section.settings.savor_button_text != blank -%}
+            <span class="split-hero__cta" aria-hidden="true">
+              {{ section.settings.savor_button_text }} <span class="split-hero__cta-arrow">→</span>
+            </span>
+          {%- endif -%}
+        </div>
+      </article>
+
+      <!-- ── CULTIVATE PANEL ── -->
+      <article class="split-hero__panel split-hero__panel--cultivate">
+
+        {%- if section.settings.cultivate_button_url != blank -%}
+          <a
+            class="split-hero__panel-link"
+            href="{{ section.settings.cultivate_button_url }}"
+            aria-label="{{ section.settings.cultivate_heading | default: 'Cultivate' }}: {{ section.settings.cultivate_tagline }}. {{ section.settings.cultivate_button_text | default: 'Find Out More' }}"
+          ></a>
+        {%- endif -%}
+
+        <div
+          class="split-hero__panel-bg"
+          id="split-hero-bg-cultivate-{{ section.id }}"
+          role="img"
+          aria-label="{{ section.settings.cultivate_heading | default: 'Cultivate' }} background"
+          {%- if section.settings.cultivate_default_image != blank -%}
+            style="background-image: url('{{ section.settings.cultivate_default_image | image_url: width: 1400 }}')"
+          {%- else -%}
+            style="background-color: var(--earth);"
+          {%- endif -%}
+        ></div>
+
+        <div class="split-hero__panel-overlay" aria-hidden="true"></div>
+        <span class="split-hero__side-label" aria-hidden="true">{{ section.settings.cultivate_eyebrow }}</span>
+
+        <div class="split-hero__panel-content">
+          <p class="split-hero__eyebrow">{{ section.settings.cultivate_eyebrow }}</p>
+          <h2 class="split-hero__heading">{{ section.settings.cultivate_heading | default: 'Cultivate' }}</h2>
+          <p class="split-hero__tagline">{{ section.settings.cultivate_tagline }}</p>
+          <p class="split-hero__sub">{{ section.settings.cultivate_subcopy }}</p>
+          {%- if section.settings.cultivate_button_text != blank -%}
+            <span class="split-hero__cta" aria-hidden="true">
+              {{ section.settings.cultivate_button_text }} <span class="split-hero__cta-arrow">→</span>
+            </span>
+          {%- endif -%}
+        </div>
+      </article>
+
+    </nav>
+
+  </div>
+</div>
+
+<script>
+  (function () {
+    try {
+      var dataEl = document.getElementById('split-hero-data-{{ section.id }}');
+      if (!dataEl) return;
+
+      var data = JSON.parse(dataEl.textContent);
+
+      function applyMedia(panelId, mediaList) {
+        if (!mediaList || mediaList.length === 0) return;
+
+        var bg = document.getElementById(panelId);
+        if (!bg) return;
+
+        var pick = mediaList[Math.floor(Math.random() * mediaList.length)];
+
+        if (pick.type === 'video' && pick.url) {
+          bg.style.backgroundImage = 'none';
+
+          var video = document.createElement('video');
+          video.className = 'split-hero__panel-video';
+          video.autoplay = true;
+          video.loop = true;
+          video.muted = true;
+          video.playsInline = true;
+          video.setAttribute('playsinline', '');
+          video.setAttribute('aria-hidden', 'true');
+
+          var source = document.createElement('source');
+          source.src = pick.url;
+          source.type = 'video/mp4';
+          video.appendChild(source);
+
+          bg.parentNode.insertBefore(video, bg.nextSibling);
+        } else if (pick.type === 'image' && pick.url) {
+          bg.style.backgroundImage = "url('" + pick.url + "')";
+        }
+      }
+
+      applyMedia('split-hero-bg-savor-{{ section.id }}', data.savor);
+      applyMedia('split-hero-bg-cultivate-{{ section.id }}', data.cultivate);
+    } catch (e) {
+      /* Fail silently — default fallback images remain visible */
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Split Hero",
+  "tag": "section",
+  "class": "section-split-hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "General"
+    },
+    {
+      "type": "checkbox",
+      "id": "hide_header_footer",
+      "label": "Hide theme header & footer",
+      "default": true,
+      "info": "Creates a full-screen takeover. Disable if using on a standard page."
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "text",
+      "id": "headline",
+      "label": "Center headline",
+      "default": "\"Which side of the truffle are you on?\""
+    },
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Center badge text",
+      "info": "Leave blank to hide badge"
+    },
+    {
+      "type": "header",
+      "content": "── Savor Panel ──"
+    },
+    {
+      "type": "image_picker",
+      "id": "savor_default_image",
+      "label": "Savor — Default Image",
+      "info": "Fallback image shown when JS is disabled or the rotation pool is empty."
+    },
+    {
+      "type": "text",
+      "id": "savor_eyebrow",
+      "label": "Savor — Eyebrow Label",
+      "default": "For food lovers & restaurants"
+    },
+    {
+      "type": "text",
+      "id": "savor_heading",
+      "label": "Savor — Panel Header",
+      "default": "Savor"
+    },
+    {
+      "type": "text",
+      "id": "savor_tagline",
+      "label": "Savor — Tagline",
+      "default": "Buy & cook with ultra fresh truffles"
+    },
+    {
+      "type": "text",
+      "id": "savor_subcopy",
+      "label": "Savor — Sub-copy",
+      "default": "Because life is too short for truffles with unknown provenance."
+    },
+    {
+      "type": "text",
+      "id": "savor_button_text",
+      "label": "Savor — Button Text",
+      "default": "Let's Eat"
+    },
+    {
+      "type": "url",
+      "id": "savor_button_url",
+      "label": "Savor — Button Link"
+    },
+    {
+      "type": "header",
+      "content": "── Cultivate Panel ──"
+    },
+    {
+      "type": "image_picker",
+      "id": "cultivate_default_image",
+      "label": "Cultivate — Default Image",
+      "info": "Fallback image shown when JS is disabled or the rotation pool is empty."
+    },
+    {
+      "type": "text",
+      "id": "cultivate_eyebrow",
+      "label": "Cultivate — Eyebrow Label",
+      "default": "For aspiring & active growers"
+    },
+    {
+      "type": "text",
+      "id": "cultivate_heading",
+      "label": "Cultivate — Panel Header",
+      "default": "Cultivate"
+    },
+    {
+      "type": "text",
+      "id": "cultivate_tagline",
+      "label": "Cultivate — Tagline",
+      "default": "Grow truffles with science on your side"
+    },
+    {
+      "type": "text",
+      "id": "cultivate_subcopy",
+      "label": "Cultivate — Sub-copy",
+      "default": "More harvest. No guesswork. We've cracked the code."
+    },
+    {
+      "type": "text",
+      "id": "cultivate_button_text",
+      "label": "Cultivate — Button Text",
+      "default": "Find Out More"
+    },
+    {
+      "type": "url",
+      "id": "cultivate_button_url",
+      "label": "Cultivate — Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "savor_rotation_image",
+      "name": "Savor Rotation Media",
+      "settings": [
+        {
+          "type": "select",
+          "id": "media_type",
+          "label": "Media type",
+          "options": [
+            { "value": "image", "label": "Image" },
+            { "value": "video", "label": "Video" }
+          ],
+          "default": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Used when media type is set to Image."
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video",
+          "info": "Upload via Settings → Files. Used when media type is set to Video."
+        }
+      ]
+    },
+    {
+      "type": "cultivate_rotation_image",
+      "name": "Cultivate Rotation Media",
+      "settings": [
+        {
+          "type": "select",
+          "id": "media_type",
+          "label": "Media type",
+          "options": [
+            { "value": "image", "label": "Image" },
+            { "value": "video", "label": "Video" }
+          ],
+          "default": "image"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image",
+          "info": "Used when media type is set to Image."
+        },
+        {
+          "type": "video",
+          "id": "video",
+          "label": "Video",
+          "info": "Upload via Settings → Files. Used when media type is set to Video."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Split Hero",
+      "blocks": []
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,265 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_DzN7p3": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_LEy3EF": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Fresh Truffle Collection",
+            "heading_size": "h2",
+            "enable_h1_tag": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_LEy3EF"
+      ],
+      "custom_css": [
+        "h1 {}"
+      ],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 0,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/banner-collection.png",
+        "section_image_width": "full-width",
+        "height_desktop": "70vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-left top-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "",
+        "text_panel": "",
+        "panel_title_link": "",
+        "panel_link": ""
+      }
+    },
+    "collection-banner": {
+      "type": "collection-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading_size": "h3",
+            "enable_h1_tag": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "truncate_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "description"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "#000000",
+        "section_content_overlay_color": "#ffffff",
+        "section_image_width": "max-width",
+        "height_desktop": "auto",
+        "desktop_content_position": "start-md",
+        "desktop_content_alignment": "ta-left-md top-md",
+        "height_mobile": "50vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs"
+      }
+    },
+    "main": {
+      "type": "product-grid",
+      "blocks": {
+        "title_MTVyTy": {
+          "type": "title",
+          "settings": {}
+        },
+        "variants_qLLxLJ": {
+          "type": "variants",
+          "settings": {
+            "card_product_variants": ""
+          }
+        },
+        "price_EdrRtr": {
+          "type": "price",
+          "settings": {
+            "color_product_price": ""
+          }
+        },
+        "product_attributes_PaVTtJ": {
+          "type": "product_attributes",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_MTVyTy",
+        "variants_qLLxLJ",
+        "price_EdrRtr",
+        "product_attributes_PaVTtJ"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "products_per_load": "24",
+        "products_load_method": "pagination",
+        "show_collection_title": true,
+        "enable_h1_tag": false,
+        "allow_switch_columns": false,
+        "switcher_style": "btn-viewby--fill",
+        "heading": "",
+        "menu": "",
+        "show_product_quantity": false,
+        "enable_filter": true,
+        "show_group_name_filters": true,
+        "enable_sort": true,
+        "limited_filter_options_desktop": 4,
+        "enable_comparison": true,
+        "custom_panel_background": "rgba(0,0,0,0)",
+        "custom_panel_color": "",
+        "filter_sort_layout": "drawer",
+        "item_per_row_desktop": "4",
+        "close_all_filter": true,
+        "item_per_row_mobile": "2",
+        "close_all_filter_mb": true,
+        "show_quick_view": true,
+        "quick_buy": "bulk"
+      }
+    },
+    "image_banner_RKxkN8": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_WLiVCw": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Lorem ipsum dolar set dium placeholder text lorem ipsum.",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_qMfhEU": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>This is placeholder copy, lorem ipsum dolar. Our mission is to make the world’s most celebrated ingredient both approachable and trustworthy. </p>"
+          }
+        },
+        "button_BrVMNT": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Explore more",
+            "button_primary_style": "primary",
+            "button_primary_link": "#",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_WLiVCw",
+        "description_qMfhEU",
+        "button_BrVMNT"
+      ],
+      "custom_css": [],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 10,
+        "section_mask_overlay_color": "#000000",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/Trish_s_Ai_Photo.png",
+        "section_image_width": "max-width",
+        "height_desktop": "70vh",
+        "desktop_content_position": "start-md",
+        "desktop_content_alignment": "ta-left-md top-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-left top-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "",
+        "text_panel": "",
+        "panel_title_link": "",
+        "panel_link": ""
+      }
+    },
+    "blog_post_list_8XtcmJ": {
+      "type": "blog-post-list",
+      "blocks": {
+        "title_etwBk9": {
+          "type": "title",
+          "settings": {}
+        },
+        "excerpt_cx3jNh": {
+          "type": "excerpt",
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "title_etwBk9",
+        "excerpt_cx3jNh"
+      ],
+      "name": "t:sections.blog_post_list.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "blog": "",
+        "heading": "Recipe section headline.",
+        "heading_size": "h3-regular",
+        "description": "",
+        "items_to_show": 3,
+        "show_featured_image": true,
+        "image_ratio": "1/1",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "true",
+        "enable_button": false,
+        "button_text": "View all",
+        "button_position": "above-listing"
+      }
+    },
+    "multiple_columns_R4krGw": {
+      "type": "multiple-columns",
+      "name": "Two Column Newsletter",
+      "settings": {
+        "left_bg_image": "shopify://shop_images/image_texture.png",
+        "right_bg_color": "#825236",
+        "left_heading": "Join our community",
+        "left_text": "Discover new content, offers and updates directly from us.",
+        "left_button_label": "atc for growers",
+        "left_button_url": "#",
+        "right_heading": "Stay updated",
+        "right_text": "Subscribe to our newsletter and never miss an update.",
+        "alignment": "left"
+      }
+    }
+  },
+  "order": [
+    "image_banner_DzN7p3",
+    "collection-banner",
+    "main",
+    "image_banner_RKxkN8",
+    "blog_post_list_8XtcmJ",
+    "multiple_columns_R4krGw"
+  ]
+}

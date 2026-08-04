@@ -1,0 +1,276 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_page_title": true,
+        "enable_h1_tag": true,
+        "show_page_content": true
+      }
+    },
+    "video_banner_XYxBGj": {
+      "type": "video-banner",
+      "blocks": {
+        "subheading_JVpMGE": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Get ready  for..."
+          }
+        },
+        "heading_KLXEac": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "The Freshest Truffle Possible",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_p3HpJb": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p><em><strong>Unprecedented</strong></em>. Farm to door. </p><p>Sign up below to be notified when we launch.</p>"
+          }
+        },
+        "button_UhHFhn": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "Explore more",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "View details",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_JVpMGE",
+        "heading_KLXEac",
+        "description_p3HpJb",
+        "button_UhHFhn"
+      ],
+      "name": "t:sections.video_banner.name",
+      "settings": {
+        "color_scheme": "scheme-5",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "video_source": "video_hosted",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_hosted": "shopify://files/videos/Atc Dtc Hero 720p.mp4",
+        "enable_controller": true,
+        "enable_loop": true,
+        "video_control_color": "transparent",
+        "section_image_width": "full-width",
+        "height_desktop": "70vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-left top-xs",
+        "image_banner_link": ""
+      }
+    },
+    "rich_text_Fm4n8j": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_MUaQet": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Why is ATC Different?"
+          }
+        },
+        "heading_Vmm98j": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "The Finest Truffle Is the Freshest One",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_8VtDUT": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p><strong>Truffles have a half-life of five days. It’s a ticking clock.</strong></p><p>Five days after harvest, half the aroma — that incomparable, irreplaceable perfume — is simply gone. By day ten, you're down to a quarter. By then, you're not getting a truffle. You're getting its memory.</p><p>Most European-produced truffles reach you 5 to 7 days after harvest, under the <em><strong>best</strong></em><strong> </strong>circumstances. And that's before you ask the question no one in the industry wants to answer: <em>Where exactly was this harvested? When? By whom? </em></p><p>They can't tell you. Because they don't know. That’s been the standard for decades.</p><p><strong>American Truffle Company® is changing all of that.</strong></p><p>We can't reveal too much – yet. We are still in stealth mode. But we <em>can </em>tell you this:</p><p><strong>A New Origin. Unprecedented Access. </strong>American-grown European black truffles. Farm to your door, overnight. Provenance you can trace. Freshness that redefines what a truffle is supposed to taste like.</p><p><em><strong>The freshest truffle available, anywhere. Period.</strong></em></p>"
+          }
+        },
+        "button_YB9mnH": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "Explore more",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "View details",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "subheading_MUaQet",
+        "heading_Vmm98j",
+        "description_8VtDUT",
+        "button_YB9mnH"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "custom_media_carousel_xfPHct": {
+      "type": "custom-media-carousel",
+      "blocks": {
+        "publication_niWCgd": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/KTVU_Fox_2_646857.jpg",
+            "quote": "Fox News Highlights ATC & the Napa Truffle Festival",
+            "link": "https://americantruffle.com/blogs/news/fox-news-highlights-napa-truffle-festival"
+          }
+        },
+        "publication_HxXDnB": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-abcnews-thumbnail-v2.jpg",
+            "quote": "ABC News Covers Icon Truffle Harvest",
+            "link": "https://americantruffle.com/blogs/news/abc-news-highlights-atc-icon-class-truffle-harvest"
+          }
+        },
+        "publication_kQNK6z": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-napavalley-thumbnail-v2.jpg",
+            "quote": "Truffle Treasures Unearthed",
+            "link": "https://americantruffle.com/blogs/news/truffle-treasures-unearthed"
+          }
+        },
+        "publication_REB7Lg": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-democrat-thumbnail-v2.jpg",
+            "quote": "A $973 Fungus – and How You Can Get Some",
+            "link": "https://americantruffle.com/blogs/news/a-973-fungus-and-how-you-can-get-some"
+          }
+        },
+        "publication_AR4wDC": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-cbsnews-thumbnail-v2.jpg",
+            "quote": "CBS News Highlights ATC Truffle Harvest",
+            "link": "https://americantruffle.com/blogs/news/cbs-news-highlights-atc-truffle-harvest"
+          }
+        },
+        "publication_ibmYt8": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-fintimes-thumbnail-v2.jpg",
+            "quote": "Truffle Economy: How a Scientist Sniffed Out a Culinary Opportunity",
+            "link": "https://americantruffle.com/blogs/news/truffle-economy-how-a-scientist-sniffed-out-a-culinary-opportunity"
+          }
+        },
+        "publication_9PyibP": {
+          "type": "publication",
+          "settings": {
+            "publication_name": "Publication Name",
+            "logo": "shopify://shop_images/logo-press-nyt-thumbnail-v2.jpg",
+            "quote": "Has A Start-Up Found the Secret to Farming the Elusive Truffle?",
+            "link": "https://americantruffle.com/blogs/news/a-start-up-found-the-secret-to-farming-the-elusive-truffle"
+          }
+        }
+      },
+      "block_order": [
+        "publication_niWCgd",
+        "publication_HxXDnB",
+        "publication_kQNK6z",
+        "publication_REB7Lg",
+        "publication_AR4wDC",
+        "publication_ibmYt8",
+        "publication_9PyibP"
+      ],
+      "name": "Media Carousel",
+      "settings": {
+        "label": "",
+        "background_color": "#ffffff",
+        "label_color": "#333333",
+        "quote_color": "#555555",
+        "scroll_speed": 20,
+        "item_width": 280,
+        "item_padding": 16,
+        "logo_filter": "none"
+      }
+    },
+    "multiple_columns_whfhDz": {
+      "type": "multiple-columns",
+      "blocks": {
+        "forms_inline_A9ehdw": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "897895",
+            "text_color": "#636855",
+            "button_background_color": "#6e4026",
+            "button_label_color": "#f7ebdd",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_A9ehdw"
+      ],
+      "custom_css": [],
+      "name": "Two Column Newsletter",
+      "settings": {
+        "hide_left": false,
+        "left_bg_image": "shopify://shop_images/Truffles_on_Pasta.jpg",
+        "right_bg_color": "#f7ebdd",
+        "left_heading": "Join the Priority Launch List",
+        "left_text": "Truffle supply will be limited, and guests on this list will be the first — first to know, first to order, first to experience what a fresh truffle is supposed to be.",
+        "left_button_label": "Learn more",
+        "left_button_url": "",
+        "right_heading": "Exclusive Early Access",
+        "show_form": false,
+        "right_text": "",
+        "zoho_form": "",
+        "alignment": "left",
+        "radio_label": "Please select one:",
+        "radio_options": "Restaurateur, At-Home Chef",
+        "button_label": "Subscribe"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_banner_XYxBGj",
+    "rich_text_Fm4n8j",
+    "custom_media_carousel_xfPHct",
+    "multiple_columns_whfhDz"
+  ]
+}

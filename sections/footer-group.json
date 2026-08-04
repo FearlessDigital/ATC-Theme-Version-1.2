@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer Group",
+  "sections": {
+    "cross_page_promotion": {
+      "type": "cross-page-promotions",
+      "blocks": {
+        "promotion_1": {
+          "type": "promotion",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "bag-check",
+            "custom_code": "",
+            "title": "About Normcore",
+            "description": "<p>Normcore celebrates timeless simplicity, curating essentials that elevate everyday living.</p>",
+            "label": "View more",
+            "link": ""
+          }
+        },
+        "promotion_2": {
+          "type": "promotion",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "armchair",
+            "custom_code": "",
+            "title": "Product Showcase",
+            "description": "<p>Our dedicated team provides timely assistance and is committed to addressing your queries.</p>",
+            "label": "Product Showcase",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "promotion_1",
+        "promotion_2"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "scheme-4",
+        "text_position": "fd-column",
+        "icon_size": "icon-scale-3xl",
+        "icon_color": ""
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "store_information_tUcQaq": {
+          "type": "store_information",
+          "settings": {
+            "logo": "shopify://shop_images/ATC_Logo_Stacked_Green.png",
+            "logo_max_width": 160,
+            "heading": "",
+            "description": "",
+            "show_social_icon": true,
+            "show_follow_on_shop": true,
+            "block_width": "2",
+            "block_alignment": "middle-lg ta-center-lg"
+          }
+        },
+        "spacer_JVq3kX": {
+          "type": "spacer",
+          "settings": {
+            "block_width": "2"
+          }
+        },
+        "menu_FCmkaj": {
+          "type": "menu",
+          "settings": {
+            "heading": "Quick Links",
+            "main_menu": "footer",
+            "block_width": "2",
+            "block_alignment": "top-lg ta-left-lg",
+            "show_collapsible_mobile": true,
+            "expand_collapsible_by_default": true
+          }
+        },
+        "menu_iFpjXz": {
+          "type": "menu",
+          "settings": {
+            "heading": "Services",
+            "main_menu": "services",
+            "block_width": "2",
+            "block_alignment": "top-lg ta-left-lg",
+            "show_collapsible_mobile": true,
+            "expand_collapsible_by_default": true
+          }
+        },
+        "menu_aPL6VN": {
+          "type": "menu",
+          "settings": {
+            "heading": "Dig Deeper",
+            "main_menu": "blog",
+            "block_width": "2",
+            "block_alignment": "top-lg ta-left-lg",
+            "show_collapsible_mobile": true,
+            "expand_collapsible_by_default": true
+          }
+        },
+        "menu_9xyJ3r": {
+          "type": "menu",
+          "disabled": true,
+          "settings": {
+            "heading": "Legal",
+            "main_menu": "legal",
+            "block_width": "2",
+            "block_alignment": "top-lg ta-left-lg",
+            "show_collapsible_mobile": true,
+            "expand_collapsible_by_default": true
+          }
+        }
+      },
+      "block_order": [
+        "store_information_tUcQaq",
+        "spacer_JVq3kX",
+        "menu_FCmkaj",
+        "menu_iFpjXz",
+        "menu_aPL6VN",
+        "menu_9xyJ3r"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_fullwidth": false,
+        "show_layout_grid": false
+      }
+    },
+    "copyright_bar": {
+      "type": "copyright-bar",
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_fullwidth": false,
+        "show_currency_selector": "show-full",
+        "show_language_selector": true,
+        "textarea": "<p>© [year] American Truffle Company. All rights reserved.</p>",
+        "enable_powered_by_shopify": false,
+        "text": ""
+      }
+    }
+  },
+  "order": [
+    "cross_page_promotion",
+    "footer",
+    "copyright_bar"
+  ]
+}

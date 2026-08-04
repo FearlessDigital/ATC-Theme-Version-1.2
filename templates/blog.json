@@ -1,0 +1,163 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_MKatDL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_ceNLnd": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Inspiration",
+            "heading_size": "h1",
+            "enable_h1_tag": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ceNLnd"
+      ],
+      "custom_css": [
+        ".right-panel {display: none;}"
+      ],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 0,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/Orchard_Hero.jpg",
+        "section_image_width": "full-width",
+        "height_desktop": "50vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "Headline for growers here.",
+        "text_panel": "Default text content",
+        "panel_title_link": "ATC for growers",
+        "panel_link": ""
+      }
+    },
+    "1772638686bf2c5ff0": {
+      "type": "apps",
+      "blocks": {
+        "bloggo_blog_search_bar_bloggo_search_e7XVLr": {
+          "type": "shopify://apps/bloggo-blog-search-bar/blocks/bloggo-search/d1023593-f742-4a71-811c-ea9d649abbe2",
+          "settings": {
+            "placeholder_text": "I'm looking for...",
+            "button_text": "",
+            "cb_custom_css": ".search-box.ttSearchInputBox.ttEventRegistered {\nbackground: #FFF;\nborder-radius: 16px;\nborder: 1px solid #4e4e4e\n}\n\n.tt-search-bar .search-button {\nfont-family: 'lexend zetta';\ntext-transform: uppercase;\nmin-width: 160px;\nborder-radius: 16px;\nbackground-color: #6e4026;\ncolor: #f7ebdd;\n}"
+          }
+        }
+      },
+      "block_order": [
+        "bloggo_blog_search_bar_bloggo_search_e7XVLr"
+      ],
+      "custom_css": [],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "enable_fullwidth": true,
+        "remove_padding_top": false,
+        "remove_padding_bottom": true
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "excerpt": {
+          "type": "excerpt",
+          "disabled": true,
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "tags",
+        "title",
+        "excerpt"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "items_per_load": "16",
+        "blogs_load_method": "infinite",
+        "show_rss": false,
+        "enable_tags_filter": true,
+        "heading_size": "h3-regular",
+        "enable_h1_tag": false,
+        "show_featured_image": true,
+        "blog_image_ratio": "3/2",
+        "columns_per_row_desktop": "3"
+      }
+    },
+    "multiple_columns_nbpPka": {
+      "type": "multiple-columns",
+      "blocks": {
+        "forms_inline_rjDEEL": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "751875",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_rjDEEL"
+      ],
+      "name": "Two Column Newsletter",
+      "settings": {
+        "hide_left": false,
+        "left_bg_image": "shopify://shop_images/GH_1_Why_ATC.png",
+        "right_bg_color": "#dfc5aa",
+        "left_heading": "Join our community",
+        "left_text": "Discover new content, offers and updates directly from us.",
+        "left_button_label": "Learn more",
+        "left_button_url": "",
+        "right_heading": "Stay updated",
+        "show_form": false,
+        "right_text": "Subscribe to our newsletter and never miss an update.",
+        "zoho_form": "",
+        "alignment": "left",
+        "radio_label": "Please select one:",
+        "radio_options": "Restaurateur, At-Home Chef",
+        "button_label": "Subscribe"
+      }
+    }
+  },
+  "order": [
+    "image_banner_MKatDL",
+    "1772638686bf2c5ff0",
+    "main",
+    "multiple_columns_nbpPka"
+  ]
+}

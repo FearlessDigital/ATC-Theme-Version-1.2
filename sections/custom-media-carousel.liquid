@@ -1,0 +1,269 @@
+{% comment %} sections/media-carousel.liquid {% endcomment %}
+
+<section class="media-carousel-section">
+  <p class="media-carousel-label">{{ section.settings.label }}</p>
+
+  <div class="media-carousel-track-wrapper">
+    <ul class="media-carousel-track">
+      {% for block in section.blocks %}
+        <li class="media-carousel-item" {{ block.shopify_attributes }}>
+          <a href="{{ block.settings.link }}" target="_blank" rel="noopener">
+            {% if block.settings.logo != blank %}
+              <img
+                src="{{ block.settings.logo | image_url }}"
+                alt="{{ block.settings.publication_name }}"
+                loading="lazy"
+                width="260"
+                height="auto"
+              >
+            {% else %}
+              <span class="media-carousel-pub-name">{{ block.settings.publication_name }}</span>
+            {% endif %}
+            {% if block.settings.quote != blank %}
+              <p class="media-carousel-quote">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+
+      {% comment %} Duplicate items for seamless infinite loop {% endcomment %}
+      {% for block in section.blocks %}
+        <li class="media-carousel-item media-carousel-item--clone" aria-hidden="true">
+          <a href="{{ block.settings.link }}" target="_blank" rel="noopener" tabindex="-1">
+            {% if block.settings.logo != blank %}
+              <img
+                src="{{ block.settings.logo | image_url }}"
+                alt="{{ block.settings.publication_name }}"
+                loading="lazy"
+                width="260"
+                height="auto"
+              >
+            {% endif %}
+            {% if block.settings.quote != blank %}
+              <p class="media-carousel-quote">&ldquo;{{ block.settings.quote }}&rdquo;</p>
+            {% endif %}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .media-carousel-section {
+    padding: 32px 0;
+    background: {{ section.settings.background_color }};
+    overflow: hidden;
+  }
+
+  .media-carousel-label {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: {{ section.settings.label_color }};
+    margin: 0 0 24px;
+  }
+
+  .media-carousel-track-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .media-carousel-track {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: max-content;
+    animation: media-carousel-scroll {{ section.settings.scroll_speed }}s linear infinite;
+  }
+
+  /* Pause on hover */
+  .media-carousel-track-wrapper:hover .media-carousel-track {
+    animation-play-state: paused;
+  }
+
+  .media-carousel-item {
+    flex-shrink: 0;
+    width: {{ section.settings.item_width }}px;
+    padding: 0 {{ section.settings.item_padding }}px;
+    text-align: center;
+    box-sizing: border-box;
+  }
+
+  .media-carousel-item:last-child {
+    border-right: none;
+  }
+
+  .media-carousel-item a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .media-carousel-item img {
+    max-width: 260px;
+    max-height: 180px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    /* Optional: grayscale with color-on-hover, matching Corto's style */
+    filter: {{ section.settings.logo_filter }};
+    transition: filter 0.3s ease;
+  }
+
+  .media-carousel-item a:hover img {
+    filter: none;
+  }
+
+  .media-carousel-quote {
+    font-size: 12px;
+    font-style: italic;
+    line-height: 1.4;
+    margin: 0;
+    color: {{ section.settings.quote_color }};
+    max-width: auto;
+  }
+
+  .media-carousel-pub-name {
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  @keyframes media-carousel-scroll {
+    from { transform: translateX(0); }
+    to   { transform: translateX(-50%); }
+  }
+
+  /* Respect reduced-motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .media-carousel-track {
+      animation: none;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: center;
+    }
+    .media-carousel-item--clone {
+      display: none;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Media Carousel",
+  "tag": "section",
+  "class": "media-carousel-section-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Section Label",
+      "default": "AS FEATURED IN"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Label Text Color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "quote_color",
+      "label": "Quote Text Color",
+      "default": "#555555"
+    },
+    {
+      "type": "range",
+      "id": "scroll_speed",
+      "label": "Scroll Speed (seconds for one full loop)",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "item_width",
+      "label": "Item Width (px)",
+      "min": 160,
+      "max": 320,
+      "step": 10,
+      "default": 240
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "label": "Item Horizontal Padding (px)",
+      "min": 16,
+      "max": 60,
+      "step": 4,
+      "default": 32
+    },
+    {
+      "type": "select",
+      "id": "logo_filter",
+      "label": "Logo Color Treatment",
+      "options": [
+        { "value": "none", "label": "Full Color" },
+        { "value": "grayscale(100%)", "label": "Grayscale (color on hover)" },
+        { "value": "grayscale(100%) opacity(50%)", "label": "Grayscale + Dimmed" }
+      ],
+      "default": "grayscale(100%) opacity(50%)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "publication",
+      "name": "Publication",
+      "settings": [
+        {
+          "type": "text",
+          "id": "publication_name",
+          "label": "Publication Name",
+          "default": "Publication Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "logo",
+          "label": "Logo Image"
+        },
+        {
+          "type": "text",
+          "id": "quote",
+          "label": "Pull Quote",
+          "default": "A great quote about your product"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Media Carousel",
+      "blocks": [
+        { "type": "publication" },
+        { "type": "publication" },
+        { "type": "publication" }
+      ]
+    }
+  ]
+}
+{% endschema %}

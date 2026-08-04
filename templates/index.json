@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "split_content_xCbat9": {
+      "type": "split-content",
+      "blocks": {
+        "cultivate_rotation_image_MtVT44": {
+          "type": "cultivate_rotation_image",
+          "settings": {
+            "media_type": "video",
+            "video": "shopify://files/videos/IMG_2026.MP4"
+          }
+        },
+        "savor_rotation_image_AY6xcc": {
+          "type": "savor_rotation_image",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Truffle_Cr_me_Br_l_e.jpg"
+          }
+        },
+        "cultivate_rotation_image_hJJBdy": {
+          "type": "cultivate_rotation_image",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Grower.jpg"
+          }
+        },
+        "savor_rotation_image_kpk9qW": {
+          "type": "savor_rotation_image",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Sunchoke_Jerusalem_Artichoke_Velout.jpg"
+          }
+        },
+        "savor_rotation_image_NY3HQx": {
+          "type": "savor_rotation_image",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Egg_Benedict_with_Truffles_v2.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "cultivate_rotation_image_MtVT44",
+        "savor_rotation_image_AY6xcc",
+        "cultivate_rotation_image_hJJBdy",
+        "savor_rotation_image_kpk9qW",
+        "savor_rotation_image_NY3HQx"
+      ],
+      "name": "Split Hero",
+      "settings": {
+        "hide_header_footer": true,
+        "logo": "shopify://shop_images/ATC_Logo_Wide_White.png",
+        "headline": "\"Which side of the truffle are you on?\"",
+        "badge_text": "",
+        "savor_default_image": "shopify://shop_images/Egg_Benedict_with_Truffles_v2.jpg",
+        "savor_eyebrow": "For food lovers & restaurants",
+        "savor_heading": "Savor",
+        "savor_tagline": "Buy & cook with ultra fresh truffles",
+        "savor_subcopy": "Because life is too short for truffles with unknown provenance.",
+        "savor_button_text": "Let's Eat",
+        "savor_button_url": "shopify://pages/truffle-buyers",
+        "cultivate_default_image": "shopify://shop_images/img-atc-hero-homepage-final-cropped.jpg",
+        "cultivate_eyebrow": "For aspiring & active growers",
+        "cultivate_heading": "Cultivate",
+        "cultivate_tagline": "Grow truffles with science on your side",
+        "cultivate_subcopy": "More harvest. No guesswork. We've cracked the code.",
+        "cultivate_button_text": "Find Out More",
+        "cultivate_button_url": "shopify://pages/growers"
+      }
+    }
+  },
+  "order": [
+    "split_content_xCbat9"
+  ]
+}

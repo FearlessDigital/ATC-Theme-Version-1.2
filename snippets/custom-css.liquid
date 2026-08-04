@@ -1,0 +1,44 @@
+<style>
+.radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.radio-option {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+{% comment %} start custom show menu item on Tablet {% endcomment %}
+ @media (min-width: 768px) and (max-width: 1024px) {
+  .header .header-icon-start { display: none !important; }
+  .header .header__logo { grid-column: 1 / span 3; order: 1; }
+  .header .header__menu { grid-column: 4 / span 6; order: 2; }
+  .header .header__utilities { grid-column: 10 / span 3; order: 3; }
+  .header { grid-template-columns: fit-content(100%) fit-content(100%) auto; }
+  .d-flex-xs { display: flex; align-items: center; }
+  .d-flex-xs ul { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 10px; }
+  .menu--horizontal .menu__item .d-block { font-size: 10px !important; text-align: center; text-transform: uppercase; color: #825236; font-weight: bold; }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.header-submenu-dropdown,
+#menuHeaderMenuList-4 {
+  position: absolute !important;
+  top: 100%;
+  background: #f7f6ed;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  z-index: 1000;
+  min-width: 200px;
+  width: max-content;
+  max-width: 220px;
+  padding: 0.5rem;
+  flex-direction: column !important;
+  gap: 0.5rem;
+}
+}
+</style>

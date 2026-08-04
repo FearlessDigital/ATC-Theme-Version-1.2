@@ -1,0 +1,185 @@
+/* =============================================================================
+   AMERICAN TRUFFLE CO — DUAL NAVIGATION STYLES  (v1.8)
+   File: assets/atc-dual-nav.css
+
+   Colors sourced from ATC Brand Color Guide (Oct 2025):
+     Green        #3f4a28  (PMS 5747)
+     Sage         #636855  (PMS 4223)
+     Espresso     #432f2a  (PMS 483)
+     Burnt Orange #9f6f39  (PMS 1595)
+     Nude         #e6d0b8  (PMS 2309)
+     Ivory        #f8f6ed  (PMS 9043)
+   ============================================================================= */
+
+/* ── Zone Indicator Bar ──────────────────────────────────────── */
+
+.atc-zone-bar {
+  width: 100%;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.atc-zone-bar--growers {
+  background-color: #3f4a28;   /* ATC Green (PMS 5747) */
+  color: #f8f6ed;              /* ATC Ivory (PMS 9043) */
+  border-bottom: 1px solid rgba(248, 246, 237, 0.15);
+}
+
+.atc-zone-bar--buyers {
+  background-color: #432f2a;   /* ATC Espresso (PMS 483) */
+  color: #e6d0b8;              /* ATC Nude (PMS 2309) */
+  border-bottom: 1px solid rgba(230, 208, 184, 0.15);
+}
+
+.atc-zone-bar__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 3px 20px;           /* v1.8: reduced from 7px to 3px (~19px bar height) */
+  max-width: var(--page-width, 1280px);
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.atc-zone-bar__eyebrow {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.65rem;
+  opacity: 0.9;
+}
+
+/* Buyer zone eyebrow uses Burnt Orange accent */
+.atc-zone-bar--buyers .atc-zone-bar__eyebrow {
+  color: #9f6f39;              /* ATC Burnt Orange (PMS 1595) */
+  opacity: 1;
+}
+
+.atc-zone-bar__divider {
+  opacity: 0.25;
+}
+
+.atc-zone-bar__message {
+  flex: 1;
+  opacity: 0.55;
+  font-style: italic;
+}
+
+.atc-zone-bar__cta {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.6;
+  font-weight: 500;
+  white-space: nowrap;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1px;
+  transition: opacity 0.2s ease;
+}
+
+.atc-zone-bar__cta:hover {
+  opacity: 1;
+}
+
+.atc-zone-bar__arrow {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.atc-zone-bar__cta:hover .atc-zone-bar__arrow {
+  transform: translateX(3px);
+}
+
+/* ── Nav Zone Accent Colors ───────────────────────────────────── */
+/* Applied via data-nav-zone="{{ atc_nav_zone }}" on the <sht-header> tag */
+
+[data-nav-zone="growers"] .menu__link--active,
+[data-nav-zone="growers"] .menu__link:hover {
+  color: #3f4a28;              /* ATC Green */
+}
+
+[data-nav-zone="buyers"] .menu__link--active,
+[data-nav-zone="buyers"] .menu__link:hover {
+  color: #432f2a;              /* ATC Espresso */
+}
+
+[data-nav-zone="buyers"] .menu__link-lv2:hover {
+  color: #9f6f39;              /* ATC Burnt Orange */
+}
+
+/* ── Homepage Audience Selector ──────────────────────────────── */
+/* Added via Custom Liquid section in the Theme Editor.          */
+
+.atc-audience-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  margin: 40px 0;
+}
+
+.atc-audience-selector__option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 48px 40px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s ease;
+}
+
+.atc-audience-selector__option--growers {
+  background-color: #f4f6f1;
+  border-left: 4px solid #3f4a28;
+}
+
+.atc-audience-selector__option--growers:hover {
+  background-color: #e8ede3;
+}
+
+.atc-audience-selector__option--buyers {
+  background-color: #f7f4f1;
+  border-left: 4px solid #432f2a;
+}
+
+.atc-audience-selector__option--buyers:hover {
+  background-color: #f0e8e0;
+}
+
+.atc-audience-selector__label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.atc-audience-selector__desc {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  line-height: 1.5;
+  display: block;
+}
+
+/* ── Responsive ──────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .atc-zone-bar__message,
+  .atc-zone-bar__divider {
+    display: none;
+  }
+
+  .atc-zone-bar__inner {
+    justify-content: space-between;
+  }
+
+  .atc-audience-selector {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .atc-audience-selector__option {
+    padding: 32px 24px;
+  }
+}

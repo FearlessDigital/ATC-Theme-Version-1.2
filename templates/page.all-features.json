@@ -1,0 +1,1135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_page_title": true,
+        "enable_h1_tag": true,
+        "show_page_content": true
+      }
+    },
+    "image_banner_pGHFdh": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qMpgny": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Normal, but hardcore",
+            "heading_size": "h3",
+            "enable_h1_tag": true
+          }
+        },
+        "description_akDtTB": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>A minimalistic and timeless solution, perfect for showcasing large catalogs and maximizing conversions through advanced customization and user-focused functionality. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qMpgny",
+        "description_akDtTB"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 20,
+        "section_mask_overlay_color": "#000000",
+        "section_content_overlay_color": "#ffffff",
+        "desktop_image": "",
+        "section_image_width": "max-width",
+        "height_desktop": "70vh",
+        "desktop_content_position": "end-md",
+        "desktop_content_alignment": "ta-left-md top-md",
+        "height_mobile": "100vh",
+        "mobile_content_position": "start-xs",
+        "mobile_content_alignment": "ta-left top-xs",
+        "image_banner_link": ""
+      }
+    },
+    "icon_with_text_FaKdkL": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_with_text_item_B3wFp9": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "shop",
+            "custom_code": "",
+            "title": "Effortless Navigation for Large Catalogs",
+            "description": "<p>Navigate complexity with ease. Normcore empowers buyers to move smoothly through extensive catalogs, reaching their desired products quickly and exploring further without feeling overwhelmed.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_VqJBJF": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "add-to-cart",
+            "custom_code": "",
+            "title": "Seamless B2B and B2C Support",
+            "description": "<p>Designed for flexibility, Normcore accommodates both <strong>B2B</strong> and <strong>B2C</strong> models. From bulk purchasing for B2B clients to personalized deals for individual shoppers, Normcore ensures every customer gets exactly what they need, how they need it.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_QhbAMf": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "filter",
+            "custom_code": "",
+            "title": "Conversion-Driven Tools",
+            "description": "<p>Boost sales with Normcore’s powerful conversion features. Create irresistible deals and leverage robust cross-sell capabilities to guide buyers toward confident purchasing decisions, turning browsers into loyal customers.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_wMrje8": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "theme_library",
+            "theme_library_icon": "seal-check",
+            "custom_code": "",
+            "title": "'Normcore' Spirit Design",
+            "description": "<p>Emphasizes minimalism, comfort, and practicality over flamboyance and intricacy. Our goal is to develop a truly 'hardcore' product for store owners, ensuring ease of use and long-term sustainability. The concept of 'Normcore' embodies this philosophy: Normal but Hardcore.</p>",
+            "label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_item_B3wFp9",
+        "icon_with_text_item_VqJBJF",
+        "icon_with_text_item_QhbAMf",
+        "icon_with_text_item_wMrje8"
+      ],
+      "settings": {
+        "color_scheme": "schema-1",
+        "heading": "",
+        "heading_size": "h3-regular",
+        "description": "",
+        "text_position": "fd-column",
+        "icon_size": "icon-scale-3xl",
+        "icon_color": "",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "4",
+        "carousel_mobile": "true",
+        "label": "",
+        "link": ""
+      }
+    },
+    "content_collage_tAh7fC": {
+      "type": "content-collage",
+      "blocks": {
+        "text_tHPNXq": {
+          "type": "text",
+          "settings": {
+            "heading": "Varied media promotion layouts",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description": "<p>Versatile and multipurpose, the cutting-edge media-promotion sections easily handle images, slideshows, and videos, allowing you to enhance your online store with diverse content forms.</p>",
+            "desktop_content_position": "center-md",
+            "desktop_content_alignment": "ta-center-md middle-md",
+            "desktop_column": "4",
+            "desktop_row": "1",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-center middle-xs",
+            "mobile_column": "2",
+            "mobile_row": "2",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "",
+            "background_color": "",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "text_tHPNXq"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_fullwidth": false,
+        "show_layout_grid": false,
+        "desktop_row_height": 300,
+        "mobile_row_height": 130
+      }
+    },
+    "rich_text_LM3y7T": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fyHh93": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Media separating with text",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_gnnVFX": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>The section is a versatile layout that combines visuals with accompanying descriptions to create engaging and informative content. By integrating with media aside, this section is ideal for showcasing details, comparisons, or storytelling in a visually compelling way</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fyHh93",
+        "description_gnnVFX"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-left-md top-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "image_with_text_G6rFpk": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_CabENg": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Showcase images without downplaying your content",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "text_block_with_icon_B4Bey8": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Highlight Features and Comparisons",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Showcase product features or compare models with paired images and text. Display attributes, specifications, or designs clearly and effectively.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "bag-check",
+            "custom_code": "<!--?xml version=\"1.0\" encoding=\"UTF-8\"?--><svg width=\"24px\" height=\"24px\" stroke-width=\"1.5\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" color=\"#000000\"><path d=\"M14 20.4V14.6C14 14.2686 14.2686 14 14.6 14H20.4C20.7314 14 21 14.2686 21 14.6V20.4C21 20.7314 20.7314 21 20.4 21H14.6C14.2686 21 14 20.7314 14 20.4Z\" stroke=\"#000000\" stroke-width=\"1.5\"></path><path d=\"M3 20.4V14.6C3 14.2686 3.26863 14 3.6 14H9.4C9.73137 14 10 14.2686 10 14.6V20.4C10 20.7314 9.73137 21 9.4 21H3.6C3.26863 21 3 20.7314 3 20.4Z\" stroke=\"#000000\" stroke-width=\"1.5\"></path><path d=\"M14 9.4V3.6C14 3.26863 14.2686 3 14.6 3H20.4C20.7314 3 21 3.26863 21 3.6V9.4C21 9.73137 20.7314 10 20.4 10H14.6C14.2686 10 14 9.73137 14 9.4Z\" stroke=\"#000000\" stroke-width=\"1.5\"></path><path d=\"M3 9.4V3.6C3 3.26863 3.26863 3 3.6 3H9.4C9.73137 3 10 3.26863 10 3.6V9.4C10 9.73137 9.73137 10 9.4 10H3.6C3.26863 10 3 9.73137 3 9.4Z\" stroke=\"#000000\" stroke-width=\"1.5\"></path></svg>",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-full-width",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        },
+        "text_block_with_icon_paifBQ": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Demonstrate Versatility",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Show how a product adapts to different settings or uses, such as indoor vs. outdoor or work vs. travel. Visuals with text make use cases clear and relatable.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "scales",
+            "custom_code": "",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-full-width",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        },
+        "text_block_with_icon_WXRTqq": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Tell Stories or Promote Offers",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Share brand milestones, values, or key messages with impactful visuals and concise text. Highlight promotions or products to quickly convey value.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "discount",
+            "custom_code": "",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-full-width",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CabENg",
+        "text_block_with_icon_B4Bey8",
+        "text_block_with_icon_paifBQ",
+        "text_block_with_icon_WXRTqq"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image_alignment": "on_scroll",
+        "image_1_link": "",
+        "image_2": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "text_first",
+        "desktop_media_width": "8",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "fd-column-reverse",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "video_with_text_aNxrLV": {
+      "type": "video-with-text",
+      "blocks": {
+        "heading_hc7jhm": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Use content and video to support each other",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "text_block_with_icon_8zRB3i": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Showcase Features and Benefits",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Demonstrate product features or service benefits with engaging videos, supported by text for key highlights or additional context.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "gift",
+            "custom_code": "",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-one-two",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        },
+        "text_block_with_icon_bVVkaC": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Tell Your Brand’s Story",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Use videos to share your brand’s journey, values, or milestones, with text adding depth or guiding viewers toward a call to action.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "happy",
+            "custom_code": "",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-one-two",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        },
+        "text_block_with_icon_ERMncm": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Explain Processes or Tutorials",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Provide step-by-step instructions, tutorials, or process overviews with videos, while text clarifies or emphasizes crucial points.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "notes",
+            "custom_code": "",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-one-two",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        },
+        "text_block_with_icon_CapCbJ": {
+          "type": "text_block_with_icon",
+          "settings": {
+            "title": "Promote Offers or Events",
+            "heading_size_text_icon": "h6",
+            "description": "<p>Highlight promotions, campaigns, or event highlights with dynamic videos, complemented by text to reinforce the message or key details.</p>",
+            "icon_source": "theme_library",
+            "theme_library_icon": "calendar",
+            "custom_code": "",
+            "icon_color": "",
+            "block_width_desktop": "desktop-width-one-two",
+            "block_width_mobile": "mobile-width-full-width"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hc7jhm",
+        "text_block_with_icon_8zRB3i",
+        "text_block_with_icon_bVVkaC",
+        "text_block_with_icon_ERMncm",
+        "text_block_with_icon_CapCbJ"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "video_source": "video_external",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "media_ratio": "auto",
+        "enable_video_mute": true,
+        "content_ordering": "fd-row-reverse-md",
+        "media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "fd-column-reverse",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "rich_text_NtDfTc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kHYXeT": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Flexibility of Media Banners",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_66mVwb": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Image and Video Banners are highly adaptable, allowing you to adjust their height and width to suit different goals and media types. Whether creating immersive full-screen displays for maximum impact or more compact banners for subtle emphasis, this flexibility ensures your content aligns perfectly with its purpose. The customization accommodates various media characteristics, enabling banners to seamlessly enhance the visual appeal and functionality of your layout.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_kHYXeT",
+        "description_66mVwb"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-right-md bottom-md",
+        "mobile_content_alignment": "ta-right bottom-xs"
+      }
+    },
+    "image_banner_f7NpUT": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pnT9NL": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Using the image to create an immersive banner",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pnT9NL"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "#000000",
+        "section_content_overlay_color": "#ffffff",
+        "desktop_image": "",
+        "section_image_width": "max-width",
+        "height_desktop": "70vh",
+        "desktop_content_position": "start-md",
+        "desktop_content_alignment": "ta-left-md top-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": ""
+      }
+    },
+    "video_banner_epH796": {
+      "type": "video-banner",
+      "blocks": {
+        "heading_hriFL7": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Emphasis your content with movement",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_hriFL7"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "#000000",
+        "section_content_overlay_color": "#ffffff",
+        "video_source": "video_external",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "enable_controller": true,
+        "enable_loop": true,
+        "video_control_color": "transparent",
+        "section_image_width": "max-width",
+        "height_desktop": "70vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": ""
+      }
+    },
+    "slideshow_fJ6Egy": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_RBPdLh": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "Showcase multiple images with slideshow",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description_text": "",
+            "background_image": "",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-center middle-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 30,
+            "section_mask_overlay_color": "#000000",
+            "section_content_overlay_color": "#ffffff"
+          }
+        },
+        "slide_3wkB7E": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "Customize each slide in depth for the best display",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description_text": "",
+            "background_image": "",
+            "content_position": "top-md",
+            "content_alignment": "ta-center-md middle-md",
+            "mobile_content_position": "middle-xs",
+            "mobile_content_alignment": "ta-center middle-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "#ffffff",
+            "section_content_overlay_color": "#000000"
+          }
+        },
+        "slide_EfxCQg": {
+          "type": "slide",
+          "settings": {
+            "subheading_text": "",
+            "heading_text": "Embed link to the whole slide",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description_text": "",
+            "background_image": "",
+            "content_position": "top-md",
+            "content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "top-xs",
+            "mobile_content_alignment": "ta-center middle-xs",
+            "button_primary_label": "",
+            "button_primary_style": "primary",
+            "button_primary_link": "",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "",
+            "image_banner_link": "",
+            "overlay_opacity": 0,
+            "section_mask_overlay_color": "",
+            "section_content_overlay_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_RBPdLh",
+        "slide_3wkB7E",
+        "slide_EfxCQg"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_transparent_header": false,
+        "show_pagination": true,
+        "show_navigation": true,
+        "enable_autoplay": true,
+        "change_slide_interval": 5,
+        "slide_style": "secondary",
+        "slideshow_width": "max-width",
+        "slideshow_height": "70vh",
+        "mobile_slideshow_height": "70vh",
+        "slideshow_description": ""
+      }
+    },
+    "divider_3gJ4wh": {
+      "type": "divider",
+      "settings": {
+        "divider_color": "#ededed"
+      }
+    },
+    "multi_media_banner_VhiUnc": {
+      "type": "multi-media-banner",
+      "blocks": {
+        "video_UT6zmq": {
+          "type": "video",
+          "settings": {
+            "heading": "Tell a story",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description": "",
+            "video_source": "video_external",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "overlay_opacity": 30,
+            "mask_overlay_color": "#000000",
+            "content_overlay_color": "#ffffff",
+            "desktop_content_position": "end-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "end-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": ""
+          }
+        },
+        "image_VbCQED": {
+          "type": "image",
+          "settings": {
+            "heading": "With various media and layouts",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description": "",
+            "desktop_image": "",
+            "overlay_opacity": 20,
+            "mask_overlay_color": "#000000",
+            "content_overlay_color": "#ffffff",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-right-md bottom-md",
+            "mobile_content_position": "end-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": ""
+          }
+        },
+        "image_VMEF9L": {
+          "type": "image",
+          "settings": {
+            "heading": "To create visual appeals",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description": "",
+            "desktop_image": "",
+            "overlay_opacity": 30,
+            "mask_overlay_color": "#000000",
+            "content_overlay_color": "#ffffff",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "mobile_content_position": "end-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_UT6zmq",
+        "image_VbCQED",
+        "image_VMEF9L"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "section_image_width": "max-width",
+        "height_desktop": "70vh",
+        "desktop_layout": "desktop-stack desktop--first-emphasis",
+        "height_mobile": "100vh",
+        "mobile_layout": "mobile-column mobile--first-emphasis"
+      }
+    },
+    "divider_nbk6HJ": {
+      "type": "divider",
+      "settings": {
+        "divider_color": "#ededed"
+      }
+    },
+    "image_with_hotspot_zR99Ty": {
+      "type": "image-with-hotspot",
+      "blocks": {
+        "product_hotspot_fVFBRP": {
+          "type": "product_hotspot",
+          "settings": {
+            "top_offset": 60,
+            "left_offset": 60,
+            "top_offset_mobile": 60,
+            "left_offset_mobile": 60,
+            "product": "",
+            "show_vendor": true,
+            "show_price": true
+          }
+        },
+        "product_hotspot_gyVagz": {
+          "type": "product_hotspot",
+          "settings": {
+            "top_offset": 83,
+            "left_offset": 31,
+            "top_offset_mobile": 60,
+            "left_offset_mobile": 60,
+            "product": "",
+            "show_vendor": true,
+            "show_price": true
+          }
+        }
+      },
+      "block_order": [
+        "product_hotspot_fVFBRP",
+        "product_hotspot_gyVagz"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "subheading_text": "",
+        "heading": "Hot spots above image",
+        "heading_size": "h3",
+        "enable_h1_tag": false,
+        "description": "<p>Highlight product features or combine multiple products using hot spot</p>",
+        "desktop_image": "",
+        "section_image_width": "max-width",
+        "desktop_content_position": "start-md",
+        "desktop_content_alignment": "ta-left-md top-md",
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "#000000",
+        "section_content_overlay_color": "#ffffff",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "hotspot_background": "#ffffff",
+        "hotspot_color": "#000000"
+      }
+    },
+    "before_after_images_dVmyRn": {
+      "type": "before-after-images",
+      "settings": {
+        "color_scheme": "",
+        "heading": "Create a parallel view",
+        "heading_size": "h3",
+        "description": "<p>Use visuals to compare product or service states, showing transformations and improvements. Compare product features or display in different settings. Show two service stages like initial design vs. completed project.</p>",
+        "desktop_image_before": "",
+        "label_image_before": "Before",
+        "desktop_image_after": "",
+        "label_image_after": "After",
+        "heading_alignment_desktop": "ta-left-md top-md",
+        "heading_alignment_mobile": "ta-center middle-xs"
+      }
+    },
+    "content_collage_Udd7eK": {
+      "type": "content-collage",
+      "blocks": {
+        "video_Atg6yB": {
+          "type": "video",
+          "settings": {
+            "heading": "",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description": "",
+            "video_source": "video_external",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "desktop_column": "2",
+            "desktop_row": "3",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "2",
+            "mobile_row": "2",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "",
+            "overlay_opacity": 0,
+            "mask_overlay_color": "",
+            "content_overlay_color": ""
+          }
+        },
+        "text_cg4WVt": {
+          "type": "text",
+          "settings": {
+            "heading": "Unleash the power of storytelling with content collage that adapts perfectly to your unique needs",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description": "",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "desktop_column": "2",
+            "desktop_row": "1",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "2",
+            "mobile_row": "1",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "",
+            "background_color": "",
+            "text_color": ""
+          }
+        },
+        "image_Ugnd8R": {
+          "type": "image",
+          "settings": {
+            "heading": "",
+            "enable_h1_tag": false,
+            "heading_size": "h2",
+            "description": "",
+            "desktop_image": "",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "desktop_column": "2",
+            "desktop_row": "1",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "2",
+            "mobile_row": "1",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "",
+            "overlay_opacity": 0,
+            "mask_overlay_color": "",
+            "content_overlay_color": ""
+          }
+        },
+        "product_Wawk6E": {
+          "type": "product",
+          "settings": {
+            "product": "",
+            "show_title": true,
+            "title_size": "h3",
+            "show_price": true,
+            "show_variant_swatches": true,
+            "limited_variants_to_show": 5,
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "desktop_column": "2",
+            "desktop_row": "3",
+            "mobile_content_position": "start-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "2",
+            "mobile_row": "1",
+            "overlay_opacity": 0,
+            "mask_overlay_color": "",
+            "content_overlay_color": "",
+            "price_color": "#fd0000"
+          }
+        },
+        "collection_GGdjgk": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "show_title": true,
+            "title_size": "h3",
+            "show_collection_quantity": true,
+            "quantity_style": "superscript",
+            "desktop_content_position": "start-md",
+            "desktop_content_alignment": "ta-left-md top-md",
+            "desktop_column": "2",
+            "desktop_row": "2",
+            "mobile_content_position": "start-xs",
+            "mobile_content_alignment": "ta-left top-xs",
+            "mobile_column": "2",
+            "mobile_row": "1",
+            "overlay_opacity": 0,
+            "mask_overlay_color": "",
+            "content_overlay_color": "#ffffff"
+          }
+        },
+        "text_9JbhFr": {
+          "type": "text",
+          "settings": {
+            "heading": "With endless possibilities, this section becomes the ultimate storytelling tool, blending design and functionality to engage, inform, and inspire.",
+            "enable_h1_tag": false,
+            "heading_size": "h3",
+            "description": "",
+            "desktop_content_position": "center-md",
+            "desktop_content_alignment": "ta-center-md middle-md",
+            "desktop_column": "4",
+            "desktop_row": "1",
+            "mobile_content_position": "center-xs",
+            "mobile_content_alignment": "ta-center middle-xs",
+            "mobile_column": "2",
+            "mobile_row": "2",
+            "button_label": "",
+            "button_style": "primary",
+            "button_link": "",
+            "background_color": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_Atg6yB",
+        "text_cg4WVt",
+        "image_Ugnd8R",
+        "product_Wawk6E",
+        "collection_GGdjgk",
+        "text_9JbhFr"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "enable_fullwidth": false,
+        "show_layout_grid": false,
+        "desktop_row_height": 300,
+        "mobile_row_height": 300
+      }
+    },
+    "image_gallery_wbQjkw": {
+      "type": "image-gallery",
+      "blocks": {
+        "image_KD3rAJ": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_RdeFYF": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_EBcBMP": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_iGT3At": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_DkjJPH": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_MJC9Q6": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_BXPz4g": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_yH93nm": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_UE3ag7": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_RKXzqp": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        },
+        "image_Gb3WRW": {
+          "type": "image",
+          "settings": {
+            "item_image": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_KD3rAJ",
+        "image_RdeFYF",
+        "image_EBcBMP",
+        "image_iGT3At",
+        "image_DkjJPH",
+        "image_MJC9Q6",
+        "image_BXPz4g",
+        "image_yH93nm",
+        "image_UE3ag7",
+        "image_RKXzqp",
+        "image_Gb3WRW"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "heading": "Building your masonry",
+        "heading_size": "h5",
+        "description": "",
+        "enable_offset_columns": true,
+        "image_ratio": "auto",
+        "desktop_column": "4",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "spotlight_quotes_i7tTy6": {
+      "type": "spotlight-quotes",
+      "blocks": {
+        "quote_xqJhyT": {
+          "type": "quote",
+          "settings": {
+            "star_rating": 5,
+            "review_content": "<p>The right interior transforms a store into an experience, making customers feel inspired, comfortable, and eager to explore.</p>",
+            "author_name": "Emma Carter",
+            "author_description": "Marketing Manager"
+          }
+        },
+        "quote_XCKeLi": {
+          "type": "quote",
+          "settings": {
+            "star_rating": 5,
+            "review_content": "<p>A well-designed store interior doesn't just sell products—it creates a feeling of belonging and connection that keeps customers coming back.</p>",
+            "author_name": "James Taylor",
+            "author_description": "Sales Representative"
+          }
+        }
+      },
+      "block_order": [
+        "quote_xqJhyT",
+        "quote_XCKeLi"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_quote_icon": true,
+        "quote_text_size": "headline",
+        "content_alignment": "ta-center middle-xs",
+        "image_ratio": "auto",
+        "image_size": "64",
+        "show_rating": true,
+        "star_rating_color": "#ffb82d",
+        "show_pagination": true,
+        "show_navigation": true,
+        "enable_autoplay": true,
+        "change_slide_interval": 5,
+        "slide_style": "transparent"
+      }
+    },
+    "testimonials_3BxR8Q": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_ay4XX3": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<p>I’ve been a loyal customer for years, and I’m always impressed by how long-lasting and comfortable their clothes are. Highly recommend!</p>",
+            "author_name": "Olivia Wilson",
+            "author_description": "Content Creator"
+          }
+        },
+        "testimonial_yHX8xi": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<p>I love how trendy their collections are without breaking the bank. Perfect for anyone looking to stay stylish on a budget.</p>",
+            "author_name": "Liam Johnson",
+            "author_description": "Product Designer"
+          }
+        },
+        "testimonial_N9nQ8M": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 5,
+            "review_content": "<p>Easy website navigation, fast shipping, and the clothes fit exactly as described. I’ll definitely shop here again.</p>",
+            "author_name": "Sophia Brown",
+            "author_description": "Customer Support Specialist"
+          }
+        },
+        "testimonial_jQ3wFf": {
+          "type": "testimonial",
+          "settings": {
+            "rating": 3,
+            "review_content": "<p>As someone with curves, I struggle to find clothes that fit well, but their inclusive sizing is a game-changer. Love everything I’ve bought so far!</p>",
+            "author_name": "Noah Davis",
+            "author_description": "Software Engineer"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_ay4XX3",
+        "testimonial_yHX8xi",
+        "testimonial_N9nQ8M",
+        "testimonial_jQ3wFf"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "heading": "Or Showing multiple testimonials at once",
+        "heading_size": "h3-regular",
+        "description": "",
+        "heading_size_item": "f-body fs-body-xl",
+        "content_alignment": "ta-left top-xs",
+        "image_ratio": "1/1",
+        "image_size": "large",
+        "show_rating": true,
+        "color_rating": "#ffb82d",
+        "carousel_desktop": "true",
+        "columns_per_row": "4",
+        "carousel_mobile": "true",
+        "label": "",
+        "link": ""
+      }
+    },
+    "rich_text_BqVMwy": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_anEi7m": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Expert help & resources",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_NVxJky": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Can't figure out something with our themes?<br/>Don't worry, our support team is just a click away.</p>"
+          }
+        },
+        "button_yziTgA": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Read Docs",
+            "button_primary_style": "secondary",
+            "button_primary_link": "",
+            "button_secondary_label": "Contact us",
+            "button_secondary_style": "primary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_anEi7m",
+        "description_NVxJky",
+        "button_yziTgA"
+      ],
+      "settings": {
+        "color_scheme": "scheme-206402cf-0ad6-469e-a6e7-0a7e0526ddad",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-center middle-xs"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_pGHFdh",
+    "icon_with_text_FaKdkL",
+    "content_collage_tAh7fC",
+    "rich_text_LM3y7T",
+    "image_with_text_G6rFpk",
+    "video_with_text_aNxrLV",
+    "rich_text_NtDfTc",
+    "image_banner_f7NpUT",
+    "video_banner_epH796",
+    "slideshow_fJ6Egy",
+    "divider_3gJ4wh",
+    "multi_media_banner_VhiUnc",
+    "divider_nbk6HJ",
+    "image_with_hotspot_zR99Ty",
+    "before_after_images_dVmyRn",
+    "content_collage_Udd7eK",
+    "image_gallery_wbQjkw",
+    "spotlight_quotes_i7tTy6",
+    "testimonials_3BxR8Q",
+    "rich_text_BqVMwy"
+  ]
+}

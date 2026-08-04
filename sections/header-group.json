@@ -1,0 +1,113 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "message_zcPYxL": {
+          "type": "message",
+          "disabled": true,
+          "settings": {
+            "message_text": "NEW! Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "message_action": "open_link",
+            "select_page": "",
+            "message_link": "",
+            "icon_before_message": false,
+            "icon_source": "theme_library",
+            "theme_library_icon": "discount",
+            "custom_code": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_zcPYxL"
+      ],
+      "custom_css": [
+        ".anmb-item__wrapper {justify-content: center !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_fullwidth": false,
+        "section_style": "slide",
+        "rotating_speed": "5",
+        "hover_interaction": "slow_down",
+        "show_navigation": true,
+        "text_size": "fs-body-m",
+        "show_icon_link": true,
+        "show_icon_popup": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "horizontal_menu_HJndpX": {
+          "type": "horizontal_menu",
+          "settings": {
+            "main_menu": "main-menu",
+            "text_size": "fs-menu-item-regular",
+            "block_width": "4",
+            "block_alignment": "end-lg ta-right-lg",
+            "show_in_menu_drawer": true
+          }
+        }
+      },
+      "block_order": [
+        "horizontal_menu_HJndpX"
+      ],
+      "custom_css": [
+        ".header__icon--search,.header__icon--account,.header__icon--cart {display: none !important;}",
+        ".header__item.header__menu.menu--horizontal.js-menu-drawer-content.d-flex-lg.d-flex-xs.d-none ~ .header__item.header__menu.menu--horizontal.js-menu-drawer-content.d-flex-lg.d-flex-xs.d-none {display: none !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "enable_fullwidth": true,
+        "show_layout_grid": false,
+        "header_layout_mobile": "logo-center",
+        "dropdown_menu_open_type": "click",
+        "atc_growers_paths": "/pages/growers,/pages/partnership,/pages/consulting,/pages/land-search-guidance,/pages/root-analysis-monitoring,/pages/soil-analysis,/pages/truffle-fundamentals,/pages/our-technology,/pages/about,/pages/contact",
+        "atc_buyers_paths": "/collections/,/products/,/pages/wholesale,/pages/seasonal-availability,/pages/find-a-retailer,/pages/truffle-buyers,/collections/all",
+        "atc_blog_slug": "/blogs/news",
+        "atc_growers_menu": "main-menu",
+        "atc_show_growers_zone_bar": false,
+        "atc_buyers_menu": "buyers-navigation",
+        "atc_show_buyers_zone_bar": false,
+        "logo_image": "shopify://shop_images/ATC_Logo_Wide_Espresso.png",
+        "enable_h1_tag": false,
+        "logo_width_desktop": "3",
+        "logo_max_width_desktop": 270,
+        "logo_max_width_mobile": 140,
+        "utilities_width_desktop": "2",
+        "button_style_desktop": "header__style-icon",
+        "button_style_mobile": "header__style-icon-mb",
+        "button_text_size": "fs-menu-item-regular",
+        "show_currency_selector": "show-full",
+        "show_language_selector": true,
+        "header_sticky": "true",
+        "sticky_color_scheme": "scheme-3",
+        "sticky_background_opacity": 90,
+        "sticky_enable_glass_effects": false,
+        "sticky_logo_max_width_desktop": 270,
+        "sticky_logo_max_width_mobile": 140,
+        "transparent_color_scheme": "schema-1",
+        "transparent_background_opacity": 0,
+        "transparent_enable_glass_effects": false,
+        "transparent_logo_max_width_desktop": 270,
+        "transparent_logo_max_width_mobile": 140
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}

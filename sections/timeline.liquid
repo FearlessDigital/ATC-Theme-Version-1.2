@@ -1,0 +1,203 @@
+<section class="timeline-wrapper">
+  {% if section.settings.section_heading != blank %}
+    <h2 class="timeline-title ta-center">{{ section.settings.section_heading }}</h2>
+  {% endif %}
+
+  <div class="timeline__slides">
+    {% for block in section.blocks %}
+      <div class="timeline__slide" {{ block.shopify_attributes }}>
+        {% if block.settings.image != blank %}
+          <div class="timeline__image">
+            <img
+              src="{{ block.settings.image | img_url: '600x' }}"
+              alt="{{ block.settings.heading | escape }}"
+              loading="lazy"
+            >
+          </div>
+        {% endif %}
+        <div class="timeline__content">
+          {% if block.settings.heading != blank %}
+            <h5 class="timeline__heading">{{ block.settings.heading }}</h5>
+          {% endif %}
+          {% if block.settings.subheading != blank %}
+            <p class="timeline__subheading">{{ block.settings.subheading }}</p>
+          {% endif %}
+          {% if block.settings.description != blank %}
+            <p class="timeline__text">{{ block.settings.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+      <div class="line"></div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+
+  .timeline-wrapper{
+    background: #f8f6ed;
+  }
+  .timeline__slides{
+    padding: 8em 0;
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+    @media (max-width:580px){
+      flex-direction: column;
+      padding: 4em 0;
+    }
+  }
+
+  .timeline__slide{
+    display: flex;
+    flex-wrap: wrap;
+    width: 23%;
+    margin: 0 auto;
+    text-align: center;
+    align-self: baseline;
+    position:relative;
+    z-index:1;
+    cursor:pointer;
+    &.active{
+      img{
+        scale:1;
+        border-radius: 16px;
+      }
+      .timeline__text{
+        opacity:1;
+        transform: translateY(0);
+      }
+    }
+    @media (max-width: 580px){
+      width:80%;
+      margin-bottom: 40px;
+      img{
+        scale:1!important;
+        border-radius: 0!important;
+      }
+      .timeline__text{
+        opacity:1!important;
+        transform: translateY(0)!important;
+      }
+    }
+  }
+
+  .line{
+      width: 19%;
+      height: 1px;
+      background-color: #97aa8a;
+      margin-left: -9%;
+      margin-right: -9%;
+      margin-top: 4.8em;
+      align-self: flex-start;
+      opacity: .6;
+      &:last-child{
+        display:none;
+      }
+      @media (max-width:580px){
+        display:none;
+      }
+  }
+.timeline__content{
+  margin-top:30px;
+  font-family: "Newsreader";
+  color: #666;
+}
+
+.timeline__subheading{
+  font-style: italic;
+}
+
+.timeline__text{
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease all;
+  transform: translateY(28px);
+  max-width: 18em;
+  margin: 0 auto;
+  font-family: "Montserrat";
+}
+
+.timeline__image{
+  height:10em;
+  margin: 0 auto;
+  img{
+    height: 100%;
+    object-fit: contain;
+    scale: 0.1;
+    border-radius: 9000px;
+    transform-origin: 50% 50%;
+    transition: .4s ease all;
+  }
+}
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const items = document.querySelectorAll('.timeline__slide');
+
+    if (items.length > 0) items[0].classList.add('active');
+
+    items.forEach((item) => {
+      item.addEventListener('click', () => {
+        items.forEach((i) => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Timeline",
+  "tag": "section",
+  "class": "timeline-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section heading",
+      "default": "Our Journey"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "timeline_item",
+      "name": "Timeline item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "2020"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Milestone reached"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "This was the year we launched our first collection and expanded internationally."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 10,
+  "presets": [
+    {
+      "name": "Timeline",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

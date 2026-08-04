@@ -1,0 +1,683 @@
+<section class="two-column-newsletter">
+  <div class="container">
+    <div class="two-column-newsletter__inner {% if section.settings.hide_left %}one-col{% endif %}">
+      <!-- Left column -->
+      <div
+        class="two-column-newsletter__left {% if section.settings.hide_left %}one-col{% endif %}"
+        style="background-image: url({{ section.settings.left_bg_image | image_url: width: 1200 }}); background-size: cover; background-position: center;"
+      >
+        <div class="two-column-newsletter__content">
+          {% if section.settings.left_heading != blank %}
+            <h2>{{ section.settings.left_heading }}</h2>
+          {% endif %}
+          {% if section.settings.left_text != blank %}
+            <p>{{ section.settings.left_text }}</p>
+          {% endif %}
+          {% if section.settings.left_button_label != blank and section.settings.left_button_url != blank %}
+            <a href="{{ section.settings.left_button_url }}" class="btn btn-tertiary">
+              {{ section.settings.left_button_label }}
+            </a>
+          {% endif %}
+        </div>
+      </div>
+      <!-- Right column -->
+      <div class="two-column-newsletter__right" style="background-color: {{ section.settings.right_bg_color }};">
+        <div class="two-column-newsletter__content">
+          {% if section.settings.right_heading != blank %}
+            <h2>{{ section.settings.right_heading }}</h2>
+          {% endif %}
+          {% if section.settings.right_text != blank %}
+            <p>{{ section.settings.right_text }}</p>
+          {% endif %}
+
+          <!-- Inline Newsletter Form -->
+          {% if sections.settings.show_form %}
+          {%- assign form_id = 'newsletterForm-' | append: section.id -%}
+          {%- form 'customer', id: form_id, class: 'two-column-newsletter__form' -%}
+            <input type="hidden" name="contact[tags]" value="newsletter">
+
+            <div class="form__field d-flex fw-wrap text-{{ section.settings.alignment }}">
+              <div class="form-group selector">
+                <label class="radio-label">{{ section.settings.radio_label }}</label>
+                {% assign radio_options = section.settings.radio_options | split: ',' %}
+                {% for option in radio_options %}
+                  {% assign option_trimmed = option | strip %}
+                  <input type="radio" name="subscription_type" value="{{ option_trimmed | downcase | replace: ' ', '_' }}" id="{{ option_trimmed | handle }}">
+                  <label for="{{ option_trimmed | handle }}">{{ option_trimmed }}</label>
+                {% endfor %}
+              </div>
+
+              <div class="newsletter-input-wrapper">
+                <input
+                  id="{{ form_id }}-email"
+                  type="email"
+                  name="contact[email]"
+                  class="field__text form__newsletter--input fs-body-m fg-1"
+                  value="{{ form.email }}"
+                  aria-required="true"
+                  autocorrect="off"
+                  autocapitalize="off"
+                  autocomplete="email"
+                  placeholder="Enter your email"
+                  required
+                >
+
+                <button
+                  type="submit"
+                  class="btn js-subscribe-btn"
+                  name="commit"
+                  aria-label="{{ section.settings.button_label }}"
+                >
+                  {{ section.settings.button_label }}
+                </button>
+              </div>
+            </div>
+
+            {% if form.posted_successfully? %}
+              <p class="newsletter-success">Thank you for subscribing!</p>
+            {% elsif form.errors %}
+              <p class="newsletter-error">Please enter a valid email.</p>
+            {% endif %}
+          {%- endform -%}
+          {% endif %}
+          <!-- App Blocks -->
+          {% for block in section.blocks %}
+            <div class="app-block-wrapper" {{ block.shopify_attributes }}>
+              {% render block %}
+            </div>
+          {% endfor %}
+
+          {{ section.settings.zoho_form }}
+          
+          {% comment %} <!-- Begin Constant Contact Inline Form Code -->
+          <div class="ctct-inline-form" data-form-id="449ae924-8a40-409a-9e59-3e6201f02029"></div>
+          <!-- End Constant Contact Inline Form Code --> {% endcomment %}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Get references to conditional fields wrappers
+  const totalAcresField = document.querySelector('input[name="SingleLine3"]').closest('.zf-tempFrmWrapper');
+  const availableAcresField = document.querySelector('input[name="SingleLine4"]').closest('.zf-tempFrmWrapper');
+  const stateField = document.querySelector('select[name="Dropdown"]').closest('.zf-tempFrmWrapper');
+  
+  // Get radio button groups
+  const ownLandRadios = document.querySelectorAll('input[name="Radio1"]');
+  const countryRadios = document.querySelectorAll('input[name="Radio"]');
+  
+  // Initially hide conditional fields
+  totalAcresField.style.display = 'none';
+  availableAcresField.style.display = 'none';
+  stateField.style.display = 'none';
+  
+  // Toggle State field visibility based on Country selection
+  countryRadios.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      if (this.value === 'United States') {
+        stateField.style.display = 'block';
+      } else {
+        stateField.style.display = 'none';
+        // Reset dropdown when hidden
+        document.querySelector('select[name="Dropdown"]').value = '-Select-';
+      }
+    });
+  });
+  
+  // Toggle acres fields visibility based on "Do you own land?" selection
+  ownLandRadios.forEach(function(radio) {
+    radio.addEventListener('change', function() {
+      if (this.value === 'Yes') {
+        totalAcresField.style.display = 'block';
+        availableAcresField.style.display = 'block';
+      } else {
+        totalAcresField.style.display = 'none';
+        availableAcresField.style.display = 'none';
+        // Clear values when hidden
+        document.querySelector('input[name="SingleLine3"]').value = '';
+        document.querySelector('input[name="SingleLine4"]').value = '';
+      }
+    });
+  });
+  
+  // Form validation
+  const form = document.getElementById('form');
+  
+  form.addEventListener('submit', function(e) {
+    let isValid = true;
+    
+    // Required fields configuration
+    const requiredFields = [
+      { name: 'SingleLine', label: 'First Name' },
+      { name: 'SingleLine1', label: 'Last Name' },
+      { name: 'Email', label: 'Email' },
+      { name: 'PhoneNumber_countrycode', label: 'Mobile' },
+      { name: 'SingleLine2', label: 'City' },
+      { name: 'Radio', label: 'Country', type: 'radio' },
+      { name: 'Radio1', label: 'Do you own land?', type: 'radio' }
+    ];
+    
+    // Clear previous error styles
+    document.querySelectorAll('.zf-errorMessage').forEach(el => el.style.display = 'none');
+    document.querySelectorAll('.zf-error-highlight').forEach(el => el.classList.remove('zf-error-highlight'));
+    
+    // Validate each required field
+    requiredFields.forEach(function(field) {
+      if (field.type === 'radio') {
+        const radios = document.querySelectorAll(`input[name="${field.name}"]`);
+        const isChecked = Array.from(radios).some(radio => radio.checked);
+        
+        if (!isChecked) {
+          isValid = false;
+          const errorEl = document.getElementById(`${field.name}_error`);
+          if (errorEl) {
+            errorEl.style.display = 'block';
+            errorEl.textContent = `${field.label} is required`;
+          }
+        }
+      } else {
+        const input = document.querySelector(`input[name="${field.name}"]`);
+        if (!input.value.trim()) {
+          isValid = false;
+          input.classList.add('zf-error-highlight');
+          const errorEl = document.getElementById(`${field.name}_error`);
+          if (errorEl) {
+            errorEl.style.display = 'block';
+            errorEl.textContent = `${field.label} is required`;
+          }
+        }
+      }
+    });
+    
+    // Validate email format
+    const emailInput = document.querySelector('input[name="Email"]');
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailInput.value.trim() && !emailRegex.test(emailInput.value.trim())) {
+      isValid = false;
+      emailInput.classList.add('zf-error-highlight');
+      const errorEl = document.getElementById('Email_error');
+      if (errorEl) {
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Please enter a valid email address';
+      }
+    }
+    
+    // Validate State if United States is selected
+    const usRadio = document.getElementById('Radio_1');
+    if (usRadio && usRadio.checked) {
+      const stateDropdown = document.querySelector('select[name="Dropdown"]');
+      if (stateDropdown.value === '-Select-') {
+        isValid = false;
+        stateDropdown.classList.add('zf-error-highlight');
+        const errorEl = document.getElementById('Dropdown_error');
+        if (errorEl) {
+          errorEl.style.display = 'block';
+          errorEl.textContent = 'State is required';
+        }
+      }
+    }
+    
+    // Validate acres fields if "Yes" is selected for owning land
+    const ownLandYes = document.getElementById('Radio1_1');
+    if (ownLandYes && ownLandYes.checked) {
+      const totalAcres = document.querySelector('input[name="SingleLine3"]');
+      const availableAcres = document.querySelector('input[name="SingleLine4"]');
+      
+      if (!totalAcres.value.trim()) {
+        isValid = false;
+        totalAcres.classList.add('zf-error-highlight');
+        const errorEl = document.getElementById('SingleLine3_error');
+        if (errorEl) {
+          errorEl.style.display = 'block';
+          errorEl.textContent = 'Total acres is required';
+        }
+      }
+      
+      if (!availableAcres.value.trim()) {
+        isValid = false;
+        availableAcres.classList.add('zf-error-highlight');
+        const errorEl = document.getElementById('SingleLine4_error');
+        if (errorEl) {
+          errorEl.style.display = 'block';
+          errorEl.textContent = 'Available acres is required';
+        }
+      }
+    }
+    
+    if (!isValid) {
+      e.preventDefault();
+      // Scroll to first error
+      const firstError = document.querySelector('.zf-error-highlight, .zf-errorMessage[style*="block"]');
+      if (firstError) {
+        firstError.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
+  });
+});
+</script>
+
+<style>
+.zf-error-highlight {
+  border: 1px solid #ff0000 !important;
+  background-color: #fff0f0 !important;
+}
+
+.zf-errorMessage {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+</style>
+
+{% style %}
+.two-column-newsletter__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  &.one-col{
+    grid-template-columns: 1fr;
+  }
+  h2{
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .two-column-newsletter__inner {
+    grid-template-columns: 1fr;
+  }
+}
+
+.two-column-newsletter__left,
+.two-column-newsletter__right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 130px 40px;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .two-column-newsletter__left,
+  .two-column-newsletter__right {
+    padding: 40px;
+  }
+}
+
+.two-column-newsletter__left {
+  color: white;
+  &.one-col{
+    display:none;
+  }
+}
+.two-column-newsletter__right h2,
+.two-column-newsletter__right p {
+  color: #636855;
+}
+
+.two-column-newsletter__content {
+  max-width: 500px;
+}
+.two-column-newsletter__content .btn {
+  display: table;
+  margin: 0 auto;
+  color: #f8f6ed;
+}
+
+.two-column-newsletter__form .fw-wrap {
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  margin-right: 10px;
+  &:not(.radio-label){
+    font-size: 14px;
+  }
+}
+
+.form-group .radio-label{
+  font-style: italic;
+  font-family: "Newsreader";
+  font-weight: 600;
+}
+
+/* === Updated Newsletter Input + Button Layout === */
+.newsletter-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+  position:relative;
+}
+
+.form__newsletter--input {
+  flex: 1;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 12px 15px;
+  font-size: 15px;
+  transition: border-color 0.2s ease;
+  width:100%;
+  max-width: 100%;
+}
+
+.form__newsletter--input:focus {
+  border-color: #636855;
+  outline: none;
+}
+
+/* Button beside input */
+.js-subscribe-btn {
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 24px;
+  cursor: pointer;
+  position:absolute;
+  background:none;
+  color: #636855!important;
+  right:0;
+  text-decoration: underline;
+}
+
+.selector{
+  color: #636855;
+  input[type="radio"] {
+    accent-color: #636855;
+  }
+}
+
+/* App block styling */
+.app-block-wrapper {
+  margin-top: 20px;
+  width: 100%;
+  /* display:none; */
+}
+
+/* === Mobile adjustment: stack input + button vertically === */
+@media (max-width: 768px) {
+  .newsletter-input-wrapper {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+
+  .js-subscribe-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.newsletter-success {
+  color: green;
+  margin-top: 10px;
+}
+.newsletter-error {
+  color: red;
+  margin-top: 10px;
+}
+ 
+.crmWebToEntityForm{
+  padding:0!important;
+  background-color: transparent!important;
+}
+.zcwf_title{
+  display:none!important;
+}
+
+.zcwf_row{
+  margin:0!important;
+  position: realtive;
+  .zcwf_col_fld{
+    width: 100%!important;
+  }
+  input[type="text"],
+  input[type="email"]{
+    border-radius: 4px !important;
+    padding: 14px 16px !important;
+    font-size: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+    background: #ffffff !important;
+  }
+  input[type="submit"]{
+    position: relative !important;
+    font-weight: 500 !important;
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 12px 24px !important;
+    cursor: pointer !important;
+    background: none !important;
+    color: #636855 !important;
+    text-decoration: underline !important;
+    font-family: "Lexend Zetta" !important;
+    text-transform: uppercase !important;
+    display: table;
+    margin: 0 auto;
+    font-size: 14px;
+    max-width: fit-content;
+  }
+  input[type="reset"]{
+    display:none!important;
+  }
+  .zcwf_col_lab{
+    pointer-events: none;
+    z-index: 1;
+    font: var(--forms-body-font);
+    line-height: 1;
+    color: var(--form-placeholder-color);
+    position: absolute;
+    left: var(--form-field-padding);
+    top: var(--input-label-top);
+    max-width: calc(100% - var(--form-field-padding) * 2);
+    word-break: keep-all;
+    overflow-wrap: break-word;
+    margin: 0;
+    transform-origin: top left;
+    transform: none;
+    transition: 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  }
+}
+.zf-frmTitle{
+  display:none;
+}
+
+.zf-templateWidth{
+  ul{
+    list-style:none;
+  }
+  .zf-tempFrmWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 10px 0;
+    input[type="email"],
+    input[type="text"]
+    {
+      border-radius: 4px !important;
+      padding: 14px 16px !important;
+      font-size: 16px !important;
+      width: 100% !important;
+      box-sizing: border-box !important;
+      transition: all 0.3s ease !important;
+      background: #ffffff !important;
+      border: 1px solid #ccc;
+    }
+    .zf-labelName{
+      font-size: 12px;
+    }
+  }
+  .zf-radio{
+    margin: 10px 0;
+      .zf-labelName{
+        font-style: italic !important;
+        font-family: "Newsreader" !important;
+        font-weight: 600 !important;
+        color: #636855 !important;
+        text-align: center;
+        font-size: 14px;
+    }
+    input[type="radio"]{
+      accent-color: #636855;
+    }
+  }
+  .zf-tempContDiv{
+    .zf-overflow{
+      text-align:center;
+    }
+  }
+  .zf-form-sBox{
+    width: 100%;
+    height: 49px;
+  }
+  .zf-fmFooter{
+    button{
+      font-weight: 500 !important;
+      border: none !important;
+      border-radius: 4px !important;
+      padding: 12px 24px !important;
+      cursor: pointer !important;
+      background: none !important;
+      color: #636855 !important;
+      text-decoration: underline !important;
+      font-family: "Lexend Zetta" !important;
+      text-transform: uppercase !important;
+      font-size: 14px;
+    }
+  }
+  .zf-tempFrmWrapper{
+    &:not(.zf-radio){
+      .zf-labelName{
+        border: 0 !important;
+        clip-path: inset(50%) !important; /* 2 */
+        height: 1px !important;
+        margin: -1px !important;
+        overflow: hidden !important;
+        padding: 0 !important;
+        width: 1px !important;
+        white-space: nowrap !important; /* 3 */
+      }
+    }
+  }
+}
+
+
+{% endstyle %}
+
+{% schema %}
+{
+  "name": "Two Column Newsletter",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_left",
+      "label": "Hide Left Panel",
+      "default": false
+    },
+    {
+      "type": "image_picker",
+      "id": "left_bg_image",
+      "label": "Left column background image"
+    },
+    {
+      "type": "color",
+      "id": "right_bg_color",
+      "label": "Right column background color",
+      "default": "#737863"
+    },
+    {
+      "type": "text",
+      "id": "left_heading",
+      "label": "Left column heading",
+      "default": "Join our community"
+    },
+    {
+      "type": "textarea",
+      "id": "left_text",
+      "label": "Left column description",
+      "default": "Discover new content, offers and updates directly from us."
+    },
+    {
+      "type": "text",
+      "id": "left_button_label",
+      "label": "Left column button label",
+      "default": "Learn more"
+    },
+    {
+      "type": "url",
+      "id": "left_button_url",
+      "label": "Left column button link"
+    },
+    {
+      "type": "text",
+      "id": "right_heading",
+      "label": "Right column heading",
+      "default": "Stay updated"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_form",
+      "label": "Show Default Subscribe form",
+      "default": true
+    },
+    {
+      "type": "textarea",
+      "id": "right_text",
+      "label": "Right column description",
+      "default": "Subscribe to our newsletter and never miss an update."
+    },
+    {
+      "type": "textarea",
+      "id": "zoho_form",
+      "label": "Zoho Form Code",
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Newsletter alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "left"
+    },
+    {
+      "type": "text",
+      "id": "radio_label",
+      "label": "Radio Field Label",
+      "default": "Please select one:"
+    },
+    {
+      "type": "text",
+      "id": "radio_options",
+      "label": "Radio Options (comma-separated)",
+      "default": "Restaurateur, At-Home Chef"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Submit button label",
+      "default": "Subscribe"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Two Column Newsletter",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

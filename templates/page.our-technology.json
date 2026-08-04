@@ -1,0 +1,874 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_page_title": true,
+        "enable_h1_tag": true,
+        "show_page_content": true
+      }
+    },
+    "image_banner_QGdxVK": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_mVhG3i": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Our Technology",
+            "heading_size": "h1",
+            "enable_h1_tag": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_mVhG3i"
+      ],
+      "custom_css": [
+        ".right-panel {display: none;}"
+      ],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/OT_1_Our_Technology_FINAL.png",
+        "section_image_width": "full-width",
+        "height_desktop": "50vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "Headline for growers here.",
+        "text_panel": "Default text content",
+        "panel_title_link": "ATC for growers",
+        "panel_link": ""
+      }
+    },
+    "rich_text_Mhy9Eb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_m3BNPE": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Built on science. Proven in orchards.",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_8tMFkK": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Relentless research, development, and large scale data collection turn knowledge into measurable grower success. We stay at the forefront of truffle science and constantly incorporate the newest know-how into every aspect of what we do. </p>"
+          }
+        },
+        "button_Jpw7AY": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "Learn More",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/consulting",
+            "button_secondary_label": "Contact Us",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_m3BNPE",
+        "description_8tMFkK",
+        "button_Jpw7AY"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-center middle-xs"
+      }
+    },
+    "rich_text_nnHMY6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Cp6H3Q": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Truffle trees—the science",
+            "heading_size": "h1",
+            "enable_h1_tag": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Cp6H3Q"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "image_with_text_4QehtB": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_fA78Ud": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "ATC truffle tree production, backed by science",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "description_JVfrTc": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Many nurseries sell truffle-inoculated trees—but quality varies widely. Because our success depends entirely on yours, we <strong>control every step</strong> from inoculum sourcing to nursery QA. Using rigorous science and technology, we produce trees with <strong>high, verified mycorrhization</strong> and a <strong>proven track record of truffle production</strong>, while minimizing risk from common diseases.</p>"
+          }
+        },
+        "subheading_EWH9DC": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "How truffle tree production works"
+          }
+        },
+        "description_VnqPYW": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>The Périgord black truffle (<em><strong>Tuber melanosporum</strong></em>) produces truffles only after it forms a <strong>mycorrhizal symbiosis</strong> (a fungus-to-root partnership) with a compatible <strong>host tree</strong>. While <em>T. melanosporum</em> can associate with several tree species, <strong>host choice directly affects yield potential, orchard longevity, and disease risk</strong>. But selecting the best host tree is only the first step. <strong>How seedlings are inoculated with </strong><em><strong>T. melanosporum</strong></em><strong> and the conditions under which colonization occurs</strong> strongly influence mycorrhiza quality—ultimately determining whether a truffle orchard produces truffles at all, and how much truffle it produces. </p><p>In short: <strong>successful truffle production depends on the right host tree </strong><em><strong>and</strong></em><strong> high-quality, highly-concentrated and well-established truffle mycorrhiza on the roots.</strong><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fA78Ud",
+        "description_JVfrTc",
+        "subheading_EWH9DC",
+        "description_VnqPYW"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/Truffle_Trees.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "text_first",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "1763053327234971db": {
+      "type": "_blocks",
+      "blocks": {
+        "heading_zXbG6T": {
+          "type": "heading",
+          "name": "t:general.heading",
+          "settings": {
+            "heading_text": "Which tree species host Tuber melanosporum?",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          },
+          "blocks": {}
+        },
+        "ai_gen_block_597ccad_rrYXT4": {
+          "type": "ai_gen_block_597ccad",
+          "settings": {
+            "table_title": "List of common host species with peer-reviewed scientific citations",
+            "enable_dropdown": true,
+            "table_width": "100%",
+            "type_body_font": "montserrat_n7",
+            "title_size": 24,
+            "heading_size": 18,
+            "title_text_color": "#ffffff",
+            "heading_text_color": "#636855",
+            "text_color": "#000000",
+            "border_color": "#636855",
+            "link_color": "#636855",
+            "wrapper_background_color": "#636855",
+            "wrapper_padding": 20,
+            "table_background_color": "#ffffff",
+            "header_background_color": "#f8f6ed",
+            "row_background_color": "#ffffff",
+            "row_alternate_background_color": "#f8f6ed",
+            "column_1_heading": "Common Name",
+            "column_2_heading": "Scientific Name",
+            "column_3_heading": "Scientific Evidence",
+            "row_1_col_1": "European hornbeam",
+            "row_1_col_2": "Carpinus betulus",
+            "row_1_col_3": "https://onlinelibrary.wiley.com/doi/10.1111/1462-2920.12741",
+            "row_1_col_3_link": "https://onlinelibrary.wiley.com/doi/10.1111/1462-2920.12741",
+            "row_2_col_1": "Common hazel",
+            "row_2_col_2": "Corylus avellana",
+            "row_2_col_3": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064626",
+            "row_2_col_3_link": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0064626",
+            "row_3_col_1": "Asian hazel",
+            "row_3_col_2": "Corylus heterophylla",
+            "row_3_col_3": "https://www.actahort.org/books/351/351_31.htm",
+            "row_3_col_3_link": "https://www.actahort.org/books/351/351_31.htm",
+            "row_4_col_1": "European hop-hornbeam",
+            "row_4_col_2": "Ostrya carpinifolia",
+            "row_4_col_3": "https://www.sciencedirect.com/science/article/abs/pii/S175450481300130X",
+            "row_4_col_3_link": "https://www.sciencedirect.com/science/article/abs/pii/S175450481300130X",
+            "row_5_col_1": "Aleppo pine",
+            "row_5_col_2": "Pinus halepensis",
+            "row_5_col_3": "https://fs.revistas.csic.es/index.php/fs/article/view/835",
+            "row_5_col_3_link": "https://fs.revistas.csic.es/index.php/fs/article/view/835",
+            "row_6_col_1": "Austrian pine",
+            "row_6_col_2": "Pinus nigra",
+            "row_6_col_3": "https://iforest.sisef.org/contents/?id=ifor1334-007",
+            "row_6_col_3_link": "https://iforest.sisef.org/contents/?id=ifor1334-007",
+            "row_7_col_1": "Sawtooth oak",
+            "row_7_col_2": "Quercus acutissima",
+            "row_7_col_3": "https://www.kjmycology.or.kr/wp-content/uploads/2025/02/KJM-5004-03.pdf",
+            "row_7_col_3_link": "https://www.kjmycology.or.kr/wp-content/uploads/2025/02/KJM-5004-03.pdf",
+            "row_8_col_1": "Oriental white oak",
+            "row_8_col_2": "Quercus aliena",
+            "row_8_col_3": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9096950/",
+            "row_8_col_3_link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9096950/",
+            "row_9_col_1": "Boissier's oak",
+            "row_9_col_2": "Quercus boissieri",
+            "row_9_col_3": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_9_col_3_link": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_10_col_1": "Turkey oak",
+            "row_10_col_2": "Quercus cerris",
+            "row_10_col_3": "https://pubmed.ncbi.nlm.nih.gov/23318650/",
+            "row_10_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/23318650/",
+            "row_11_col_1": "Kermes oak",
+            "row_11_col_2": "Quercus coccifera",
+            "row_11_col_3": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_11_col_3_link": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_12_col_1": "Fabre's oak",
+            "row_12_col_2": "Quercus fabrei",
+            "row_12_col_3": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_12_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_13_col_1": "Portuguese oak",
+            "row_13_col_2": "Quercus faginea",
+            "row_13_col_3": "https://www.sciencedirect.com/science/article/abs/pii/S0378112706003641",
+            "row_13_col_3_link": "https://www.sciencedirect.com/science/article/abs/pii/S0378112706003641",
+            "row_14_col_1": "Texas live oak (Escarpment)",
+            "row_14_col_2": "Quercus fusiformis",
+            "row_14_col_3": "https://link.springer.com/article/10.1007/s42977-023-00189-w",
+            "row_14_col_3_link": "https://link.springer.com/article/10.1007/s42977-023-00189-w",
+            "row_15_col_1": "Oregon white oak",
+            "row_15_col_2": "Quercus garryana",
+            "row_15_col_3": "https://link.springer.com/article/10.1007/s42977-023-00189-w",
+            "row_15_col_3_link": "https://link.springer.com/article/10.1007/s42977-023-00189-w",
+            "row_16_col_1": "Holm oak",
+            "row_16_col_2": "Quercus ilex",
+            "row_16_col_3": "https://iforest.sisef.org/abstract/?id=ifor2096-009",
+            "row_16_col_3_link": "https://iforest.sisef.org/abstract/?id=ifor2096-009",
+            "row_17_col_1": "Iberian holm oak (ballota)",
+            "row_17_col_2": "Quercus ilex subsp. ballota",
+            "row_17_col_3": "https://fs.revistas.csic.es/index.php/fs/article/view/3559",
+            "row_17_col_3_link": "https://fs.revistas.csic.es/index.php/fs/article/view/3559",
+            "row_18_col_1": "Mount Tabor oak",
+            "row_18_col_2": "Quercus ithaburensis",
+            "row_18_col_3": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_18_col_3_link": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_19_col_1": "Lebanon oak",
+            "row_19_col_2": "Quercus libani",
+            "row_19_col_3": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_19_col_3_link": "https://www.sciencedirect.com/science/article/pii/S0953756208603536",
+            "row_20_col_1": "Long-spike oak",
+            "row_20_col_2": "Quercus longispica",
+            "row_20_col_3": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_20_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_21_col_1": "Mongolian oak",
+            "row_21_col_2": "Quercus mongolica",
+            "row_21_col_3": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_21_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_22_col_1": "Sessile oak",
+            "row_22_col_2": "Quercus petraea",
+            "row_22_col_3": "https://agris.fao.org/search/en/providers/122535/records/65de40f56eef00c2cea01005",
+            "row_22_col_3_link": "https://agris.fao.org/search/en/providers/122535/records/65de40f56eef00c2cea01005",
+            "row_23_col_1": "Mexican white oak",
+            "row_23_col_2": "Quercus polymorpha",
+            "row_23_col_3": "https://link.springer.com/article/10.1007/s42977-023-00189-w",
+            "row_23_col_3_link": "https://link.springer.com/article/10.1007/s42977-023-00189-w",
+            "row_24_col_1": "Downy oak",
+            "row_24_col_2": "Quercus pubescens",
+            "row_24_col_3": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10176669/",
+            "row_24_col_3_link": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10176669/",
+            "row_25_col_1": "Pyrenean oak",
+            "row_25_col_2": "Quercus pyrenaica",
+            "row_25_col_3": "https://www.sciencedirect.com/science/article/pii/S1470160X21010086",
+            "row_25_col_3_link": "https://www.sciencedirect.com/science/article/pii/S1470160X21010086",
+            "row_26_col_1": "Pedunculate oak (English oak)",
+            "row_26_col_2": "Quercus robur",
+            "row_26_col_3": "https://pubmed.ncbi.nlm.nih.gov/23318650/",
+            "row_26_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/23318650/",
+            "row_27_col_1": "Chinese deciduous oak",
+            "row_27_col_2": "Quercus senescens",
+            "row_27_col_3": "https://pubmed.ncbi.nlm.nih.gov/23318650/",
+            "row_27_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/23318650/",
+            "row_28_col_1": "Chinese cork oak",
+            "row_28_col_2": "Quercus variabilis",
+            "row_28_col_3": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_28_col_3_link": "https://pubmed.ncbi.nlm.nih.gov/31760479/",
+            "row_29_col_1": "Small-leaved linden (basswood)",
+            "row_29_col_2": "Tilia cordata",
+            "row_29_col_3": "https://www.jstor.org/stable/3761397",
+            "row_29_col_3_link": "https://www.jstor.org/stable/3761397",
+            "row_30_col_1": "Large-leaved linden",
+            "row_30_col_2": "Tilia platyphyllos",
+            "row_30_col_3": "https://www.sydowia.at/syd59-1/T5-Garcia.htm",
+            "row_30_col_3_link": "https://www.sydowia.at/syd59-1/T5-Garcia.htm"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "heading_zXbG6T",
+        "ai_gen_block_597ccad_rrYXT4"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "background_media": "none",
+        "video_source": "external",
+        "external_video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "show_video_controllers": true,
+        "enable_video_loop": true,
+        "video_controller_color": "transparent",
+        "section_image_width": "max-width",
+        "desktop_height": "50vh",
+        "desktop_direction": "fd-column-md",
+        "content_alignment_desktop_vertical": "ta-center-md middle-md",
+        "content_position_desktop_vertical": "center-md",
+        "content_alignment_desktop_horizontal": "ta-left-md start-md",
+        "content_position_desktop_horizontal": "top-md",
+        "desktop_gap": 24,
+        "mobile_height": "50vh",
+        "mobile_direction": "fd-column",
+        "content_alignment_mobile_vertical": "ta-center middle-xs",
+        "content_position_mobile_vertical": "center-xs",
+        "content_alignment_mobile_horizontal": "ta-left start-xs",
+        "content_position_mobile_horizontal": "top-xs",
+        "mobile_gap": 24,
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "blog_post_list_PPEqm7": {
+      "type": "blog-post-list",
+      "blocks": {
+        "tags_Wdj7G9": {
+          "type": "tags",
+          "settings": {}
+        },
+        "title_rikGGR": {
+          "type": "title",
+          "settings": {}
+        },
+        "excerpt_VyxGmD": {
+          "type": "excerpt",
+          "settings": {
+            "truncate_text": true
+          }
+        }
+      },
+      "block_order": [
+        "tags_Wdj7G9",
+        "title_rikGGR",
+        "excerpt_VyxGmD"
+      ],
+      "disabled": true,
+      "name": "t:sections.blog_post_list.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "blog": "science",
+        "heading": "Our Ongoing Research",
+        "heading_size": "h3-regular",
+        "description": "",
+        "items_to_show": 4,
+        "show_featured_image": true,
+        "image_ratio": "1/1",
+        "carousel_desktop": "true",
+        "columns_per_row_desktop": "4",
+        "carousel_mobile": "false",
+        "enable_button": true,
+        "button_text": "View all",
+        "button_position": "above-listing"
+      }
+    },
+    "rich_text_U8F9mJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PtNEz9": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "More yields, less risk",
+            "heading_size": "h1",
+            "enable_h1_tag": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PtNEz9"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "image_with_text_zNzNRE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_t9kDFb": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Why tree species selection matters",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "description_xMCqiT": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>A tree can host the fungus without being an <strong>ideal producer</strong>. Because your outcomes drive ours, we inoculate <strong>only the top species</strong> with the most <strong>scientifically documented</strong> yield performance for <em>T. melanosporum</em>.</p>"
+          }
+        },
+        "subheading_WHwYmR": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "The Trouble with Hazelnut Trees"
+          }
+        },
+        "description_xAHCik": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Hazelnuts (<em><strong>Corylus avellana</strong></em>) are often used as hosts, but they’re <strong>highly susceptible</strong> to <strong>Eastern Filbert Blight (EFB)</strong> caused by the fungus <em>Anisogramma anomala</em>. There is <strong>no known cure</strong>; even with pruning and fungicides, most affected trees die. Some nurseries offer “blight-resistant” cultivars (e.g., Yamhill, McDonald, Wepster, Jefferson). A 2009 <a href=\"https://agsci.oregonstate.edu/sites/agscid7/files/horticulture/attachments/em8987.pdf\" target=\"_blank\"><span style=\"text-decoration:underline\">publication</span></a> described <strong>Yamhill</strong> as “completely resistant,” but <strong>resistance isn’t immunity</strong>—and <strong>new, aggressive EFB strains were </strong><a href=\"https://extension.oregonstate.edu/catalog/potential-new-aggressive-efb-strain-infecting-resistant-hazelnut-varieties#:~:text=Now%20some%20of%20those%20varieties,commencing%20between%20budswell%20and%20budbreak.\" target=\"_blank\"><span style=\"text-decoration:underline\"><strong>reported</strong></span></a><strong> infecting resistant varieties in 2023</strong>.</p><p>Think of “resistant” hazelnuts like the <strong>first COVID vaccines</strong>: they provided strong protection against the original strain, but as the <strong>virus mutated</strong>, that protection was <strong>bypassed</strong>. In the same way, EFB can evolve to overcome genetic resistance in hazelnut cultivars—turning “resistant” into <strong>vulnerable</strong> over time. </p><p>Because resistance can be overcome, <strong>ATC has long avoided the common hazelnut (</strong><em><strong>Corylus avellana)</strong></em> as a host. The result: <strong>our growers have never been affected by EFB, and never will</strong>—a direct outcome of ATC’s science-first risk management and aligned incentives. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_t9kDFb",
+        "description_xMCqiT",
+        "subheading_WHwYmR",
+        "description_xAHCik"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/Hazelnut_tree.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "rich_text_kf4gkR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_qi6RzK": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "A Major Truffle-Tree Pitfall"
+          }
+        },
+        "heading_mggczd": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Contamination",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_eDcWLg": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Inoculation relies on spores in truffles. The industry’s reality: <em><strong>T. melanosporum</strong></em><strong> is sometimes cut</strong> with cheaper species such as <em><strong>T. brumale</strong></em> or <em><strong>T. indicum</strong></em>. If contaminants enter an orchard, they will <strong>outcompete</strong> <em>T. melanosporum</em> over time—non-ATC growers have harvested these species tracing back to mistakes made in non-ATC nurseries. </p><p>To prevent this, <strong>ATC DNA-tests </strong><em><strong>every single </strong></em><strong>truffle used in our inoculation process</strong> and enforces strict chain-of-custody and nursery QC. This is a core reason we can <strong>guarantee sapling quality</strong> and protect the long-term integrity of your orchard. </p>"
+          }
+        },
+        "button_GEmYDh": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "Root Analysis",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/root-analysis-monitoring",
+            "button_secondary_label": "Soil Analysis",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "shopify://pages/soil-analysis"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_qi6RzK",
+        "heading_mggczd",
+        "description_eDcWLg",
+        "button_GEmYDh"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "icon_with_text_3mNyEe": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_with_text_item_Be7KXi": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-assesment.svg",
+            "custom_code": "car",
+            "title": "Verified Mycorrhization",
+            "description": "<p>High, documented colonization rates on every tree shipped. <strong>Benefit</strong>: Higher truffle yield, because more of the tree roots are colonized, producing more truffles per tree.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_JkTkr9": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-treeline.svg",
+            "custom_code": "",
+            "title": "Best-in-class Host Selection",
+            "description": "<p>ATC only inoculates and ships tree species with the highest documented yield track record for your climate. <strong>Benefit</strong>: Higher truffle yield.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_byYBVm": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-recommendations.svg",
+            "custom_code": "",
+            "title": "Disease-Risk Avoidance",
+            "description": "<p>ATC does not use <em>Corylus avellana</em> → no EFB exposure path. <strong>Benefit:</strong> Your truffle trees will not be decimated by EFB, as many non-ATC truffle orchards have.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_dE4E7m": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-drop1.svg",
+            "custom_code": "",
+            "title": "Combination Controls",
+            "description": "<p>DNA-verified inoculum; strict QA. <strong>Benefit</strong>: You will produce the Périgord truffle, not some other contaminating species that end up taking over your orchard. </p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_LY6jhY": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-graph1.svg",
+            "custom_code": "",
+            "title": "Aligned Incentives",
+            "description": "<p>We get paid only when your orchard produces. <strong>Benefit</strong>: This shared common interest guarantees the truffle trees you plant are of the highest quality that science can deliver. </p>",
+            "label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_item_Be7KXi",
+        "icon_with_text_item_JkTkr9",
+        "icon_with_text_item_byYBVm",
+        "icon_with_text_item_dE4E7m",
+        "icon_with_text_item_LY6jhY"
+      ],
+      "name": "t:sections.icon_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "Why ATC truffle trees are different",
+        "heading_size": "h3-regular",
+        "description": "",
+        "text_position": "fd-column",
+        "icon_size": "icon-scale-3xl",
+        "icon_color": "",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "false",
+        "label": "",
+        "link": ""
+      }
+    },
+    "rich_text_fzUR77": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_GKEeiz": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Advanced Truffle Climate Map",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "subheading_zzn7gg": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Pinpoint where truffles can thrive—before you plant."
+          }
+        },
+        "description_CpWHrA": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Built on our original interactive map and engineered specifically for truffles, the <strong>Advanced Truffle Climate Map</strong> further includes these features: </p><ul><li><strong>Street-level resolution,</strong></li><li><strong>Dense climate data points</strong>, and </li><li><strong>Search-by-address</strong></li></ul><p>It includes <strong>historical climate conditions</strong> and <strong>50-year climate-change scenarios</strong>, translating complex microclimate data into <strong>clear, site-level guidance</strong>—so you invest where production potential is highest for <em>Tuber melanosporum</em>. With this map, you can be assured your truffle orchard location will remain climatically suitable for truffles for at least the next 50 years, even under the worst-case climate change scenario.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GKEeiz",
+        "subheading_zzn7gg",
+        "description_CpWHrA"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "multi_columns_69J7gQ": {
+      "type": "multi-columns",
+      "blocks": {
+        "image_column_pA3JpK": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/Street_level_granularity.jpg",
+            "title": "Street-Level Microclimate Data",
+            "description": "<p>Detailed and localized suitability, down to nearly individual street level. <strong>Benefit</strong>: You can assess the microclimate for specific locations with accurate and granular data. </p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        },
+        "image_column_GVrJ8U": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/Climate_change.jpg",
+            "title": "Integrates 50-Year Climate Change Data",
+            "description": "<p>Climate change can turn suitable climate areas hostile for truffles. This map ensures this doesn't happen to you. <strong>Benefit</strong>: Your chosen location will enjoy optimal climate for truffles for at least the next 50 years.</p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        },
+        "image_column_AcWtaB": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/Search_by_address.jpg",
+            "title": "Search Any Address",
+            "description": "<p>Instant feasibility verification for any parcel, with no guessing or approximation. <strong>Benefit:</strong> You will see the exact suitability criterion for the address you're looking for, with high confidence in the data. </p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        },
+        "image_column_dkqdmh": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/Gradations.jpg",
+            "title": "Clear Risk Levels",
+            "description": "<p>Visual gradations to compare sites at a glance. Even within climatically suitable regions, this map shows differences in suitability. <strong>Benefit</strong>: Clearly understand the trade-offs and different risk levels between parcels.</p>",
+            "btn_label": "",
+            "btn_link": "#"
+          }
+        }
+      },
+      "block_order": [
+        "image_column_pA3JpK",
+        "image_column_GVrJ8U",
+        "image_column_AcWtaB",
+        "image_column_dkqdmh"
+      ],
+      "name": "t:general.settings.multi_columns.label",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "item_position": "ta-left start-xs",
+        "media_ratio": "1/1",
+        "heading_size_item": "fs-heading-m",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "4",
+        "carousel_mobile": "false",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "rich_text_NDVAeW": {
+      "type": "rich-text",
+      "blocks": {
+        "button_TaieRL": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Access Advanced Truffle Climate Map",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/contact",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "button_TaieRL"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "multi_columns_jTX6pa": {
+      "type": "multi-columns",
+      "blocks": {
+        "image_column_n6VgGm": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/N_America_Map.jpg",
+            "title": "What it shows",
+            "description": "<ul><li><strong>Viability Zones:</strong> Areas with temperature and seasonality aligned to truffle production. </li><li><strong>Risk Levels: </strong>Graduated suitability to weigh trade-offs within “good” zones. </li><li><strong>Microclimate Signals:</strong> Slope, aspect, and elevation modeled at local resolution. </li><li><strong>Time Horizons:</strong> Historical baselines plus forward-looking projections out 50 years to ensure suitability under even the worst climate change scenario.</li></ul>",
+            "btn_label": "",
+            "btn_link": ""
+          }
+        },
+        "image_column_iyHhQ6": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/Land_for_sale.jpg",
+            "title": "How you can use it",
+            "description": "<ul><li><strong>Zone Targeting:</strong> Focus your land search on the most promising regions. </li><li><strong>Site Selection:</strong> Shortlist properties with climate fit—before soil tests. </li><li><strong>Irrigation Planning:</strong> Anticipate seasonal water demand and heat-event mitigation. </li></ul>",
+            "btn_label": "",
+            "btn_link": ""
+          }
+        },
+        "image_column_GDJUgr": {
+          "type": "image_column",
+          "settings": {
+            "image_column_image": "shopify://shop_images/Map_Differentiators.jpg",
+            "title": "Why it's different",
+            "description": "<ul><li><strong>Truffle-Specific Parameters</strong> — Purpose-built for truffles, not generic hardiness zones. </li><li><strong>One-of-a-Kind Interactivity</strong> — No other truffle climate tool like it. </li><li><strong>Science-Integrated</strong> — Feeds directly into our species, irrigation, and management protocols.</li><li><strong>Climate Change Included</strong> — No other truffle climate tool considers climate change effects.</li></ul>",
+            "btn_label": "",
+            "btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_column_n6VgGm",
+        "image_column_iyHhQ6",
+        "image_column_GDJUgr"
+      ],
+      "name": "t:general.settings.multi_columns.label",
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "item_position": "ta-left start-xs",
+        "media_ratio": "1/1",
+        "heading_size_item": "fs-heading-m",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "false",
+        "button_label": "",
+        "button_link": ""
+      }
+    },
+    "multiple_columns_VLwkH6": {
+      "type": "multiple-columns",
+      "blocks": {
+        "forms_inline_6yadhf": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "disabled": true,
+          "settings": {
+            "form_id": "743797",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_6yadhf"
+      ],
+      "name": "Two Column Newsletter",
+      "settings": {
+        "hide_left": false,
+        "left_bg_image": "shopify://shop_images/S1.3.jpg",
+        "right_bg_color": "#dfc5aa",
+        "left_heading": "We have the unique truffle science & technology that can help you succeed.",
+        "left_text": "We invite you to speak to us to find out more.",
+        "left_button_label": "",
+        "left_button_url": "#",
+        "right_heading": "Contact us for a consultation and to learn more",
+        "show_form": true,
+        "right_text": "",
+        "zoho_form": "<div class=\"zf-templateWidth\">\n  <form action=\"https://forms.zohopublic.com/robert6174/form/Growers/formperma/5NtUmMz9LAoRjIw1HkJQhKrd4EFr8RsanUvb4PH3awo/htmlRecords/submit\" name=\"form\" method=\"POST\" onsubmit='javascript:document.charset=\"UTF-8\"; return zf_ValidateAndSubmit();' accept-charset=\"UTF-8\" enctype=\"multipart/form-data\" id=\"form\">\n    <input type=\"hidden\" name=\"zf_referrer_name\" value=\"\"><!-- To Track referrals , place the referrer name within the \" \" in the above hidden input field -->\n    <input type=\"hidden\" name=\"zf_redirect_url\" value=\"\"><!-- To redirect to a specific page after record submission , place the respective url within the \" \" in the above hidden input field -->\n    <input type=\"hidden\" name=\"zc_gad\" value=\"\"><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->\n    <div class=\"zf-templateWrapper\">\n      <ul class=\"zf-tempHeadBdr\">\n        <li class=\"zf-tempHeadContBdr\">\n          <h2 class=\"zf-frmTitle\">\n            <em>Growers</em>\n          </h2>\n          <p class=\"zf-frmDesc\"></p>\n          <div class=\"zf-clearBoth\"></div>\n        </li>\n      </ul>\n      <div class=\"zf-subContWrap zf-topAlign\">\n        <ul>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> First Name </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"First Name\">\n              </span>\n              <p id=\"SingleLine_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              Last Name\n              <em class=\"zf-important\"> *</em>\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine1\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"Last Name\">\n              </span>\n              <p id=\"SingleLine1_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> Email </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"Email\" checktype=\"c5\" value=\"\" maxlength=\"255\" fieldtype=\"9\" placeholder=\"Email\">\n              </span>\n              <p id=\"Email_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf- zf-large\">\n            <label class=\"zf-labelName\"> Mobile </label>\n            <div class=\"zf-tempContDiv zf-phonefld\">\n              <div class=\"zf-phwrapper zf-phNumber\">\n                <span>\n                 <input type=\"text\" compname=\"PhoneNumber\" name=\"PhoneNumber_countrycode\" phoneformat=\"1\" iscountrycodeenabled=\"false\" maxlength=\"20\" value=\"\" fieldtype=\"11\" id=\"international_PhoneNumber_countrycode\" placeholder=\"Mobile (Numbers Only)\">\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"PhoneNumber_countrycode_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> City </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine2\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"City\">\n              </span>\n              <p id=\"SingleLine2_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-radio zf-tempFrmWrapper zf-oneColumns\">\n            <label class=\"zf-labelName\"> Country </label>\n            <div class=\"zf-tempContDiv\">\n              <div class=\"zf-overflow\">\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_1\" name=\"Radio\" checktype=\"c1\" value=\"United States\">\n                  <label for=\"Radio_1\" class=\"zf-radioChoice\">United States</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_2\" name=\"Radio\" checktype=\"c1\" value=\"Canada\">\n                  <label for=\"Radio_2\" class=\"zf-radioChoice\">Canada</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_3\" name=\"Radio\" checktype=\"c1\" value=\"Mexico\">\n                  <label for=\"Radio_3\" class=\"zf-radioChoice\">Mexico</label>\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"Radio_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large zf-radio\">\n            <label class=\"zf-labelName\"> State </label>\n            <div class=\"zf-tempContDiv\">\n              <select class=\"zf-form-sBox\" name=\"Dropdown\" checktype=\"c1\">\n                <option selected value=\"-Select-\">-Select-</option>\n                <option value=\"Alabama\">Alabama</option>\n                <option value=\"Alaska\">Alaska</option>\n                <option value=\"Arizona\">Arizona</option>\n                <option value=\"Arkansas\">Arkansas</option>\n                <option value=\"California\">California</option>\n                <option value=\"Colorado\">Colorado</option>\n                <option value=\"Connecticut\">Connecticut</option>\n                <option value=\"Delaware\">Delaware</option>\n                <option value=\"Florida\">Florida</option>\n                <option value=\"Georgia\">Georgia</option>\n                <option value=\"Hawaii\">Hawaii</option>\n                <option value=\"Idaho\">Idaho</option>\n                <option value=\"Illinois\">Illinois</option>\n                <option value=\"Indiana\">Indiana</option>\n                <option value=\"Iowa\">Iowa</option>\n                <option value=\"Kansas\">Kansas</option>\n                <option value=\"Kentucky\">Kentucky</option>\n                <option value=\"Louisiana\">Louisiana</option>\n                <option value=\"Maine\">Maine</option>\n                <option value=\"Maryland\">Maryland</option>\n                <option value=\"Massachusetts\">Massachusetts</option>\n                <option value=\"Michigan\">Michigan</option>\n                <option value=\"Minnesota\">Minnesota</option>\n                <option value=\"Mississippi\">Mississippi</option>\n                <option value=\"Missouri\">Missouri</option>\n                <option value=\"Montana\">Montana</option>\n                <option value=\"Nebraska\">Nebraska</option>\n                <option value=\"Nevada\">Nevada</option>\n                <option value=\"New Hampshire\">New Hampshire</option>\n                <option value=\"New Jersey\">New Jersey</option>\n                <option value=\"New Mexico\">New Mexico</option>\n                <option value=\"New York\">New York</option>\n                <option value=\"North Carolina\">North Carolina</option>\n                <option value=\"North Dakota\">North Dakota</option>\n                <option value=\"Ohio\">Ohio</option>\n                <option value=\"Oklahoma\">Oklahoma</option>\n                <option value=\"Oregon\">Oregon</option>\n                <option value=\"Pennsylvania\">Pennsylvania</option>\n                <option value=\"Rhode Island\">Rhode Island</option>\n                <option value=\"South Carolina\">South Carolina</option>\n                <option value=\"South Dakota\">South Dakota</option>\n                <option value=\"Tennessee\">Tennessee</option>\n                <option value=\"Texas\">Texas</option>\n                <option value=\"Utah\">Utah</option>\n                <option value=\"Vermont\">Vermont</option>\n                <option value=\"Virginia\">Virginia</option>\n                <option value=\"Washington\">Washington</option>\n                <option value=\"West Virginia\">West Virginia</option>\n                <option value=\"Wisconsin\">Wisconsin</option>\n                <option value=\"Wyoming\">Wyoming</option>\n              </select>\n              <p id=\"Dropdown_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-radio zf-tempFrmWrapper zf-oneColumns\">\n            <label class=\"zf-labelName\"> Do you own land? </label>\n            <div class=\"zf-tempContDiv\">\n              <div class=\"zf-overflow\">\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio1_1\" name=\"Radio1\" checktype=\"c1\" value=\"Yes\">\n                  <label for=\"Radio1_1\" class=\"zf-radioChoice\">Yes</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio1_2\" name=\"Radio1\" checktype=\"c1\" value=\"No\">\n                  <label for=\"Radio1_2\" class=\"zf-radioChoice\">No</label>\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"Radio1_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              How many total acres on your property?\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine3\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"How many total acres on your property?\">\n              </span>\n              <p id=\"SingleLine3_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              How many acres are available for a planting?\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine4\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"How many acres are available for a planting?\">\n              </span>\n              <p id=\"SingleLine4_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n        </ul>\n      </div>\n      <ul>\n        <li class=\"zf-fmFooter\">\n          <button class=\"zf-submitColor\">Submit</button>\n        </li>\n      </ul>\n    </div>\n  </form>\n</div>\n<script type=\"text/javascript\">\n  var dateAndMonthRegexFormateArray =\n    zf_SetDateAndMonthRegexBasedOnDateFormate(\"dd-MMM-yyyy\");\n  var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);\n  var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);\n  var zf_MandArray = [\"SingleLine1\"];\n  var zf_FieldArray = [\n    \"SingleLine\",\n    \"SingleLine1\",\n    \"Email\",\n    \"PhoneNumber_countrycode\",\n    \"SingleLine2\",\n    \"Radio\",\n    \"Dropdown\",\n    \"Radio1\",\n    \"SingleLine3\",\n    \"SingleLine4\",\n  ];\n  var isSalesIQIntegrationEnabled = false;\n  var salesIQFieldsArray = [];\n</script>",
+        "alignment": "left",
+        "radio_label": "Please select one:",
+        "radio_options": "Restaurateur, At-Home Chef",
+        "button_label": "Subscribe"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_QGdxVK",
+    "rich_text_Mhy9Eb",
+    "rich_text_nnHMY6",
+    "image_with_text_4QehtB",
+    "1763053327234971db",
+    "blog_post_list_PPEqm7",
+    "rich_text_U8F9mJ",
+    "image_with_text_zNzNRE",
+    "rich_text_kf4gkR",
+    "icon_with_text_3mNyEe",
+    "rich_text_fzUR77",
+    "multi_columns_69J7gQ",
+    "rich_text_NDVAeW",
+    "multi_columns_jTX6pa",
+    "multiple_columns_VLwkH6"
+  ]
+}
