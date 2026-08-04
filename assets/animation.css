@@ -962,7 +962,7 @@ sht-before-after-images .tag.is-animated {
   }
   .header__menu .animated-out .megamenu-promotion{
     animation: fadeOut var(--duration-moderate-02) var(--ex-ease-p) forwards;
-  }
+  }  
   .animated .megamenu-tab-header-button {
     animation: fadeIn var(--duration-moderate-02) var(--en-ease-p) var(--duration-fast-01);
   }
@@ -976,3 +976,4 @@ sht-before-after-images .tag.is-animated {
     animation: fadeOut var(--duration-moderate-02) var(--ex-ease-p) forwards;
   }
 }
+

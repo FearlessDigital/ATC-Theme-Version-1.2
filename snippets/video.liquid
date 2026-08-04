@@ -24,7 +24,7 @@
     play_icon: true,
     nute: true,
     default_thumbnail_image: default_thumbnail_image,
-    image_sizes: image_sizes
+    image_sizes: image_sizes 
   %}
 {% endcomment %}
 {%- liquid
@@ -103,7 +103,7 @@
     {%- liquid
       if block != blank
         assign external_video_id = 'shtVideo-' | append: section.id | append: '-' | append: block.id | append: '-' | append: video_id
-      else
+      else 
         assign external_video_id ='shtVideo-' | append: section.id | append: '-' | append: video_id
       endif
     -%}
@@ -112,7 +112,7 @@
         data-type="{{ external_video_link.type }}"
         id="{{ external_video_id }}"
       >
-      <iframe
+      <iframe 
         src="https://player.vimeo.com/video/{{ video_id }}?autoplay=1&muted={{ mute | default: '0' | replace: 'true', '1' }}"
         class="js-vimeo-media d-none"
         allow="autoplay; encrypted-media"

@@ -55,13 +55,13 @@
             <div class="rw gap-equal">
               <div class="clm field mb-scale-xl" style="--w-xs:12;--w-md:6">
                 <label class="d-block field__label fs-body-m" for="{{ form_id }}-name">{{ 'templates.contact.form.name' | t }}</label>
-                <input
-                class="field__text field--focus field--hover fs-body-m w-100"
-                autocomplete="name"
-                type="text"
-                id="{{ form_id }}-name"
+                <input 
+                class="field__text field--focus field--hover fs-body-m w-100" 
+                autocomplete="name" 
+                type="text" 
+                id="{{ form_id }}-name" 
                 name="contact[Name]"
-                value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" 
                 placeholder="{{ 'templates.contact.form.name_placeholder' | t }}"
                 >
               </div>
@@ -74,7 +74,7 @@
                 class="field__text field--focus field--hover fs-body-m w-100"
                 name="contact[email]"
                 spellcheck="false"
-                autocapitalize="off"
+                autocapitalize="off" 
                 value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                 aria-required="true"
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
@@ -280,7 +280,7 @@
             "value": "ta-right-md",
             "label": "t:general.settings.option_right.label"
           }
-        ],
+        ], 
         "default": "ta-center-md"
       },
       {
@@ -297,7 +297,7 @@
             "value": "image-first-md",
             "label": "t:sections.images_with_text.settings.content_ordering.options_2.label"
           }
-        ]
+        ] 
       },
       {
         "type": "header",
@@ -321,7 +321,7 @@
             "value": "ta-right",
             "label": "t:general.settings.option_right.label"
           }
-        ],
+        ], 
         "default": "ta-left"
       },
       {
@@ -338,7 +338,7 @@
             "value": "image-first",
             "label": "t:sections.images_with_text.settings.content_ordering.options_2.label"
           }
-        ]
+        ] 
       },
       {
         "type": "header",

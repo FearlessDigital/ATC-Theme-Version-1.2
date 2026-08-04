@@ -217,8 +217,8 @@
           -%}
           {{- local_video | replace: '<source src="', '<source data-src="' | replace: '<img', preview_image_text -}}
         {%- elsif section.settings.video_source == 'external' and video_id != blank -%}
-          <iframe tabindex="-1" title="{{ video_type | capitalize }} video"
-            class="pe-none {{ iframe_video }} js-local-video w-100 h-100"
+          <iframe tabindex="-1" title="{{ video_type | capitalize }} video" 
+            class="pe-none {{ iframe_video }} js-local-video w-100 h-100" 
             allow="autoplay; encrypted-media"
             loading="{{ loading }}"
             fetchpriority="{{ fetchpriority }}"
@@ -234,7 +234,7 @@
             allowfullscreen>
           </iframe>
         {%- endif -%}
-
+        
         {% if section.settings.show_video_controllers and video_type != blank %}
           <div class="js-video-controller video-controller p-absolute zi-2 d-flex gap-3xs middle-xs rad-p video-controller--{{ section.settings.video_controller_color }}">
             <button class="btn btn-icon-m bg-transparent js-btn-play" aria-label="Play or Pause">

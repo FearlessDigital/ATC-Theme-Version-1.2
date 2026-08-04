@@ -30,7 +30,7 @@
 	 },
 	 "sections": {
 	  "video_with_text": {
-	   "load_video": "Charger la vidéo : {{ description }}"
+	   "load_video": "Charger la vidéo : {{ description }}"
 	  },
 	  "shop_the_look": {
 	   "view_details": "Afficher les détails",
@@ -82,12 +82,12 @@
 	    "reset_all": "Tout effacer",
 	    "reset": "Réinitialiser",
 	    "product_count": {
-	     "other": "{{ product_count }} produits sur {{ count }}",
-	     "one": "{{ product_count }} produit sur {{ count }}"
+	     "other": "{{ product_count }} produits sur {{ count }}",
+	     "one": "{{ product_count }} produit sur {{ count }}"
 	    },
 	    "product_count_simple": {
-	     "other": "{{ count }} produits",
-	     "one": "{{ count }} produit"
+	     "other": "{{ count }} produits",
+	     "one": "{{ count }} produit"
 	    },
 	    "max_price": "Le prix le plus élevé est de {{ price }}.",
 	    "instock_only": "En stock",
@@ -112,8 +112,8 @@
 	   },
 	   "cart_label": "Panier",
 	   "cart_count": {
-	    "other": "{{ count }} éléments",
-	    "one": "{{ count }} élément"
+	    "other": "{{ count }} éléments",
+	    "one": "{{ count }} élément"
 	   }
 	  },
 	  "footer": {
@@ -289,7 +289,7 @@
 	   "back_to_home_page": "RETOUR À L'HOME PAGE"
 	  },
 	  "collection": {
-	   "view_collection": "{{ count }} éléments",
+	   "view_collection": "{{ count }} éléments",
 	   "search_filter": "Filtre de recherche",
 	   "label": "Collection"
 	  },
@@ -419,11 +419,11 @@
 	    "view_color_swatch": "Voir la couleur {{ color_swatch_name }} sur {{ product_name }} produit",
 	    "load_product_hotspot": "Charger {{ product_name }} en mode curseur"
 	   },
-	   "low_stock_html": "Stock faible : {{ stock }} produits",
+	   "low_stock_html": "Stock faible : {{ stock }} produits",
 	   "low_stock": "Stock faible",
 	   "item_to_cart": "panier",
 	   "include_taxes": "Taxe incluse.",
-	   "in_stock_html": "En stock : {{ stock }} produits",
+	   "in_stock_html": "En stock : {{ stock }} produits",
 	   "in_stock": "En stock",
 	   "enter_your_message": "Entrez votre message",
 	   "email": "E-mail",
@@ -432,11 +432,11 @@
 	   "compare_product": "Comparer le produit",
 	   "compare_now": "Comparez maintenant",
 	   "compare": "Comparer",
-	   "characters_max": "{{ max_chars }} caractères maximum",
+	   "characters_max": "{{ max_chars }} caractères maximum",
 	   "card": {
 	    "votes": "voix",
-	    "save_percent_up_to": "Jusqu'à {{ save_amount }} %",
-	    "save_percent": "{{ save_amount }} %",
+	    "save_percent_up_to": "Jusqu'à {{ save_amount }} %",
+	    "save_percent": "{{ save_amount }} %",
 	    "quick_shop": "Boutique rapide"
 	   },
 	   "bundle": "Paquet",
@@ -466,9 +466,9 @@
 	  },
 	  "volume_pricing_available": "Tarifs de volume disponibles",
 	  "volume_pricing": "Tarification au volume",
-	  "min_error_message": "Cet article a un minimum de {{min}}",
-	  "max_error_message": "Cet article a un maximum de {{max}}",
-	  "step_error_message": "Vous ne pouvez ajouter cet élément que par incréments de {{step}}."
+	  "min_error_message": "Cet article a un minimum de {{min}}",
+	  "max_error_message": "Cet article a un maximum de {{max}}",
+	  "step_error_message": "Vous ne pouvez ajouter cet élément que par incréments de {{step}}."
 	 },
 	 "onboarding": {
 	  "product_title": "Exemple de titre de produit",
@@ -482,12 +482,12 @@
 	 },
 	 "gift_cards": {
 	  "issued": {
-	   "title": "Voici votre carte cadeau {{ value }} pour {{ shop }} !",
+	   "title": "Voici votre carte cadeau {{ value }} pour {{ shop }} !",
 	   "subtext": "Votre carte cadeau",
 	   "shop_link": "Commencez vos achats",
 	   "remaining_html": "{{ balance }} restants",
 	   "redeem": "Utilisez ce code lors du paiement pour utiliser votre carte-cadeau",
-	   "qr_image_alt": "Code QR : scannez-le pour utiliser une carte-cadeau",
+	   "qr_image_alt": "Code QR : scannez-le pour utiliser une carte-cadeau",
 	   "print_gift_card": "Imprimer",
 	   "gift_card_code": "Code de la carte cadeau",
 	   "expired": "Expiré",
@@ -554,7 +554,7 @@
 	   "fulfilled_at_html": "Rempli {{ date }}",
 	   "discount": "Rabais",
 	   "date_html": "Placé le {{ date }}",
-	   "cancelled_reason": "Raison : {{ reason }}",
+	   "cancelled_reason": "Raison : {{ reason }}",
 	   "cancelled_html": "Commande annulée le {{ date }}",
 	   "billing_address": "adresse de facturation",
 	   "back_to_orders": "Retour aux commandes"
@@ -587,7 +587,7 @@
 	   "first_name": "Prénom",
 	   "edit_address": "Modifier l'adresse",
 	   "edit": "Modifier",
-	   "delete_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse ?",
+	   "delete_confirm": "Êtes-vous sûr de vouloir supprimer cette adresse ?",
 	   "delete": "Supprimer",
 	   "default": "Défaut",
 	   "country": "Pays/région",
@@ -662,18 +662,18 @@
 	  "next_slide": "Glisser vers la droite",
 	  "next": "Suivant",
 	  "minus": "Moins",
-	  "load_video": "Charger la vidéo : {{ video }}",
+	  "load_video": "Charger la vidéo : {{ video }}",
 	  "link_messages": {
 	   "new_window": "Ouvre dans une nouvelle fenêtre.",
 	   "external": "Ouvre un site Web externe."
 	  },
-	  "layout_6_items_per_row_desktop": "6 éléments par ligne sur le bureau",
-	  "layout_5_items_per_row_desktop": "5 éléments par ligne sur le bureau",
-	  "layout_4_items_per_row_desktop": "4 éléments par ligne sur le bureau",
-	  "layout_3_items_per_row_desktop": "3 éléments par ligne sur le bureau",
-	  "layout_2_items_per_row_mobile": "2 éléments par ligne sur mobile",
-	  "layout_2_items_per_row_desktop": "2 éléments par ligne sur le bureau",
-	  "layout_1_items_per_row_mobile": "1 élément par ligne sur mobile",
+	  "layout_6_items_per_row_desktop": "6 éléments par ligne sur le bureau",
+	  "layout_5_items_per_row_desktop": "5 éléments par ligne sur le bureau",
+	  "layout_4_items_per_row_desktop": "4 éléments par ligne sur le bureau",
+	  "layout_3_items_per_row_desktop": "3 éléments par ligne sur le bureau",
+	  "layout_2_items_per_row_mobile": "2 éléments par ligne sur mobile",
+	  "layout_2_items_per_row_desktop": "2 éléments par ligne sur le bureau",
+	  "layout_1_items_per_row_mobile": "1 élément par ligne sur mobile",
 	  "home": "Maison",
 	  "filter_and_sort": "Filtres et tri",
 	  "filter": "Filtre",

@@ -52,7 +52,7 @@
     assign product_alt_text = collection.products.first.featured_image.alt | default: collection.products.first.featured_image.src | split: '/' | last | split: '.' | first
     assign alt_text = collection.image.alt | default: collection.image.src | split: '/' | last | split: '.' | first
     assign collection_image = 'collection-apparel-1' | placeholder_svg_tag: 'placeholder media of-cover w-100 h-100'
-
+    
     if collection.products.first.featured_image
       capture product_srcset
         if collection.products.first.featured_image.width >= 160
@@ -86,7 +86,7 @@
       endcapture
       assign collection_image = collection.products.first.featured_image | image_url: width: 550 | image_tag: srcset: product_srcset, sizes: sizes, alt: product_alt_text, class: classes, loading: image_loading, fetchpriority: fetchpriority, decoding: decoding, preload: preload
     endif
-
+    
     if collection.image
       capture collection_srcset
         if collection.image.width >= 160

@@ -1,4 +1,4 @@
-{%- liquid
+{%- liquid 
   assign section_id = section.id | md5 | truncate: 12, ''
   assign form_id = section_id | prepend: 'cf-'
   assign alignment_class = section.settings.heading_alignment_desktop | append: ' ' | append: section.settings.heading_alignment_mobile
@@ -36,7 +36,7 @@
                   assign aria_expanded = 'false'
                   assign ac_open_css = ''
                   assign styles = 'max-height: 0;'
-
+  
                   if section.settings.open_first_item and forloop.first
                     assign aria_expanded = 'true'
                     assign ac_open_css = 'open'
@@ -59,14 +59,14 @@
                   </button>
                   <div class="fs-body-m accordion__content-large o-hidden rte js-accordion-content accordion-content {{ ac_open_css }}" id="collapsible-content-{{- block.id -}}" role="region" aria-describedby="collapsible-control-{{- block.id -}}" tabindex="-1"  style="{{ styles }}">
                     {{- block.settings.description_faq_item-}}
-                  </div>
+                  </div> 
                 </div>
               {%- endfor -%}
             </sht-accordion>
           </div>
         {% endif %}
-
-        {% if section.settings.enable_contact_form %}
+        
+        {% if section.settings.enable_contact_form %} 
           <div class="faqs__form">
             <div class="p-m border rad-l" style="{{ color_form_background }}; {{ color_form_content }}">
               {%- if section.settings.heading_contact_form != blank -%}
@@ -110,13 +110,13 @@
                     <div class="rw gap-equal">
                       <div class="clm field mb-scale-xl" style="--w-xs:12;--w-md:6">
                         <label class="d-block field__label fs-body-m" for="{{ form_id }}-name">{{ 'templates.contact.form.name' | t }}</label>
-                        <input
-                        class="field__text field--focus field--hover fs-body-m w-100"
-                        autocomplete="name"
-                        type="text"
-                        id="{{ form_id }}-name"
+                        <input 
+                        class="field__text field--focus field--hover fs-body-m w-100" 
+                        autocomplete="name" 
+                        type="text" 
+                        id="{{ form_id }}-name" 
                         name="contact[Name]"
-                        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}"
+                        value="{% if form.name %}{{ form.name }}{% elsif customer %}{{ customer.name }}{% endif %}" 
                         placeholder="{{ 'templates.contact.form.name_placeholder' | t }}"
                         >
                       </div>
@@ -129,7 +129,7 @@
                         class="field__text field--focus field--hover fs-body-m w-100"
                         name="contact[email]"
                         spellcheck="false"
-                        autocapitalize="off"
+                        autocapitalize="off" 
                         value="{% if form.email %}{{ form.email }}{% elsif customer %}{{ customer.email }}{% endif %}"
                         aria-required="true"
                         pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
@@ -137,7 +137,7 @@
                         required
                         >
                       </div>
-
+                      
                       <div class="clm field mb-scale-2xl" style="--w-xs:12;">
                         <label class="field__label fs-body-m p-relative d-block" for="{{ form_id }}-message">{{ 'templates.contact.form.message' | t }}<sup class="p-absolute ml-4xs color-danger">*</sup></label>
                         <textarea
@@ -165,7 +165,7 @@
         {% endif %}
       </div>
     </div>
-  </div>
+  </div> 
 {%- endif -%}
 {% schema %}
 	{
@@ -189,7 +189,7 @@
         "default": "scheme-1"
       },
       {
-        "type": "text",
+        "type": "text", 
         "id": "heading_text",
         "label": "t:general.settings.section_heading.label",
         "default": "Frequently asked questions"

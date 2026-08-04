@@ -348,7 +348,7 @@
         "description_CNPn64": {
           "type": "description",
           "settings": {
-            "description_text": "<p>When you engage ATC for Land Search Guidance, we don’t just look at a map and say “yes” or “no.” We systematically assess four critical dimensions:</p>"
+            "description_text": "<p>When you engage ATC for Land Search Guidance, we don’t just look at a map and say “yes” or “no.” We systematically assess four critical dimensions:</p>"
           }
         }
       },
@@ -447,7 +447,7 @@
         "heading_bJdNxV": {
           "type": "heading",
           "settings": {
-            "heading_text": "How our land search guidance works",
+            "heading_text": "How our land search guidance works",
             "heading_size": "h2",
             "enable_h1_tag": false
           }

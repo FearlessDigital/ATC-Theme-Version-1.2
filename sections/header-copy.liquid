@@ -93,7 +93,7 @@
               {%- endif -%}
             {%- when 'horizontal_menu' -%}
               {%- if block.settings.main_menu != blank -%}
-                <div class="header__item header__menu menu--horizontal js-menu-drawer-content d-flex-lg d-flex-xs d-none" style="--item-clm-span: {{ block.settings.block_width }}" {{ block.shopify_attributes }}>
+                <div class="header__item header__menu menu--horizontal js-menu-drawer-content d-flex-lg d-flex-xs d-none" style="--item-clm-span: {{ block.settings.block_width }}" {{ block.shopify_attributes }}> 
                   {%- render 'header-nav', block: block, main_list_class: 'middle-xs gap-3xs', menu_open_type: menu_open_type, menu_color: menu_color -%}
                 </div>
               {%- endif -%}

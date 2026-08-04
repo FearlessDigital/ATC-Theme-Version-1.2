@@ -128,10 +128,10 @@
   assign overlay_mask_color = block.settings.mask_overlay_color | replace: 'rgba(0,0,0,0)', 'initial' | color_modify: 'alpha', overlay_opacity
   assign overlay_content_color = block.settings.content_overlay_color | replace: 'rgba(0,0,0,0)', 'var(--color-normal-text)'
 %}
-<div class="group__content group-content__wrapper w-100"
+<div class="group__content group-content__wrapper w-100" 
       style="--height-group: {{- group_height -}};
            --width-group-md: {{- group_width -}};
-           --width-group: {{- group_width_mobile -}};"
+           --width-group: {{- group_width_mobile -}};" 
     {{ block.shopify_attributes }}>
   <div class="ctnr p-relative h-100">
     <div class="group-content h-100 m-auto color-{{- block.settings.color_scheme }} background sht-mask sht-mask--{{ sht_mask_desk }} sht-mask--{{ sht_mask_mb }} p-relative o-hidden"
@@ -165,8 +165,8 @@
             -%}
             {{- local_video | replace: '<source src="', '<source data-src="' | replace: '<img',  preview_image_text -}}
           {%- else %}
-            <iframe tabindex="-1" title="{{ block.settings.external_video.type }}"
-              class="group-video-iframe pe-none js-local-video w-100 h-100"
+            <iframe tabindex="-1" title="{{ block.settings.external_video.type }}" 
+              class="group-video-iframe pe-none js-local-video w-100 h-100" 
               allow="autoplay; encrypted-media"
               loading="{{ loading }}"
               fetchpriority="{{ fetchpriority }}"

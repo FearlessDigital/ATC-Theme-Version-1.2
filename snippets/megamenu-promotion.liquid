@@ -16,10 +16,10 @@
 {%- if block.settings.promotion_display_style == 'collage' -%}
     {%- for i in (1..3) %}
         {%- liquid
-        assign image_key = 'promotion_' | append: i | append: '_image'
-        assign heading_key = 'promotion_' | append: i | append: '_heading'
-        assign description_key = 'promotion_' | append: i | append: '_description'
-        assign button_label_key = 'promotion_' | append: i | append: '_button_label'
+        assign image_key = 'promotion_' | append: i | append: '_image' 
+        assign heading_key = 'promotion_' | append: i | append: '_heading' 
+        assign description_key = 'promotion_' | append: i | append: '_description' 
+        assign button_label_key = 'promotion_' | append: i | append: '_button_label' 
         assign button_link_key = 'promotion_' | append: i | append: '_link'
         assign overlay_opacity_key = 'promotion_' | append: i | append: '_mask_overlay_opacity'
         assign overlay_color_key = 'promotion_' | append: i | append: '_custom_mask_overlay_color'
@@ -65,10 +65,10 @@
         <div aria-atomic="true" class="d-flex o-hidden r-gap-scale-xl js-carousel-items ox-auto p-relative scrollable scrollable-x disable-scrollbars carousel--special">
             {%- for i in (1..3) %}
             {%- liquid
-                assign image_key = 'promotion_' | append: i | append: '_image'
-                assign heading_key = 'promotion_' | append: i | append: '_heading'
-                assign description_key = 'promotion_' | append: i | append: '_description'
-                assign button_label_key = 'promotion_' | append: i | append: '_button_label'
+                assign image_key = 'promotion_' | append: i | append: '_image' 
+                assign heading_key = 'promotion_' | append: i | append: '_heading' 
+                assign description_key = 'promotion_' | append: i | append: '_description' 
+                assign button_label_key = 'promotion_' | append: i | append: '_button_label' 
                 assign button_link_key = 'promotion_' | append: i | append: '_link'
                 assign overlay_opacity_key = 'promotion_' | append: i | append: '_mask_overlay_opacity'
                 assign overlay_color_key = 'promotion_' | append: i | append: '_custom_mask_overlay_color'

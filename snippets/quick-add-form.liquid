@@ -15,9 +15,9 @@
         aria-label="{{ "products.product.quick_add" | t }}"
         {{ button_type }}
         data-quick-buy="{{ quick_buy }}"
-        data-product-url="{{ product.url | split: "?" | first }}?view=quick-buy"
-        aria-haspopup="dialog"
-        onclick="window.dialogQuickBuy.checkSellingPlan(this, true)"
+        data-product-url="{{ product.url | split: "?" | first }}?view=quick-buy" 
+        aria-haspopup="dialog" 
+        onclick="window.dialogQuickBuy.checkSellingPlan(this, true)" 
         {% unless product.available %}disabled{% endunless %}
         name="add"
         data-selling-plan="{{- product.requires_selling_plan -}}"

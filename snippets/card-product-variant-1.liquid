@@ -57,7 +57,7 @@
 					</sht-variant-swtch>
 				{%- endif -%}
 			{% else %}
-			<sht-variant-swtch class="variant-swatches" data-variant-name="{{ variant_name }}">
+			<sht-variant-swtch class="variant-swatches" data-variant-name="{{ variant_name }}">		
 				{%- for value in option.values limit: max_swatch_display -%}
 					{%-liquid
 								assign selected_variant = product.selected_variant
@@ -85,7 +85,8 @@
 				{%- endif -%}
 				</sht-variant-swtch>
     {%- endfor -%}
-
+		
 	{% endfor %}
 {%- endunless -%}
+
 

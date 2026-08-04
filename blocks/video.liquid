@@ -12,7 +12,7 @@
   assign default_thumbnail_image = 'blog-apparel-2' | placeholder_svg_tag: 'placeholder w-100 h-100 media d-block'
   if block.settings.video_thumbnail_image
     assign video_width = block.settings.video_thumbnail_image.width | append: 'px'
-  else
+  else 
     if block.settings.video_hosted != blank
       assign video_width = block.settings.video_hosted.preview_image.width | append: 'px'
     endif

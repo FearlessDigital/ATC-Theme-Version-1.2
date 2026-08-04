@@ -7,7 +7,7 @@
     unless menu_apply_image == 'none'
         assign menu_level_two_image = false
         assign menu_level_three_image = false
-
+        
         if menu_link_apply_image == 'product'
             assign enable_menu_product_image = true
         endif
@@ -23,12 +23,12 @@
         if menu_apply_image == 'level_2'
             assign menu_level_two_image = true
         endif
-
+        
         assign menu_level_three_image_size = 'megamenu-item-card__media ratio--square of-cover rad-s megamenu-item-card__media--' | append: block.settings.menu_level_three_image_size
         if menu_apply_image == 'level_3'
             assign menu_level_three_image = true
         endif
-
+        
         if menu_apply_image == 'both'
             assign menu_level_two_image = true
             assign menu_level_three_image = true
@@ -38,7 +38,7 @@
 
 <div class="megamenu-grid megamenu-columns d-none d-block-lg {% if links.size <= 4 %} megamenu-grid-4 {% endif %} {% if links.size == 5 %} megamenu-grid-5 {% endif %} {% if links.size >= 6 %} megamenu-grid-6 {% endif %}">
     {%- for childlink in links -%}
-        <ul class="megamenu-grid__item megamenu-column-list ls-none">
+        <ul class="megamenu-grid__item megamenu-column-list ls-none"> 
             <li class="megamenu-column-item d-flex fd-column gap-xs top-xs megamenu-column-item--lv2">
                 {%- if childlink.object.featured_image and menu_level_two_image and enable_menu_product_image and childlink.type == 'product_link' -%}
                     <a class="menu__link megamenu-item-card megamenu-column-menu-link d-flex fd-column gap-s start-xs {{ childlink.current | default: '' | replace: 'true', 'menu__link--active' }}" href="{{- childlink.url -}}">
@@ -143,4 +143,5 @@
         {%- endfor -%}
     </ul>
 </div>
+
 

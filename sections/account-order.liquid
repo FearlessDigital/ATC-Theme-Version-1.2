@@ -98,7 +98,7 @@
                     {%- endif -%}
                   </div>
                   <span class="d-none-md d-block color-text-60">{{ 'customer.order.sku' | t }}: {{ line_item.sku }}</span>
-                  <span class="d-none-md d-block color-text-60">{{ 'customer.order.price' | t }}:
+                  <span class="d-none-md d-block color-text-60">{{ 'customer.order.price' | t }}: 
                     {% if line_item.original_price != line_item.final_price or line_item.unit_price_measurement %}
                       <dl class="customer-order__position m-zero">
                         {%- if line_item.original_price != line_item.final_price -%}

@@ -6,7 +6,7 @@
 }
 .account-noti {
   margin: auto;
-  margin-bottom: calc(var(--gutter-base) * 2.5);
+  margin-bottom: calc(var(--gutter-base) * 2.5); 
 }
 .order-title {
   margin-bottom: var(--gap-width);

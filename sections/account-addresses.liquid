@@ -37,7 +37,7 @@
             </ul>
           </sht-tab-overflow>
           <div class="d-block fs-body-m">
-
+          
             <button
               data-address-id="addAddress"
               aria-controls="addAddress"
@@ -46,7 +46,7 @@
               {{ 'customer.addresses.add_new' | t }}
               {%- render 'icon-plus', class: 'icon icon-fix-m' -%}
             </button>
-
+            
             {% capture add_new_address_content %}
               {%- assign add_address_form_id = 'addAddressForm_' | append: customer.new_address.id -%}
               <div id="addAddress" class="d-flex fd-column gap-content d-none gradient-overlay--dialog gradient-overlay">
@@ -207,7 +207,7 @@
                 {%- endform -%}
               </div>
             {% endcapture %}
-
+            
             {% if customer.addresses.size > 0 %}
               <div class="list-header gap-m d-flex middle-xs px-m">
                 <div class="list-item">{{ 'customer.addresses.header' | t }}</div>

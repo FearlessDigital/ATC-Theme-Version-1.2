@@ -151,7 +151,7 @@
         "heading_WLiVCw": {
           "type": "heading",
           "settings": {
-            "heading_text": "Lorem ipsum dolar set dium placeholder text lorem ipsum.",
+            "heading_text": "Lorem ipsum dolar \u0003set dium placeholder \u0003text lorem ipsum.",
             "heading_size": "h2",
             "enable_h1_tag": false
           }

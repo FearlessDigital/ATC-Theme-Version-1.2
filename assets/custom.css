@@ -24,9 +24,9 @@ header > div.header__item.header__menu.menu--horizontal.js-menu-drawer-content.d
 
 /** SITEWIDE STYLES FOR BUTTONS, TYPE AND IMAGES **/
 
-p, .rte>ol, .rte>ul {
+p, .rte>ol, .rte>ul {    
   font-size: .975rem;
-}
+} 
 
 img.w-100.h-100.rad-s.of-cover {
   border-radius: 0px !important;
@@ -677,10 +677,10 @@ div.zf-tempContDiv > span > input[type="text"], #international_PhoneNumber_count
 
 /* MEDIA QUERIES */
 
-@media (max-width: 1024px) {
-  p, .rte>ol, .rte>ul {
+@media (max-width: 1024px) {  
+  p, .rte>ol, .rte>ul {    
     font-size: .88rem;
-  }
+  } 
   .sp-accordion-content-inner ol li {
     font-size: .88rem;
   }
@@ -707,7 +707,7 @@ div.zf-tempContDiv > span > input[type="text"], #international_PhoneNumber_count
     text-transform: initial;
     letter-spacing: initial;
   }
-}
+} 
 
 @media (min-width: 768px) {
     .d-none-md-2 {

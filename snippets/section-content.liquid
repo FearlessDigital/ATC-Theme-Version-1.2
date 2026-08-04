@@ -32,8 +32,8 @@
         </div>
 			{%- when 'newsletter_form' -%}
 				<div class="section__newsletter-form" {{ block.shopify_attributes }} aria-label="newsletter-form">
-					{%- render 'newsletter-form',
-						block: block,
+					{%- render 'newsletter-form', 
+						block: block, 
 						alignment_class: alignment_class,
 						button_label: block.settings.submit_button -%}
 				</div>

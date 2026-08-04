@@ -1543,7 +1543,7 @@
             "value": "drag",
             "label": "drag"
           },
-         {
+          {
             "group": "Functional",
             "value": "enlarge",
             "label": "enlarge"
@@ -2045,7 +2045,7 @@
           },
           {
             "group": "Interior",
-          "value": "flower",
+            "value": "flower",
             "label": "flower"
           },
           {
@@ -2104,7 +2104,7 @@
             "label": "toilet"
           },
           {
-          "group": "Interior",
+            "group": "Interior",
             "value": "tools",
             "label": "tools"
           },

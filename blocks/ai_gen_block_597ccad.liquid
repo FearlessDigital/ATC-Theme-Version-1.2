@@ -191,7 +191,7 @@
       connectedCallback() {
         this.toggle = this.querySelector('.ai-table-toggle-{{ ai_gen_id }}');
         this.content = this.querySelector('.ai-table-content-{{ ai_gen_id }}');
-
+        
         if (this.toggle && this.content) {
           this.toggle.addEventListener('click', () => this.toggleContent());
         }

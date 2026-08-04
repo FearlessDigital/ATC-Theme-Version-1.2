@@ -20,12 +20,12 @@
 					{% if block.settings.button_secondary_label != blank %}
 						<a href="{{- block.settings.button_secondary_link | default: '#' -}}" {{ block.settings.button_secondary_link | default: 'tabindex="-1"' | replace: block.settings.button_secondary_link , '' }} class="btn btn-m btn-{{- block.settings.button_secondary_style }} hide-empty {{ block.settings.button_secondary_link | default: 'disable' | replace: block.settings.button_secondary_link , '' }}">{{- block.settings.button_secondary_label | escape -}}</a>
 					{% endif %}
-				</div>
+				</div> 
 			{%- when 'text_block_with_icon' -%}
 			{% assign alignment_class_text_icon = alignment_class | replace: ' start', ' top' | replace: ' center', ' middle' | replace: ' end', ' bottom'  %}
 			{% assign text_block_with_icon = 'media-with-text-block-icon ' | append: block.settings.block_width_desktop | append: ' ' | append: block.settings.block_width_mobile | append: ' ' | append: alignment_class_text_icon%}
         {%- render 'card-icon-with-text',
-          class: text_block_with_icon,
+          class: text_block_with_icon, 
           icon_color: block.settings.icon_color,
           theme_library_icon: block.settings.theme_library_icon,
           icon_source: block.settings.icon_source,

@@ -1,0 +1,685 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_page_title": true,
+        "enable_h1_tag": true,
+        "show_page_content": true
+      }
+    },
+    "image_banner_LknT3a": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_9rC9QV": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Root Analysis & Mycorrhiza Monitoring",
+            "heading_size": "h1",
+            "enable_h1_tag": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_9rC9QV"
+      ],
+      "custom_css": [
+        ".right-panel {display: none;}"
+      ],
+      "name": "t:sections.image_banner.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "enable_transparent_header": false,
+        "section_overlay_opacity": 30,
+        "section_mask_overlay_color": "",
+        "section_content_overlay_color": "",
+        "desktop_image": "shopify://shop_images/S4_Hero_White_Gloves_s.jpg",
+        "section_image_width": "full-width",
+        "height_desktop": "50vh",
+        "desktop_content_position": "center-md",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "height_mobile": "70vh",
+        "mobile_content_position": "center-xs",
+        "mobile_content_alignment": "ta-center middle-xs",
+        "image_banner_link": "",
+        "right_panel_heading": "Headline for growers here.",
+        "text_panel": "Default text content",
+        "panel_title_link": "ATC for growers",
+        "panel_link": ""
+      }
+    },
+    "rich_text_rDPNLV": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xRWXzq": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "The only way to really know what’s happening with your truffle mycorrhiza",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_3wkBCz": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Truffles are born from microscopic root tips. Long before you ever harvest a truffle, the real story is happening underground—where the truffle fungus colonizes your tree roots, competes with other fungi, and either establishes a strong foothold… or quietly disappears.</p><p>American Truffle Company’s Root Analysis Service gives you a clear, scientific view of that invisible world—every year—so you can protect your investment and manage your orchard based on data, not guesswork.</p>"
+          }
+        },
+        "button_ctjAGn": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "How We Can Help",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/consulting",
+            "button_secondary_label": "Contact Us",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "shopify://pages/contact"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xRWXzq",
+        "description_3wkBCz",
+        "button_ctjAGn"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "rich_text_ktFqdx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_QVPPmE": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Why you need annual root analysis",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_zWbMVm": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>From global truffle research and ATC’s own orchards and partner network, three reasons stand out for testing roots every year, not just once:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QVPPmE",
+        "description_zWbMVm"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "image_with_text_dwGeUe": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_73GTKi": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Confirm that the right truffle fungus is present and thriving",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "subheading_6GkWDc": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "A detailed microscope-based mycorrhiza analysis shows:"
+          }
+        },
+        "description_zAjXGh": {
+          "type": "description",
+          "settings": {
+            "description_text": "<ul><li>Whether your target truffle species (for example, Périgord black truffle, <em>Tuber melanosporum</em>) is actually colonizing the roots.</li><li>How extensively it is occupying root tips, which is strongly linked to fruiting potential.</li></ul><p>Without this, you’re effectively farming in the dark. There is little point in pouring time and money into irrigation, groundcover management, or pruning if the truffle fungus is not there—or not thriving—on the roots.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_73GTKi",
+        "subheading_6GkWDc",
+        "description_zAjXGh"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/Tuber_melanosporum_mycorrhiza.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "image_with_text_YGEHyN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_3UjAjz": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Detect contamination and competition before they affect yields",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "description_fBwmjn": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Truffle roots can host many different ectomycorrhizal fungi. Some are benign; others are direct competitors or even the “wrong” truffle species that can displace your intended Périgord fungus. Root analysis allows you to:</p><ul><li>Identify non-target fungi on the roots and assess their relative abundance.</li><li>Catch shifts in the fungal community early—while you still have options to adjust management, groundcover, or surrounding vegetation.</li></ul><p>Once an orchard becomes dominated by the wrong mycorrhiza, recovery can be difficult or impossible. Regular root monitoring is your early-warning system.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3UjAjz",
+        "description_fBwmjn"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/S4_content_f45a9a7f-24a4-4ee4-b879-a0be29b32c42.png",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "text_first",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "image_with_text_j8dbRd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_my8WU8": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Turn invisible underground changes into actionable management decisions",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "subheading_WRTdEq": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "Mycorrhizal communities and truffle mycelium aren’t static; they respond to:"
+          }
+        },
+        "description_yFNwGt": {
+          "type": "description",
+          "settings": {
+            "description_text": "<ul><li>Irrigation regimes</li><li>Soil amendments and fertilizer use</li><li>Extreme weather (drought, flooding)</li><li>Orchard age and management over time</li></ul><p>Annual root analysis lets you track trends instead of snapshots—how colonization is progressing, whether a management change helped or hurt, and how your orchard compares with productive benchmarks. This is exactly how ATC and our scientific team “know what’s happening” during the long build-up years before harvest: we look at root samples and soil samples, not just the surface of the orchard.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_my8WU8",
+        "subheading_WRTdEq",
+        "description_yFNwGt"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "image_alignment": "middle-xs",
+        "image_1": "shopify://shop_images/Underground_ecosystem.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-left start-xs"
+      }
+    },
+    "rich_text_6ghwNj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4hYRP3": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "What the Root Analysis Service includes",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_CwddzY": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>Our Root Analysis Service is designed specifically for truffle orchards—using methods refined across ATC’s network of orchards in North America and in collaboration with global research partners. <strong>Subtleties in how the mycorrhiza manifests itself can mean the difference in distinguishing the intended mycorrhiza from competing ones.</strong> We bring <strong>20+ years of experience in meticulously analyzing roots </strong>with mycorrhiza to ensure accurate and correct results.</p><p>It is <strong>a yearly microscope- and data-driven health check for your truffle roots. </strong>The quality of this type of root analysis in North America varies widely, because most American academic and even university laboratories lack the extensive knowledge and experience working with <em>Tuber melanosporum</em>. Our expertise and experience in root analysis are based on 20+ years of specializing in <em>T. melanosporum.</em></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4hYRP3",
+        "description_CwddzY"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "icon_with_text_KFmUfp": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_with_text_item_JgQpVY": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-graph1.svg",
+            "custom_code": "",
+            "title": "Sampling guidance or protocol",
+            "description": "<p>We provide clear instructions (or direct support, depending on service level) on how and where to collect representative root samples from your orchard, so the results actually reflect orchard status rather than one random tree.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_jVrQFR": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-assesment.svg",
+            "custom_code": "",
+            "title": "Microscopic mycorrhiza assessment",
+            "description": "<p>Specialist technicians examine root tips under the microscope to:</p><ul><li>Confirm the presence of your target truffle species’ mycorrhiza.</li><li>Estimate the level and quality of colonization (for example, proportion of colonized root tips, development stage).</li><li>Note signs of stress or poorly developed mycorrhiza.</li></ul>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_BGhD47": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-identify.svg",
+            "custom_code": "",
+            "title": "Target vs. non-target fungal identification",
+            "description": "<p>Where appropriate, we assess the presence and relative abundance of other ectomycorrhizal fungi on the roots, including potentially competing or contaminant species. In selected cases, DNA-based methods may be used to clarify species identity if warranted.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_CKfcwm": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-exploratory.svg",
+            "custom_code": "",
+            "title": "Interpretation against ATC’s global benchmarks",
+            "description": "<p>The raw numbers only tell part of the story. We interpret your results in the context of:</p><ul><li>Orchard age</li><li>Species planted (Périgord, Burgundy, etc.)</li><li>Climate and region</li><li>Tree species</li><li>Soil and irrigation context</li></ul><p>American Truffle Company and our scientific partner Mycorrhizal Systems Ltd. have built one of the largest unified datasets of truffle cultivation sites globally, across diverse climates and soils. That allows us to translate root data into realistic expectations and practical recommendations.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_jdw6b7": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-recommendations.svg",
+            "custom_code": "",
+            "title": "Actionable recommendations",
+            "description": "<p>You receive a concise, decision-oriented report that may address, for example:</p><ul><li>Whether colonization is on track for orchard age.</li><li>If contamination is a concern, and what to do about it.</li><li>Whether irrigation, groundcover, or nutrient management should be adjustedin light ofmycorrhiza status.</li></ul><p>The aim is always the same: to increase the probability of strong, consistent truffle production over the life of the orchar</p>",
+            "label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_item_JgQpVY",
+        "icon_with_text_item_jVrQFR",
+        "icon_with_text_item_BGhD47",
+        "icon_with_text_item_CKfcwm",
+        "icon_with_text_item_jdw6b7"
+      ],
+      "name": "t:sections.icon_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "text_position": "fd-column",
+        "icon_size": "icon-scale-3xl",
+        "icon_color": "",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "false",
+        "label": "",
+        "link": ""
+      }
+    },
+    "rich_text_XUpkw8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_fi9RX4": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "How the Root Analysis Service works",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_FtT88f": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>While details can be tailored to each grower and orchard, most engagements follow a simple pattern:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_fi9RX4",
+        "description_FtT88f"
+      ],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "icon_with_text_nfKCd4": {
+      "type": "icon-with-text",
+      "blocks": {
+        "icon_with_text_item_DiDTYJ": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-identify.svg",
+            "custom_code": "",
+            "title": "Context review",
+            "description": "<p>We start with key background: orchard location, age, species planted, management history, and any concerns (for example, slow development, inconsistent brûlé formation, unusual weather events).</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_ezUHUE": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-prescreening.svg",
+            "custom_code": "",
+            "title": "Sampling plan",
+            "description": "<p>We design or confirm a sampling strategy—how many trees, which zones of the orchard, and how often. For many orchards, an annual sampling of a representative subset of trees provides an excellent balance between cost and insight; in critical phases (such as years 3–7 after planting), more frequent testing can be justified.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_P8dXit": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-collection.svg",
+            "custom_code": "",
+            "title": "Root collection",
+            "description": "<p>We provide training videos on how to collect viable roots to help you collect root samples, following a defined protocol to avoid damaging mycorrhiza and to ensure enough fine root tips are available for analysis.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_CGbrPP": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-flask.svg",
+            "custom_code": "",
+            "title": "Laboratory analysis",
+            "description": "<p>Samples are examined under the microscope and, where warranted, supplemented with molecular analysis to confirm species identities or quantify specific fungi.</p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_bUfimE": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-exploratory.svg",
+            "custom_code": "",
+            "title": "Report & review session",
+            "description": "<p>An ATC expert will report the findings, review the results, answer questions, and discuss management implications with you. You will also receive the analysis data in a report.  </p>",
+            "label": "",
+            "link": ""
+          }
+        },
+        "icon_with_text_item_4Miwc3": {
+          "type": "icon_with_text_item",
+          "settings": {
+            "icon_source": "image",
+            "theme_library_icon": "happy",
+            "icon_image": "shopify://shop_images/icon-graph1.svg",
+            "custom_code": "",
+            "title": "Year-on-year benchmarking",
+            "description": "<p>With each annual analysis, you build a time series: trends in colonization, contamination, and response to management. Over time, this becomes one of the most powerful tools you have for keeping your orchard on track.</p>",
+            "label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_item_DiDTYJ",
+        "icon_with_text_item_ezUHUE",
+        "icon_with_text_item_P8dXit",
+        "icon_with_text_item_CGbrPP",
+        "icon_with_text_item_bUfimE",
+        "icon_with_text_item_4Miwc3"
+      ],
+      "name": "t:sections.icon_with_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "heading": "",
+        "heading_size": "h5",
+        "description": "",
+        "text_position": "fd-column",
+        "icon_size": "icon-scale-3xl",
+        "icon_color": "",
+        "carousel_desktop": "false",
+        "columns_per_row_desktop": "3",
+        "carousel_mobile": "false",
+        "label": "",
+        "link": ""
+      }
+    },
+    "rich_text_V4FyTd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Xn8gmM": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Whom is the Root Analysis Service for?",
+            "heading_size": "h2",
+            "enable_h1_tag": false
+          }
+        },
+        "description_CbLiPK": {
+          "type": "description",
+          "settings": {
+            "description_text": "<ul><li><strong>Established truffle orchard owners </strong>(with or without ATC partnership) who need to understand why an orchard is underperforming—or to confirm that it is on the right trajectory.</li><li><strong>New truffle projects </strong>that want an early baseline on root colonization in the first few years after planting.</li><li><strong>ATC partner growers </strong>automatically have this service included in the partnership program.</li></ul><p><strong>If you are investing years and significant capital into a truffle orchard, annual root analysis is not a luxury—it’s a key part of responsible risk management.</strong></p>"
+          }
+        },
+        "button_kCEBhE": {
+          "type": "button",
+          "settings": {
+            "button_primary_label": "Contact Us",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/contact",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": "shopify://pages/about"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Xn8gmM",
+        "description_CbLiPK",
+        "button_kCEBhE"
+      ],
+      "custom_css": [],
+      "name": "t:sections.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-1",
+        "desktop_content_alignment": "ta-center-md middle-md",
+        "mobile_content_alignment": "ta-left top-xs"
+      }
+    },
+    "image_with_text_fHbNb3": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nk4Ath": {
+          "type": "heading",
+          "settings": {
+            "heading_text": "Understand how your orchard is really doing",
+            "heading_size": "h3",
+            "enable_h1_tag": false
+          }
+        },
+        "description_66kNiM": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>From the outside, two orchards can look identical: same trees, same drip lines, same mowing pattern. Underground, however, they can be radically different—one with vigorous truffle mycorrhiza, the other quietly losing its target fungus to competitors.</p>"
+          }
+        },
+        "subheading_Tw4K8K": {
+          "type": "subheading",
+          "settings": {
+            "subheading_text": "ATC’s Root Analysis Service is how you tell which one you have."
+          }
+        },
+        "description_ChfWCE": {
+          "type": "description",
+          "settings": {
+            "description_text": "<p>If you would like to integrate annual root analysis into your orchard management—or bundle it with our broader scientific partnership—we invite you to get in touch with us to discuss options tailored to your land, your orchard, and your goals.</p>"
+          }
+        },
+        "button_MdF3rB": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_primary_label": "Inquire Now",
+            "button_primary_style": "primary",
+            "button_primary_link": "shopify://pages/contact",
+            "button_secondary_label": "",
+            "button_secondary_style": "secondary",
+            "button_secondary_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_nk4Ath",
+        "description_66kNiM",
+        "subheading_Tw4K8K",
+        "description_ChfWCE",
+        "button_MdF3rB"
+      ],
+      "name": "t:sections.images_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "image_alignment": "on_scroll",
+        "image_1": "shopify://shop_images/Root_analysis_contrast.jpg",
+        "image_1_link": "",
+        "image_2_link": "",
+        "image_3_link": "",
+        "image_4_link": "",
+        "desktop_layout": "fd-row-reverse-md",
+        "desktop_media_width": "6",
+        "desktop_content_alignment": "ta-left-md start-md",
+        "mobile_layout": "text-first",
+        "mobile_content_alignment": "ta-center center-xs"
+      }
+    },
+    "multiple_columns_ACVcCH": {
+      "type": "multiple-columns",
+      "blocks": {
+        "forms_inline_y3x3Kr": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "disabled": true,
+          "settings": {
+            "form_id": "743797",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_y3x3Kr"
+      ],
+      "name": "Two Column Newsletter",
+      "settings": {
+        "hide_left": false,
+        "left_bg_image": "shopify://shop_images/S1.3.jpg",
+        "right_bg_color": "#dfc5aa",
+        "left_heading": "We have the deep expertise and experience in truffle root analysis – let us help you.",
+        "left_text": "",
+        "left_button_label": "",
+        "left_button_url": "",
+        "right_heading": "Contact us to start your root analysis",
+        "show_form": false,
+        "right_text": "and really find out how your mycorrhiza is doing",
+        "zoho_form": "<div class=\"zf-templateWidth\">\n  <form action=\"https://forms.zohopublic.com/robert6174/form/Growers/formperma/5NtUmMz9LAoRjIw1HkJQhKrd4EFr8RsanUvb4PH3awo/htmlRecords/submit\" name=\"form\" method=\"POST\" onsubmit='javascript:document.charset=\"UTF-8\"; return zf_ValidateAndSubmit();' accept-charset=\"UTF-8\" enctype=\"multipart/form-data\" id=\"form\">\n    <input type=\"hidden\" name=\"zf_referrer_name\" value=\"\"><!-- To Track referrals , place the referrer name within the \" \" in the above hidden input field -->\n    <input type=\"hidden\" name=\"zf_redirect_url\" value=\"\"><!-- To redirect to a specific page after record submission , place the respective url within the \" \" in the above hidden input field -->\n    <input type=\"hidden\" name=\"zc_gad\" value=\"\"><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->\n    <div class=\"zf-templateWrapper\">\n      <ul class=\"zf-tempHeadBdr\">\n        <li class=\"zf-tempHeadContBdr\">\n          <h2 class=\"zf-frmTitle\">\n            <em>Growers</em>\n          </h2>\n          <p class=\"zf-frmDesc\"></p>\n          <div class=\"zf-clearBoth\"></div>\n        </li>\n      </ul>\n      <div class=\"zf-subContWrap zf-topAlign\">\n        <ul>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> First Name </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"First Name\">\n              </span>\n              <p id=\"SingleLine_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              Last Name\n              <em class=\"zf-important\"> *</em>\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine1\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"Last Name\">\n              </span>\n              <p id=\"SingleLine1_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> Email </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"Email\" checktype=\"c5\" value=\"\" maxlength=\"255\" fieldtype=\"9\" placeholder=\"Email\">\n              </span>\n              <p id=\"Email_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf- zf-large\">\n            <label class=\"zf-labelName\"> Mobile </label>\n            <div class=\"zf-tempContDiv zf-phonefld\">\n              <div class=\"zf-phwrapper zf-phNumber\">\n                <span>\n                  <input type=\"text\" compname=\"PhoneNumber\" name=\"PhoneNumber_countrycode\" phoneformat=\"1\" iscountrycodeenabled=\"false\" maxlength=\"20\" value=\"\" fieldtype=\"11\" id=\"international_PhoneNumber_countrycode\" placeholder=\"Mobile (Numbers Only)\">\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"PhoneNumber_countrycode_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\"> City </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine2\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"City\">\n              </span>\n              <p id=\"SingleLine2_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-radio zf-tempFrmWrapper zf-oneColumns\">\n            <label class=\"zf-labelName\"> Country </label>\n            <div class=\"zf-tempContDiv\">\n              <div class=\"zf-overflow\">\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_1\" name=\"Radio\" checktype=\"c1\" value=\"United States\">\n                  <label for=\"Radio_1\" class=\"zf-radioChoice\">United States</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_2\" name=\"Radio\" checktype=\"c1\" value=\"Canada\">\n                  <label for=\"Radio_2\" class=\"zf-radioChoice\">Canada</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio_3\" name=\"Radio\" checktype=\"c1\" value=\"Mexico\">\n                  <label for=\"Radio_3\" class=\"zf-radioChoice\">Mexico</label>\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"Radio_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large zf-radio\">\n            <label class=\"zf-labelName\"> State </label>\n            <div class=\"zf-tempContDiv\">\n              <select class=\"zf-form-sBox\" name=\"Dropdown\" checktype=\"c1\">\n                <option selected value=\"-Select-\">-Select-</option>\n                <option value=\"Alabama\">Alabama</option>\n                <option value=\"Alaska\">Alaska</option>\n                <option value=\"Arizona\">Arizona</option>\n                <option value=\"Arkansas\">Arkansas</option>\n                <option value=\"California\">California</option>\n                <option value=\"Colorado\">Colorado</option>\n                <option value=\"Connecticut\">Connecticut</option>\n                <option value=\"Delaware\">Delaware</option>\n                <option value=\"Florida\">Florida</option>\n                <option value=\"Georgia\">Georgia</option>\n                <option value=\"Hawaii\">Hawaii</option>\n                <option value=\"Idaho\">Idaho</option>\n                <option value=\"Illinois\">Illinois</option>\n                <option value=\"Indiana\">Indiana</option>\n                <option value=\"Iowa\">Iowa</option>\n                <option value=\"Kansas\">Kansas</option>\n                <option value=\"Kentucky\">Kentucky</option>\n                <option value=\"Louisiana\">Louisiana</option>\n                <option value=\"Maine\">Maine</option>\n                <option value=\"Maryland\">Maryland</option>\n                <option value=\"Massachusetts\">Massachusetts</option>\n                <option value=\"Michigan\">Michigan</option>\n                <option value=\"Minnesota\">Minnesota</option>\n                <option value=\"Mississippi\">Mississippi</option>\n                <option value=\"Missouri\">Missouri</option>\n                <option value=\"Montana\">Montana</option>\n                <option value=\"Nebraska\">Nebraska</option>\n                <option value=\"Nevada\">Nevada</option>\n                <option value=\"New Hampshire\">New Hampshire</option>\n                <option value=\"New Jersey\">New Jersey</option>\n                <option value=\"New Mexico\">New Mexico</option>\n                <option value=\"New York\">New York</option>\n                <option value=\"North Carolina\">North Carolina</option>\n                <option value=\"North Dakota\">North Dakota</option>\n                <option value=\"Ohio\">Ohio</option>\n                <option value=\"Oklahoma\">Oklahoma</option>\n                <option value=\"Oregon\">Oregon</option>\n                <option value=\"Pennsylvania\">Pennsylvania</option>\n                <option value=\"Rhode Island\">Rhode Island</option>\n                <option value=\"South Carolina\">South Carolina</option>\n                <option value=\"South Dakota\">South Dakota</option>\n                <option value=\"Tennessee\">Tennessee</option>\n                <option value=\"Texas\">Texas</option>\n                <option value=\"Utah\">Utah</option>\n                <option value=\"Vermont\">Vermont</option>\n                <option value=\"Virginia\">Virginia</option>\n                <option value=\"Washington\">Washington</option>\n                <option value=\"West Virginia\">West Virginia</option>\n                <option value=\"Wisconsin\">Wisconsin</option>\n                <option value=\"Wyoming\">Wyoming</option>\n              </select>\n              <p id=\"Dropdown_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-radio zf-tempFrmWrapper zf-oneColumns\">\n            <label class=\"zf-labelName\"> Do you own land? </label>\n            <div class=\"zf-tempContDiv\">\n              <div class=\"zf-overflow\">\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio1_1\" name=\"Radio1\" checktype=\"c1\" value=\"Yes\">\n                  <label for=\"Radio1_1\" class=\"zf-radioChoice\">Yes</label>\n                </span>\n                <span class=\"zf-multiAttType\">\n                  <input class=\"zf-radioBtnType\" type=\"radio\" id=\"Radio1_2\" name=\"Radio1\" checktype=\"c1\" value=\"No\">\n                  <label for=\"Radio1_2\" class=\"zf-radioChoice\">No</label>\n                </span>\n                <div class=\"zf-clearBoth\"></div>\n              </div>\n              <p id=\"Radio1_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              How many total acres on your property?\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine3\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"How many total acres on your property?\">\n              </span>\n              <p id=\"SingleLine3_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n          <div class=\"zf-tempFrmWrapper zf-large\">\n            <label class=\"zf-labelName\">\n              How many acres are available for a planting?\n            </label>\n            <div class=\"zf-tempContDiv\">\n              <span>\n                <input type=\"text\" name=\"SingleLine4\" checktype=\"c1\" value=\"\" maxlength=\"255\" fieldtype=\"1\" placeholder=\"How many acres are available for a planting?\">\n              </span>\n              <p id=\"SingleLine4_error\" class=\"zf-errorMessage\" style=\"display: none\">\n                Invalid value\n              </p>\n            </div>\n            <div class=\"zf-clearBoth\"></div>\n          </div>\n        </ul>\n      </div>\n      <ul>\n        <li class=\"zf-fmFooter\">\n          <button class=\"zf-submitColor\">Submit</button>\n        </li>\n      </ul>\n    </div>\n  </form>\n</div>\n<script type=\"text/javascript\">\n  var dateAndMonthRegexFormateArray =\n    zf_SetDateAndMonthRegexBasedOnDateFormate(\"dd-MMM-yyyy\");\n  var zf_DateRegex = new RegExp(dateAndMonthRegexFormateArray[0]);\n  var zf_MonthYearRegex = new RegExp(dateAndMonthRegexFormateArray[1]);\n  var zf_MandArray = [\"SingleLine1\"];\n  var zf_FieldArray = [\n    \"SingleLine\",\n    \"SingleLine1\",\n    \"Email\",\n    \"PhoneNumber_countrycode\",\n    \"SingleLine2\",\n    \"Radio\",\n    \"Dropdown\",\n    \"Radio1\",\n    \"SingleLine3\",\n    \"SingleLine4\",\n  ];\n  var isSalesIQIntegrationEnabled = false;\n  var salesIQFieldsArray = [];\n</script>",
+        "alignment": "left",
+        "radio_label": "Please select one:",
+        "radio_options": "Restaurateur, At-Home Chef",
+        "button_label": "Subscribe"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_LknT3a",
+    "rich_text_rDPNLV",
+    "rich_text_ktFqdx",
+    "image_with_text_dwGeUe",
+    "image_with_text_YGEHyN",
+    "image_with_text_j8dbRd",
+    "rich_text_6ghwNj",
+    "icon_with_text_KFmUfp",
+    "rich_text_XUpkw8",
+    "icon_with_text_nfKCd4",
+    "rich_text_V4FyTd",
+    "image_with_text_fHbNb3",
+    "multiple_columns_ACVcCH"
+  ]
+}

@@ -69,7 +69,7 @@
                   unless block.settings.custom_color.alpha == 0.0 or block.settings.custom_color == blank
                     assign color_content_style = '; --color-normal-text-rgb: ' | append: block.settings.custom_color.red | append: ',' | append: block.settings.custom_color.green | append: ',' | append: block.settings.custom_color.blue | append: ';'
                   endunless
-
+                  
                   assign image_loading = 'lazy'
                   assign fetchpriority = 'auto'
                   if section.index == 1 and forloop.first

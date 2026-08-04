@@ -222,18 +222,18 @@
                                     <span class="visually-hidden">{{ 'general.cart.decrease' | t }}</span>
                                     {% render 'icon-minus', class: 'icon-fix-m icon' %}
                                   </button>
-                                  <input class="js-cart-drawer-quantity-input product-quantity-input input-number fs-body-l btn-icon-m b-zero ta-center bg-transparent"
-                                  type="number"
-                                  name="updates[]"
-                                  data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}"
-                                  value="{{ item.quantity }}"
+                                  <input class="js-cart-drawer-quantity-input product-quantity-input input-number fs-body-l btn-icon-m b-zero ta-center bg-transparent" 
+                                  type="number" 
+                                  name="updates[]" 
+                                  data-cart-quantity="{{ cart | item_count_for_variant: item.variant.id }}" 
+                                  value="{{ item.quantity }}" 
                                   min="{{ item.product.selected_or_first_available_variant.quantity_rule.min }}"
                                   step="{{ item.product.selected_or_first_available_variant.quantity_rule.increment }}"
                                   {% if item.product.selected_or_first_available_variant.quantity_rule.max != null %}
                                     max="{{ item.product.selected_or_first_available_variant.quantity_rule.max }}"
                                   {% endif %}
-                                  aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
-                                  id="cartDrawerQuantityField-{{ item.index | plus: 1 }}"
+                                  aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}" 
+                                  id="cartDrawerQuantityField-{{ item.index | plus: 1 }}" 
                                   data-index="{{ item.index | plus: 1 }}"
                                   data-quantity-rule="{{ item.product.selected_or_first_available_variant.quantity_rule | escape }}"
                                   >

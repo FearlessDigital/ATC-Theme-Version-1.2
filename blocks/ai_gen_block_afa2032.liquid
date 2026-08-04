@@ -139,7 +139,7 @@
               assign col1_key = 'row_' | append: i | append: '_col_1'
               assign col2_key = 'row_' | append: i | append: '_col_2'
               assign col3_key = 'row_' | append: i | append: '_col_3'
-
+              
               assign col1_value = block.settings[col1_key]
               assign col2_value = block.settings[col2_key]
               assign col3_value = block.settings[col3_key]
@@ -170,7 +170,7 @@
 
         this.toggle.addEventListener('click', () => {
           const isActive = this.content.classList.contains('active');
-
+          
           this.content.classList.toggle('active');
           this.icon.classList.toggle('active');
           this.toggle.setAttribute('aria-expanded', !isActive);

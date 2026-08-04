@@ -30,7 +30,7 @@
           {%- for i in (1..2) -%}
             {%- liquid
               assign image_key = 'image_' | append: i
-              assign link_key = 'image_' | append: i | append: '_link'
+              assign link_key = 'image_' | append: i | append: '_link' 
               assign image = section.settings[image_key]
               assign link = section.settings[link_key]
               assign image_name = image.src | split: '/' | last | split: '.' | first
@@ -185,7 +185,7 @@
       "options": [
         {
             "value": "text_first",
-            "label": "t:sections.images_with_text.settings.content_ordering.options_1.label"
+            "label": "t:sections.images_with_text.settings.content_ordering.options_1.label" 
         },
         {
             "value": "fd-row-reverse-md",
@@ -199,13 +199,13 @@
       "id": "desktop_media_width",
       "label": "t:sections.images_with_text.settings.images_width.label",
       "options": [
-        {   "value": "2",
+        {   "value": "2", 
             "label": "1/4"
         },
-        {   "value": "6",
+        {   "value": "6", 
             "label": "t:general.settings.block_width.options_1_2.label"
         },
-        {   "value": "8",
+        {   "value": "8", 
             "label": "2/3"
         }
       ],
@@ -218,11 +218,11 @@
       "options": [
         {
           "value": "ta-left-md start-md",
-					"label": "t:sections.images_with_text.settings.content_alignment.options_1.label"
+					"label": "t:sections.images_with_text.settings.content_alignment.options_1.label" 
 				},
         {
           "value": "ta-center-md center-md",
-					"label": "t:sections.images_with_text.settings.content_alignment.options_2.label"
+					"label": "t:sections.images_with_text.settings.content_alignment.options_2.label" 
 				},
         {
           "value": "ta-right-md end-md",
@@ -242,7 +242,7 @@
       "options": [
         {
 						"value": "text-first",
-						"label": "t:sections.images_with_text.settings.content_ordering.options_1.label"
+						"label": "t:sections.images_with_text.settings.content_ordering.options_1.label" 
 				},
 				{
 						"value": "fd-column-reverse",
@@ -258,13 +258,13 @@
       "options": [
         {
 					"value": "ta-left start-xs",
-					"label": "t:sections.images_with_text.settings.content_alignment.options_1.label"
+					"label": "t:sections.images_with_text.settings.content_alignment.options_1.label" 
 				},
-        {
+        { 
 					"value": "ta-center center-xs",
-					"label": "t:sections.images_with_text.settings.content_alignment.options_2.label"
+					"label": "t:sections.images_with_text.settings.content_alignment.options_2.label" 
 				},
-        {
+        { 
 					"value": "ta-right end-xs",
 					"label": "t:sections.images_with_text.settings.content_alignment.options_3.label"
 				 }
@@ -468,7 +468,7 @@
       ]
     },
     {
-      "type": "text_block_with_icon",
+      "type": "text_block_with_icon",  
       "name": "t:general.settings.text_block_with_icon.name",
       "settings": [
         {

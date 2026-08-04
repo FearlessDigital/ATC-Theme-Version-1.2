@@ -5,7 +5,7 @@
     assign detect_background = section.settings.color_scheme.settings.color_background | color_brightness | times: 9999
   endif
 %}
-<style>
+<style>  
   #shopify-section-{{ section.id }} {
     --section-background-hash: {{ detect_background }};
   }
