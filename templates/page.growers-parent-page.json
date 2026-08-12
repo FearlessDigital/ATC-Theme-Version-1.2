@@ -206,7 +206,7 @@
       "name": "t:sections.blog_post_list.name",
       "settings": {
         "color_scheme": "scheme-1",
-        "blog": "news",
+        "blog": "inspirations",
         "heading": "",
         "heading_size": "h3-regular",
         "description": "",
